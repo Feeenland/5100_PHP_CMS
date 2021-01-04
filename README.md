@@ -62,8 +62,8 @@ With PHP the whole thing gets a bit more complicated, I ask you not to change an
  2. `web` folder _contains files for configuration_
     1. `css` folder _finished css files_
     2. `html` folder  _HTML templates files, are only required for preparation_
- 3. README.md
- 4. 
+ 3. README.md 
+ 
 ***
 
 ##source directory

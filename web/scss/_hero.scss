@@ -1,0 +1,229 @@
+.hero {
+  &:first-of-type {
+    .grid_container_child_pictures {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(10, 30px);
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
+      width: 90%;
+      margin: 2% auto;
+
+      .picture_box {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px;
+
+        .picture_wrap {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+          box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a;
+
+          .picture_front, .picture_back {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .picture_front {
+            background-color: black;
+          }
+
+          // pictures definition images (Back)*/
+          .img1 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img2 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img3 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img4 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img5 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img6 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img7 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img8 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img9 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img10 {
+            background-image: url("../img/armor_front.jpg");
+          }
+          .img11 {
+            background-image: url("../img/armor_front.jpg");
+          }
+
+          // pictures definition images (Front)*/
+          .pic1 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic2 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic3 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic4 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic5 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic6 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic7 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic8 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic9 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic10 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .pic11 {
+            background-image: url("../img/armschiene.jpg");
+          }
+          .picture_back {
+            background-color: #5a371a;
+            transform: rotateX(-180deg);
+          }
+          .picture_back {
+            transform: rotateY(180deg);
+          }
+        }
+        &:hover .picture_wrap {
+          transform: rotateX(-180deg);
+        }
+        &:nth-child(odd):hover .picture_wrap {
+          transform: rotateY(-180deg);
+        }
+        &:nth-child(even):hover .picture_wrap {
+          transform: rotateY(-180deg);
+        }
+      }
+
+      // picture positioning
+      .pic_item1 {
+        grid-column: 1/2;
+        grid-row: 6/8;
+      }
+      .pic_item2 {
+        grid-column: 1/2;
+        grid-row: 1/4;
+      }
+      .pic_item3 {
+        grid-column: 1/2;
+        grid-row: 4/6;
+      }
+      .pic_item4 {
+        grid-column: 2/2;
+        grid-row: 1/3;
+      }
+      .pic_item5 {
+        grid-column: 1/3;
+        grid-row: 8/11;
+      }
+      .pic_item6 {
+        grid-column: 2/4;
+        grid-row: 3/8;
+      }
+      .pic_item7 {
+        grid-column: 3/5;
+        grid-row: 8/11;
+      }
+      .pic_item8 {
+        grid-column: 3/4;
+        grid-row: 1/3;
+      }
+      .pic_item9 {
+        grid-column: 4/5;
+        grid-row: 4/6;
+      }
+      .pic_item10 {
+        grid-column: 4/5;
+        grid-row: 1/4;
+      }
+      .pic_item11 {
+        grid-column: 4/5;
+        grid-row: 6/8;
+      }
+
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 50px);
+        grid-column-gap: 42px;
+        grid-row-gap: 0;
+        margin: 0 auto 140px;
+
+        .pic_item1 {
+          grid-column: 1/2;
+          grid-row: 5/7;
+        }
+        .pic_item2 {
+          grid-column: 2/3;
+          grid-row: 4/8;
+        }
+        .pic_item3 {
+          grid-column: 3/4;
+          grid-row: 3/5;
+        }
+        .pic_item4 {
+          grid-column: 4/5;
+          grid-row: 1/3;
+        }
+        .pic_item5 {
+          grid-column: 3/5;
+          grid-row: 6/10;
+        }
+        .pic_item6 {
+          grid-column: 5/7;
+          grid-row: 2/9;
+        }
+        .pic_item7 {
+          grid-column: 7/9;
+          grid-row: 6/10;
+        }
+        .pic_item8 {
+          grid-column: 7/8;
+          grid-row: 1/3;
+        }
+        .pic_item9 {
+          grid-column: 8/9;
+          grid-row: 3/5;
+        }
+        .pic_item10 {
+          grid-column: 9/10;
+          grid-row: 4/8;
+        }
+        .pic_item11 {
+          grid-column: 10/11;
+          grid-row: 5/7;
+        }
+      }
+    }
+  }
+}

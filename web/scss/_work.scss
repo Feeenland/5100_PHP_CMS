@@ -1,0 +1,45 @@
+.work_collapse_element{
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 150px;
+  }
+  .work_visual{
+    margin-bottom: 30px;
+
+    img{
+      width: 100px;
+      height: 100px;
+      position: relative;
+     // margin: 10px 0 150px 40px;
+      margin: 20px 10px;
+      box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a;
+      @include media-breakpoint-up(sm) {
+        width: 150px;
+        height: 150px;
+      }
+      @include media-breakpoint-up(md) {
+        width: 200px;
+        height: 200px;
+        &:first-of-type{
+          left: -20%;
+          top: -25%;
+        }
+        &:last-of-type{
+          left: 40%;
+          top: 5%;
+          position: absolute;
+        }
+      }
+    }
+    button{
+      margin-bottom: 10px;
+    }
+  }
+  .work_collapsed{
+    img{
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
+/* hero element (home)*/
 .hero {
-  &:first-of-type {
     .grid_container_child_pictures {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -21,7 +21,7 @@
           width: 100%;
           transition: transform 0.8s;
           transform-style: preserve-3d;
-          box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a;
+          box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px $primary;
 
           .picture_front, .picture_back {
             top: 0;
@@ -225,5 +225,4 @@
         }
       }
     }
-  }
 }

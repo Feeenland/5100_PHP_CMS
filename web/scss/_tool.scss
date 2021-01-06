@@ -1,0 +1,13 @@
+.tools{
+  img{
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a;
+    position: relative;
+    top: -10%;
+    margin: 10px;@include media-breakpoint-up(lg) {
+    width: 300px;
+    height: 220px;
+    }
+  }
+}

@@ -851,12 +851,12 @@ $navbar-toggler-border-radius:      $btn-border-radius;
 $navbar-toggler-focus-width:        $btn-focus-width;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out;
 
-$navbar-dark-color:                 rgba($white, .55);
-$navbar-dark-hover-color:           rgba($white, .75);
-$navbar-dark-active-color:          $white;
+$navbar-dark-color:                 $light;
+$navbar-dark-hover-color:           $secondary;
+$navbar-dark-active-color:          $secondary;
 $navbar-dark-disabled-color:        rgba($white, .25);
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-dark-toggler-border-color:  rgba($white, .1);
+$navbar-dark-toggler-border-color:  rgba($light, .2);
 
 $navbar-light-color:                $dark; //rgba($black, .55);
 $navbar-light-hover-color:          $secondary; //rgba($black, .7);

@@ -63,9 +63,9 @@ $colors: (
 $primary:       #ad714a; // medium brown
 $secondary:     #a96734; // dark brown
 $success:       #71401a; //dark bron btn
-$info:          #5A0202;
+$info:          $red;
 $warning:       $yellow;
-$danger:        $red;
+$danger:        #5A0202;
 $light:         #d9b784; //light brown
 $dark:          #000004; // background
 
@@ -568,12 +568,12 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 // Forms
 
 $form-text-margin-top:                  .25rem;
-$form-text-font-size:                   $small-font-size;
+$form-text-font-size:                   1rem;
 $form-text-font-style:                  null;
 $form-text-font-weight:                 null;
-$form-text-color:                       $text-muted;
+$form-text-color:                       $light; //$text-muted;
 
-$form-label-margin-bottom:              .5rem;
+$form-label-margin-bottom:              .8rem;
 $form-label-font-size:                  null;
 $form-label-font-style:                 null;
 $form-label-font-weight:                null;
@@ -595,15 +595,15 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg;
 $input-font-size-lg:                    $input-btn-font-size-lg;
 
 $input-bg:                              $dark;
-$input-disabled-bg:                     $gray-200;
+$input-disabled-bg:                     $light; //$gray-200;
 $input-disabled-border-color:           null;
 
 $input-color:                           $primary;
-$input-border-color:                    $secondary;
+$input-border-color:                    rgba($success, .5);//$success;
 $input-border-width:                    $input-btn-border-width;
 $input-box-shadow:                      $box-shadow-inset;
 
-$input-border-radius:                   $border-radius;
+$input-border-radius:                   5px  ; //$border-radius;
 $input-border-radius-sm:                $border-radius-sm;
 $input-border-radius-lg:                $border-radius-lg;
 

@@ -9781,8 +9781,25 @@ footer {
 /* Navigation */
 .nav_styles {
   margin-bottom: 50px;
-  margin-top: 10px;
-  border-bottom: 2px solid #a96734; }
+  border-bottom: 2px solid #a96734;
+  font-size: 1.5rem; }
+  .nav_styles .nav_top {
+    font-size: 1rem; }
+  .nav_styles ul li {
+    margin-left: 15px; }
+
+.show_on_lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .show_on_lg {
+      display: block; } }
+
+@media (min-width: 992px) {
+  .hide_on_lg {
+    display: none; } }
+
+.float_right {
+  float: right; }
 
 form {
   font-size: 1.4rem;

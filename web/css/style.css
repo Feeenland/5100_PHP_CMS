@@ -9300,7 +9300,7 @@ footer {
   footer li {
     display: inline-block; }
     footer li:hover a span {
-      text-shadow: 1px 1px 1px #d9b784;
+      text-shadow: 1px 1px 1px #71401a;
       -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
               transform: scale(1.1);

@@ -1,0 +1,414 @@
+// ### footer ### */
+footer{
+  //border-top: 5px solid rgba(173, 113, 74, 0.3);
+  border-top: 2px solid $secondary;
+  padding: 5% 2%;
+  position: relative;
+  margin-top: 4%;
+  li{
+    display: inline-block;
+    &:hover a span{
+      text-shadow:1px 1px 1px $light;
+      transform: scale(1.1);
+      transition-delay: 0.1s;
+    }
+  }
+  > div{ // background properties for paws
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: .1;
+  }
+  // positioning paw steps and define paws (color)
+  .step1, .step2{
+    background-image: url("../img/paw_mittel_border.png");
+    height: 102px;
+    width: 100px;
+    opacity: 1;
+  }
+  // 1 & 2 = big Paws
+  .step1{
+    transform: rotateZ(-10deg);
+    left: 1%;
+    top: 20%;
+  }
+  .step2{
+    transform: rotateZ(30deg);
+    right: 1%;
+    top: 20%;
+  }
+  .step3, .step6{
+    background-image: url("../img/paw_hell.png");
+  }
+  .step4{
+    background-image: url("../img/paw_mittel.png");
+  }
+  .step5{
+    background-image: url("../img/paw_dunkel.png");
+  }
+  .step3, .step4, .step5, .step6{
+    height: 52px;
+    width: 50px;
+    transform: rotateZ(-35deg);
+  }
+  // left
+  .step3{
+    left: 25%;
+    bottom: 5%;
+  }
+  .step4{
+    left: 17%;
+    bottom: 15%;
+  }
+  .step5{
+    left: 15%;
+    bottom: 60%;
+  }
+  .step6{
+    left: 8%;
+    bottom: 66%;
+  }
+  // right */
+  .step7, .step10{
+    background-image: url("../img/paw_hell.png");
+  }
+  .step8, .step11{
+    background-image: url("../img/paw_mittel.png");
+  }
+  .step9, .step12{
+    background-image: url("../img/paw_dunkel.png");
+  }
+  .step7, .step8, .step9, .step10, .step11, .step12{
+    height: 32px;
+    width: 30px;
+    -webkit-transform: rotateZ(138deg);
+    transform: rotateZ(138deg);
+  }
+  .step7{
+    right: 31%;
+    bottom: 79%;
+  }
+  .step8{
+    right: 26%;
+    bottom: 76%;
+  }
+  .step9{
+    right: 23%;
+    bottom: 49%;
+  }
+  .step10{
+    right: 18%;
+    bottom: 47%;
+  }
+  .step11{
+    right: 16%;
+    bottom: 15%;
+  }
+  .step12{
+    right: 11%;
+    bottom: 11%;
+  }
+  &:hover .step1{
+    opacity: .1;
+  }
+  &:hover .step2{
+    opacity: .1;
+  }
+  // big paw */
+  &:hover .step3{
+    -webkit-animation: cat_steps3 5s linear infinite;
+    animation: cat_steps3 5s linear infinite;
+  }
+  // paw animation
+  @-webkit-keyframes cat_steps3 {
+    0%   {opacity: 0;}
+    20%  {opacity: 1;}
+    40%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps3 {
+    0%   {opacity: 0;}
+    20%  {opacity: 1;}
+    40%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step4{
+    -webkit-animation: cat_steps4 5s linear infinite;
+    animation: cat_steps4 5s linear infinite;
+  }
+  @-webkit-keyframes cat_steps4 {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    40%  {opacity: 1;}
+    60%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps4 {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    40%  {opacity: 1;}
+    60%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step5{
+    -webkit-animation: cat_steps5 5s linear infinite;
+    animation: cat_steps5 5s linear infinite;
+  }
+  @-webkit-keyframes cat_steps5 {
+    0%   {opacity: 0;}
+    40%  {opacity: 0;}
+    60%  {opacity: 1;}
+    80%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps5 {
+    0%   {opacity: 0;}
+    40%  {opacity: 0;}
+    60%  {opacity: 1;}
+    80%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step6{
+    -webkit-animation: cat_steps6 5s linear infinite;
+    animation: cat_steps6 5s linear infinite;
+  }
+  @-webkit-keyframes cat_steps6 {
+    0%   {opacity: 0;}
+    60%  {opacity: 0;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps6 {
+    0%   {opacity: 0;}
+    60%  {opacity: 0;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  // little paw */
+  &:hover .step7{
+    -webkit-animation: cat_steps7 7s linear infinite;
+    animation: cat_steps7 7s linear infinite;
+  }
+  @-webkit-keyframes cat_steps7 {
+    0%   {opacity: 0;}
+    14%  {opacity: 1;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps7 {
+    0%   {opacity: 0;}
+    14%  {opacity: 1;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step8{
+    -webkit-animation: cat_steps8 7s linear infinite;
+    animation: cat_steps8 7s linear infinite;
+  }
+  @-webkit-keyframes cat_steps8 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 1;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps8 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 1;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step9{
+    -webkit-animation: cat_steps9 7s linear infinite;
+    animation: cat_steps9 7s linear infinite;
+  }
+  @-webkit-keyframes cat_steps9 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 1;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps9 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 1;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step10{
+    -webkit-animation: cat_steps10 7s linear infinite;
+    animation: cat_steps10 7s linear infinite;
+  }
+  @-webkit-keyframes cat_steps10 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 1;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps10 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 1;}
+    70%  {opacity: 0;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step11{
+    -webkit-animation: cat_steps11 7s linear infinite;
+    animation: cat_steps11 7s linear infinite;
+  }
+  @-webkit-keyframes cat_steps11 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 1;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps11 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 1;}
+    84%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  &:hover .step12{
+    -webkit-animation: cat_steps12 7s linear infinite;
+    animation: cat_steps12 7s linear infinite;
+  }
+  @-webkit-keyframes cat_steps12 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  @keyframes cat_steps12 {
+    0%   {opacity: 0;}
+    14%  {opacity: 0;}
+    28%  {opacity: 0;}
+    42%  {opacity: 0;}
+    56%  {opacity: 0;}
+    70%  {opacity: 0;}
+    84%  {opacity: 1;}
+    100% {opacity: 0;}
+  }
+}//footer end
+
+/* Responsive / media queries ( in the footer case without bootstrap )*/
+@media screen and (max-width: 1400px) {
+  footer{
+    .step7, .step8, .step9, .step10, .step11, .step12{
+      height: 22px;
+      width: 20px;
+    }
+    .step3, .step4, .step5, .step6{
+      height: 42px;
+      width: 40px;
+    }
+    .step1, .step2{
+      height: 82px;
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  footer{
+    .small{
+      font-size: 1rem;
+    }
+    .step7, .step8, .step9, .step10, .step11, .step12{
+      height: 12px;
+      width: 10px;
+    }
+    .step3, .step4, .step5, .step6{
+      height: 32px;
+      width: 30px;
+    }
+    .step7{
+      right: 21%;
+      bottom: 79%;
+    }
+    .step8{
+      right: 16%;
+      bottom: 76%;
+    }
+    .step9{
+      right: 13%;
+      bottom: 49%;
+    }
+    .step10{
+      right: 8%;
+      bottom: 47%;
+    }
+    .step11{
+      right: 6%;
+      bottom: 15%;
+    }
+    .step12{
+      right: 1%;
+      bottom: 11%;
+    }
+    .step1, .step2{
+      height: 62px;
+      width: 60px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  footer{
+    .step3, .step4, .step5, .step6{
+      height: 22px;
+      width: 20px;
+    }
+    .step1, .step2{
+      height: 32px;
+      width: 30px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  footer{
+    .step3, .step4, .step5, .step6{
+      height: 12px;
+      width: 10px;
+    }
+  }
+}

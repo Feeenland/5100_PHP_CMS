@@ -1,0 +1,28 @@
+.news_section{
+
+  .news_card{
+    //box-shadow: 1px 1px 2px $primary;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 85%;
+
+    &:before{
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: -0%;
+      position: absolute;
+      background-image:  linear-gradient(0deg, rgba(0,0,4,1) 0%, rgba(0,0,4,1) 25%, rgba(0,0,4,.6) 65%, rgba(0,0,4,0.2) 100%);
+    }
+    img{
+      width: 100%;
+      height: auto;
+      margin: 20px 0px;
+      //border: 1px solid $dark;
+    }
+  }
+}

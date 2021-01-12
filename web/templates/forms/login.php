@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-11">
             <h2>Login</h2>
-            <form action="../../index.php?p=login" method="POST">
+            <form action="index.php?p=login" method="POST">
                 <input type="hidden" name="login_try" value="1">
                 <div class="form-group row">
                     <label for="exampleFormControlInput12" class="col col-form-label font_wind">Email address</label>

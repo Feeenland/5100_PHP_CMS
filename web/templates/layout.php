@@ -1,5 +1,4 @@
 <?php
-$content = ''; // i guess tats not oky like that !!!
 ?>
 
 

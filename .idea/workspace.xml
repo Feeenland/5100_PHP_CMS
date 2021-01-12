@@ -4,8 +4,10 @@
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/first_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,14 +96,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1610457808247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610457808247" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1609146634581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1609146634581" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1610386645295">
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1610461504518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610386645295" />
+    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610461504518" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1609143021151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

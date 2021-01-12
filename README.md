@@ -62,6 +62,7 @@ With PHP the whole thing gets a bit more complicated, I ask you not to change an
  2. `web` folder _contains files for configuration_
     1. `css` folder _finished css files_
     2. `html` folder  _HTML templates files, are only required for preparation_
+    2. `templates` folder  _views_
     3. `controllers`  files die kontollieren, warten, entscheiden was mit den seiten passieren soll
  3. README.md 
  

@@ -13,7 +13,11 @@
                                 <a class="nav-link" href="#">Kontakt</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=login">Login</a>
+                                <?php if($_SESSION['logged_in'] != 1) { ?>
+                                    <a class="nav-link" href="index.php?p=login">Login</a>
+                                <?php }else{ ?>
+                                    <a class="nav-link" href="index.php?p=login&action=logout">Logout</a>
+                                <?php } ?>
                             </li>
                         </ul>
                     </div>
@@ -28,7 +32,11 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-lg-right  " id="navbarText">
                     <ul class="navbar-nav mr-auto nav_top hide_on_lg">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=login">Login</a>
+                            <?php if($_SESSION['logged_in'] != 1) { ?>
+                                <a class="nav-link" href="../index.php?p=login">Login</a>
+                            <?php }else{ ?>
+                                <a class="nav-link" href="../index.php?p=login&action=logout">Logout</a>
+                            <?php } ?>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Kontakt</a>
@@ -42,7 +50,7 @@
                             <a class="nav-link" href="#">Neues</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Arbeit</a>
+                            <a class="nav-link" href="index.php?p=templates/work.php">Arbeit</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Werkzeug</a>

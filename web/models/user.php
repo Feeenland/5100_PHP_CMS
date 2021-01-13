@@ -20,7 +20,8 @@ function getUserByEmail($email)
     }
 }
 
-function updateUserField($id, $field, $newValue, $valueType){
+
+function updateUserField($id, $field, $newValue, $valueType){ //to update the user field in DB
     global $db_connection;
     try{
         $stmt = $db_connection->prepare('UPDATE users SET ' . $field .  ' = ? WHERE id = ?');
@@ -32,26 +33,24 @@ function updateUserField($id, $field, $newValue, $valueType){
     }catch(Exception $exception){
         die('update failed');
     }
-
 }
 
-function saveUser($data){
+function saveUser($data){ // to add a new user
     global $db_connection;
     if($data['id']){
         // update
-
 
     }else{
         // Create
         try{
             $stmt = $db_connection->prepare(
-                "INSERT INTO users (email, password, prename, lastname) 
+                "INSERT INTO users (email, password, first_name, last_name) 
                     VALUES (?,?,?,?)");
-            $stmt->bind_param("ssii", $email, $password, $prename, $lastname);
+            $stmt->bind_param("ssii", $email, $password, $first_name, $last_name);
             $email = $data['emeil'];
             $password = password_hash($data['password'], PASSWORD_DEFAULT);
-            $prename = $data['priority'] ?? 1;
-            $lastname = $data['starred'] == 0;
+            $first_name = $data['priority'] ?? 1;
+            $last_name = $data['starred'] == 0;
             $stmt->execute();
             return $stmt->insert_id;
         }catch(Exception $e){

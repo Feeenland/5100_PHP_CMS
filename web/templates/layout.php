@@ -14,7 +14,7 @@
 
 
     <!-- seo optimierte meta description und title -->
-    <title><?php print $pageTitle ?? 'Leder Tatze' ?></title>
+    <title><?php if (isset($pageTitle)){print $pageTitle ?? 'Leder Tatze';}  ?></title>
     <meta name="Description" content="Lederrüstung für ein LARP selbst anfertigen.
      Auf dieser Webseite werden Arbeitsschritte und Werkzeuge beschrieben, welche du benötigst, um selbst eine Rüstung aus Leder anzufertigen "/>
     <meta name="keywords" content="LARP, Leder, Rüsung, selbst">
@@ -29,15 +29,21 @@
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <?php include('navigation.php') ?>
+
+<span class="font_wind login_output"> <!--// prints infos from the login (like failed etc.)-->
+    <?php if (isset($login_output)){print $login_output;} ?>
+</span>
 
 <?php
 
 if(isset($page)){ //is the var $page defined
     include($page); // include $page
 }else{
-    if($content){ //is the var $content defined //content is not defined jet!
+    if (isset($content)){ //is the var $content defined //content is not defined jet!
         print $content; // print content
     }else{
         //print 'nothing found'; // else load default file

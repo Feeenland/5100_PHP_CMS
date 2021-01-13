@@ -15,7 +15,8 @@ Also, the site is now being set up with Bootstrap and Mobile first.
 
 ##Project structure
 **Pic**  
-
+my php code is unfortunately a mishmash between object-oriented programming and not object-oriented programming. 
+this for the reason that I can not yet determine the difference everywhere and thus also could not locate with examples from the internet whether this is object-oriented or not.
 ***
 
 ##Installation and system

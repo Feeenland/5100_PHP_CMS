@@ -5,16 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/database/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/database/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/work.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/work.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +89,7 @@
       <workItem from="1608593750076" duration="1968000" />
       <workItem from="1609143020389" duration="1223000" />
       <workItem from="1609745451842" duration="41651000" />
-      <workItem from="1610521230000" duration="6301000" />
+      <workItem from="1610521230000" duration="20790000" />
     </task>
     <servers />
   </component>

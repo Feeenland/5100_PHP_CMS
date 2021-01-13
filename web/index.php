@@ -1,6 +1,8 @@
 <?php
 
-
+// database connection
+include('database/config.php');
+include('database/database.php');
 
 session_start();
 //error_reporting(E_WARNING);

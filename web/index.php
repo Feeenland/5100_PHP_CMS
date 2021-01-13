@@ -1,4 +1,8 @@
 <?php
+/**
+ * The Index.php controls the whole website.
+ * or to say so index.php is the whole website with different content each time.
+ */
 
 // database connection
 include('database/config.php');

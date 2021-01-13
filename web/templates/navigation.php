@@ -1,4 +1,7 @@
 <?php
+/**
+ * navigation.php = this file generates the content for the navigation.
+ */
 ?>
 <!--Start Navigation-->
 <div class="container">

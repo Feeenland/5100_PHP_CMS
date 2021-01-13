@@ -1,4 +1,7 @@
 <?php
+/**
+ * tools.php = this file generates the content for the tools page.
+ */
 ?>
 <!-- Start Tools-->
 <div class="container tools">

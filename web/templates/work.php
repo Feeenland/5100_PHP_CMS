@@ -1,4 +1,8 @@
 <?php
+/**
+ * work.php = this file generates the content for the work page.
+ */
+
 ?>
 <!--Start work-->
 <article class="container work_collapse_element">

@@ -1,4 +1,7 @@
 <?php
+/**
+ * news.php = this file generates the content for the news page.
+ */
 ?>
 <!-- start news -->
 

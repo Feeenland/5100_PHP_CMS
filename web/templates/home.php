@@ -1,4 +1,7 @@
 <?php
+/**
+ * home.php = this file generates the content for the home page.
+ */
 ?>
 <div class="container">
     <div class="row">

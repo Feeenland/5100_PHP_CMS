@@ -10,7 +10,7 @@ include('database/database.php');
 
 session_start();
 //error_reporting(E_WARNING);
-
+$pageElement= null;
 $p ='home';
 
 if(isset($_GET['p']) && $_GET['p'] != ''){// from the get param, is p set and not empty ?
@@ -27,6 +27,8 @@ if(isset($_GET['p']) && $_GET['p'] != ''){// from the get param, is p set and no
         $page = 'templates/tools.php';
     }else if($_GET['p'] == 'contact'){
         include('controllers/contact.php');
+    }else if($_GET['p'] == 'admin'){
+        $page ='templates/admin/admin.php';
     }
 }else{
     $page = 'templates/home.php';

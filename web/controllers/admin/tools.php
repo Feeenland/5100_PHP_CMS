@@ -22,9 +22,8 @@ if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actio
 
 // VALIDATIONS
 $rules = [
-    'nav_title' => ['required', 'max20chars'],
-    'title' => ['required'],
-    'priority' => ['number', 'max20chars', 'required']
+    'title' => ['required', 'max20chars'],
+    'subtitle' => ['required']
 ];
 
 
@@ -91,10 +90,9 @@ function createToolItem($rules)
         return showCreateForm(
             $errors,
             [
-                'nav_title' => $_REQUEST['nav_title'],
                 'title' => $_REQUEST['title'],
-                'priority' => $_REQUEST['priority'],
-                'starred' => $_REQUEST['starred']
+                'subtitle' => $_REQUEST['subtitle'],
+                'text' => $_REQUEST['text']
             ]);
     } else {
         include('models/tools.php');
@@ -131,19 +129,21 @@ function updateToolItem($rules)
             $errors,
             [
                 'id' => $_REQUEST['id'],
-                'nav_title' => $_REQUEST['nav_title'],
                 'title' => $_REQUEST['title'],
-                'priority' => $_REQUEST['priority'],
-                'starred' => $_REQUEST['starred']
+                'subtitle' => $_REQUEST['subtitle'],
+                'text' => $_REQUEST['text']
             ]);
     } else {
         include('models/tools.php');
         $res = saveToolEntry($_REQUEST);
+        print $res;
         if ($res == false) {
-            die('Speichern fehlgeschlagen');
+            print 'Speichern fehlgeschlagen';
+            //die('Speichern fehlgeschlagen');
         } else {
-            // redirect to overview to prevent double-save
-            header('Location: index.php?p=admin&module=tools&action=list', true, 301);
+            // redirect to overview tools list
+            //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
+            print 'location should be: index.php?p=admin&module=tools&action=list';
             exit();
         }
     }

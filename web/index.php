@@ -7,6 +7,7 @@
 // database connection
 include('database/config.php');
 include('database/database.php');
+include('helpers/validations.php');
 
 session_start();
 //error_reporting(E_WARNING);

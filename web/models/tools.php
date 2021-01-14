@@ -31,12 +31,11 @@ function saveToolEntry($data){
     if($data['id']){
         // update
         try{
-            $stmt = $db_connection->prepare("UPDATE tools SET title = ?, nav_title = ?, priority = ?, starred = ? WHERE id = ?");
-            $stmt->bind_param("ssiii", $title, $nav_title, $priority, $starred, $id);
+            $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ? WHERE id = ?");
+            $stmt->bind_param("sssi", $title, $subtitle, $text, $id);
             $title = $data['title'];
-            $nav_title = $data['nav_title'];
-            $priority = $data['priority'] ?? 1;
-            $starred = $data['starred'] == 0;
+            $subtitle = $data['subtitle'];
+            $text = $data['text'];
             $id = $data['id'];
             $stmt->execute();
             return true;
@@ -47,12 +46,11 @@ function saveToolEntry($data){
     }else{
         // Create
         try{
-            $stmt = $db_connection->prepare("INSERT INTO tools (title, nav_title, priority, starred) VALUES (?,?,?,?)");
-            $stmt->bind_param("ssii", $title, $nav_title, $priority, $starred);
+            $stmt = $db_connection->prepare("INSERT INTO tools (title, subtitle, text) VALUES (?,?,?)");
+            $stmt->bind_param("sss", $title, $subtitle, $text);
             $title = $data['title'];
-            $nav_title = $data['nav_title'];
-            $priority = $data['priority'] ?? 1;
-            $starred = $data['starred'] == 0;
+            $subtitle = $data['subtitle'];
+            $text = $data['text'];
             $stmt->execute();
             return $stmt->insert_id;
         }catch(Exception $e){

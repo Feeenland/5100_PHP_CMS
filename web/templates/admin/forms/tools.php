@@ -7,7 +7,7 @@
         <div class="col">
             <label class="label">Werkzeug Titel</label>
             <input
-                name="nav_title"
+                name="title"
                 class="input <?php if(array_key_exists('title', $pageElement['errors'])){ ?> is-danger <?php } ?>"
                 type="text"
                 maxlength="20"
@@ -34,7 +34,7 @@
         <div class="col">
             <label class="label">Werkzeug Untertitel</label>
             <input
-                name="nav_title"
+                name="subtitle"
                 class="input <?php if(array_key_exists('subtitle', $pageElement['errors'])){ ?> is-danger <?php } ?>"
                 type="text"
                 maxlength="20"
@@ -61,7 +61,7 @@
         <div class="col">
             <label class="label">Werkzeug Text</label>
             <input
-                name="nav_title"
+                name="text"
                 class="input <?php if(array_key_exists('text', $pageElement['errors'])){ ?> is-danger <?php } ?>"
                 type="text"
                 maxlength="20"
@@ -87,7 +87,7 @@
     <div class="row">
         <div class="col">
 
-            <button class="button is-link">Speichern</button>
+            <button class="btn_1 btn">Speichern</button>
 
         </div>
     </div>

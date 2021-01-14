@@ -62,8 +62,8 @@ function listToolItems()
 {
     include('models/tools.php');
     $items = getAllToolItems();
-    $i = $items;
-    print_r($i);
+    //$i = $items;
+    //print_r($i);
     return [
         'page' => 'templates/admin/lists/tools.php',
         'items' => $items, //saved all items from the models/tools.php
@@ -118,7 +118,7 @@ function showUpdateForm($id, $errors = [], $values = [])
         'errors' => $errors
     ];
 }
-
+$location = '';
 function updateToolItem($rules)
 {
     $errors = validateFields($rules);
@@ -136,15 +136,18 @@ function updateToolItem($rules)
     } else {
         include('models/tools.php');
         $res = saveToolEntry($_REQUEST);
-        print $res;
+        //print $res;
         if ($res == false) {
             print 'Speichern fehlgeschlagen';
             //die('Speichern fehlgeschlagen');
         } else {
             // redirect to overview tools list
             //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
-            print 'location should be: index.php?p=admin&module=tools&action=list';
-            exit();
+            $location = 'tools';
+            //print 'location should be: index.php?p=admin&module=tools&action=list';
+            //print $location;
+            include 'templates/admin/forms/edit-worked.php';
+            //exit();
         }
     }
 }

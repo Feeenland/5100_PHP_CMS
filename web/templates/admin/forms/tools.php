@@ -64,7 +64,7 @@
                 name="text"
                 class="input <?php if(array_key_exists('text', $pageElement['errors'])){ ?> is-danger <?php } ?>"
                 type="text"
-                maxlength="20"
+                maxlength="500"
                 placeholder="Text"
                 value="<?php print $pageElement['values']['text'] ?? '' ?>">
 

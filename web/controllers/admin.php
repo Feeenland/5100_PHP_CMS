@@ -25,7 +25,7 @@ include($active_module); // now = 'controllers/admin/tools.php'
 
 
 if (isset($pageElement) && $pageElement != null){
-    print ($pageElement['page']); //now = templates/admin/lists/tools.php
+    //print ($pageElement['page']);
     include ($pageElement['page']);
 }else{
     print 'pageElement is not set';

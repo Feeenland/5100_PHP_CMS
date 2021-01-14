@@ -76,7 +76,7 @@ function listToolItems()
 function showCreateForm($errors = [], $values = [])
 {
     return [
-        'page' => 'admin/forms/tools.php',
+        'page' => 'templates/admin/lists/tools.php',
         'action' => 'index.php?p=admin&module=tools&action=create',
         'errors' => $errors,
         'values' => $values
@@ -114,7 +114,7 @@ function showUpdateForm($id, $errors = [], $values = [])
     include('models/tools.php');
     $item = getToolItemById($id);
     return [
-        'page' => 'admin/forms/tools.php',
+        'page' => 'templates/admin/forms/tools.php',
         'action' => 'index.php?p=admin&module=tools&action=update',
         'values' => $values != [] ? $values : $item,
         'errors' => $errors

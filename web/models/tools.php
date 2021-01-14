@@ -58,3 +58,17 @@ function saveToolEntry($data){
         }
     }
 }
+
+function deleteToolItemById($id){
+    global $db_connection;
+    try{
+        $stmt = $db_connection->prepare("DELETE FROM tools WHERE ID = ?");
+        $stmt->bind_param("i", $_id);
+        $_id = $id;
+        $stmt->execute();
+        $result = $stmt->get_result();
+    }catch(Exception $e){
+        return false;
+    }
+
+}

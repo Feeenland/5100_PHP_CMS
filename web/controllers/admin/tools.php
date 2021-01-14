@@ -15,7 +15,7 @@ $available_actions = [
 if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actions)) {
     $action = $_REQUEST['action'];
 } else {
-    print 'dise aktion ist nicht möglich 4';
+    //print 'diese aktion ist nicht möglich 4';
     //die('invalid action');
 }
 
@@ -23,38 +23,44 @@ if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actio
 // VALIDATIONS
 $rules = [
     'title' => ['required', 'max20chars'],
-    'subtitle' => ['required']
+    'subtitle' => ['required'],
+    'text' => ['required']
 ];
 
-
-switch ($action) {
-    case 'list':
-        $pageElement = listToolItems();
-        break;
-    case 'new':
-        // show empty mask
-        $pageElement = showCreateForm();
-        break;
-    case 'create':
-        // save
-        $pageElement = createToolItem($rules);
-        break;
-    case 'edit':
-        // show filled mask
-        $pageElement = showUpdateForm($_REQUEST['id']);
-        break;
-    case 'update':
-        // update
-        $pageElement = updateToolItem($rules);
-        break;
-    case 'delete':
-        // delete
-        break;
+if (isset($action)){
+    switch ($action) {
+        case 'list':
+            $pageElement = listToolItems();
+            break;
+        case 'new':
+            // show empty mask
+            $pageElement = showCreateForm();
+            break;
+        case 'create':
+            // save
+            $pageElement = createToolItem($rules);
+            break;
+        case 'edit':
+            // show filled mask
+            $pageElement = showUpdateForm($_REQUEST['id']);
+            break;
+        case 'update':
+            // update
+            $pageElement = updateToolItem($rules);
+            break;
+        case 'delete':
+            // delete
+            $pageElement = deleteTools($_REQUEST['id']);
+            break;
+    }
 }
+
 
 //var_dump($pageElement);
 //die();
 
+$location = 'tools';// to re locate after the action
+$happened = ''; // to change the message after the action
 
 // PAGE FUNCTIONS
 
@@ -118,7 +124,7 @@ function showUpdateForm($id, $errors = [], $values = [])
         'errors' => $errors
     ];
 }
-$location = '';
+
 function updateToolItem($rules)
 {
     $errors = validateFields($rules);
@@ -143,16 +149,22 @@ function updateToolItem($rules)
         } else {
             // redirect to overview tools list
             //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
-            $location = 'tools';
             //print 'location should be: index.php?p=admin&module=tools&action=list';
             //print $location;
+            $location = 'tools';
+            $happened = 'Aktualisiert';
             include 'templates/admin/forms/edit-worked.php';
             //exit();
         }
     }
 }
 
-function deleteNavigation($id)
-{
+function deleteTools($id){
+    //print 'delete that';
+    include('models/tools.php');
+    $item = deleteToolItemById($id);
+    $location = 'tools';
+    $happened = 'Gelöscht';
+    include 'templates/admin/forms/edit-worked.php';
 }
 

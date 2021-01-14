@@ -13,14 +13,14 @@
                     <div class="col-12">
                         <ul class="navbar-nav mr-auto float_right">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=contact">Kontakt</a>
+                                <a class="nav-link <?php if($p=='contact'){print 'active';} ?>" href="index.php?p=contact">Kontakt</a>
                             </li>
                             <li class="nav-item">
                                 <?php if (isset($_SESSION['logged_in'])) { ?>
                                     <?php if($_SESSION['logged_in'] != 1) { ?>
-                                        <a class="nav-link" href="index.php?p=login">Login</a>
+                                        <a class="nav-link <?php if($p=='login'){print 'active';} ?>" href="index.php?p=login">Login</a>
                                     <?php }else{ ?>
-                                        <a class="nav-link" href="index.php?p=login&action=logout">Logout</a>
+                                        <a class="nav-link <?php if($p=='login&action=logout'){print 'active';} ?>" href="index.php?p=login&action=logout">Logout</a>
                                     <?php } ?>
                                 <?php } else{?>
                                     <a class="nav-link" href="index.php?p=login">Login</a>
@@ -41,13 +41,13 @@
                     <ul class="navbar-nav mr-auto nav_top hide_on_lg">
                         <li class="nav-item">
                             <?php if($_SESSION['logged_in'] != 1) { ?>
-                                <a class="nav-link" href="../index.php?p=login">Login</a>
+                                <a class="nav-link <?php if($p=='login'){print 'active';} ?>" href="../index.php?p=login">Login</a>
                             <?php }else{ ?>
                                 <a class="nav-link" href="../index.php?p=login&action=logout">Logout</a>
                             <?php } ?>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=contact">Kontakt</a>
+                            <a class="nav-link <?php if($p=='contact'){print 'active';} ?>" href="index.php?p=contact">Kontakt</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto flex-nowrap">
@@ -55,16 +55,16 @@
                             <a class="nav-link <?php if($p=='home'){print 'active';} ?> " href="index.php?p=home"">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=news"">Neues</a>
+                            <a class="nav-link <?php if($p=='news'){print 'active';} ?>" href="index.php?p=news"">Neues</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=work">Arbeit</a>
+                            <a class="nav-link <?php if($p=='work'){print 'active';} ?>" href="index.php?p=work">Arbeit</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=tools"">Werkzeug</a>
+                            <a class="nav-link <?php if($p=='tools'){print 'active';} ?>" href="index.php?p=tools"">Werkzeug</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallerie</a>
+                            <a class="nav-link <?php if($p=='gallery'){print 'active';} ?>" href="#">Gallerie</a>
                         </li>
                     </ul>
 

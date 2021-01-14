@@ -5,7 +5,7 @@
 <p><!-- include lead text--></p>
 <div class="row">
     <div class="col-12 col-sm-4">
-        <button class="btn btn_1">Neues Item</button>
+        <button class="btn btn_1">Neues Item Hinzufügen</button>
     </div>
 </div>
 <div class="row">

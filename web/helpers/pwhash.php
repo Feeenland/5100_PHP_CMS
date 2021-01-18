@@ -1,6 +1,7 @@
 <?php
 /**
- * I need this file only to save the pw in the database as a hash
+ * I need this file only to save the pw in the database as a hash. (for the admin and before i could add users in the backend)
+ * I used this function because it only compares and it is not possible to derive the password from the hash
  */
 
  //echo password_hash("leder", PASSWORD_DEFAULT);

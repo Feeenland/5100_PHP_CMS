@@ -1,4 +1,15 @@
+<?php
+/**
+ * This is the form for the tools items in the backend.
+ * to add new items and edit existing ones.
+ *
+ * who an item is processed it will fill the value with the existing entry.
+ * error, klass danger...
+ */
+?>
+
 <form action="<?php print $pageElement['action'] ?>" method="POST">
+    <!-- If i need to edit a Item the ID will be send by a hidden field (if i add a new i don't need this)-->
     <?php if(array_key_exists('id', $pageElement['values'])) { ?>
         <input type="hidden" name="id" value="<?php print $pageElement['values']['id'] ?>">
     <?php } ?>

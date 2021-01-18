@@ -79,7 +79,6 @@ function listItems()
 
 function showCreateForm($errors = [], $values = [])
 {
-    print 'new';
     return [
         'page' => 'templates/admin/forms/users.php',
         'action' => 'index.php?p=admin&module=users&action=create',

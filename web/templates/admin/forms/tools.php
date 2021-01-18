@@ -68,17 +68,7 @@
                 type="text"
                 maxlength="500"
                 name="text"
-                placeholder="Text"
-                form="usrform">
-                    <?php print $pageElement['values']['text'] ?? '' ?>
-            </textarea>
-            <input
-                name="text"
-                class="input <?php if(array_key_exists('text', $pageElement['errors'])){ ?> is-danger <?php } ?>"
-                type="text"
-                maxlength="200"
-                placeholder="text"
-                value="<?php print $pageElement['values']['text'] ?? '' ?>">
+                placeholder="Text"><?php print $pageElement['values']['text'] ?? '' ?></textarea>
 
             <?php if(array_key_exists('text', $pageElement['errors'])){ ?>
                 <span class="icon is-small is-right">

@@ -81,7 +81,7 @@ function listToolItems()
 
 function showCreateForm($errors = [], $values = [])
 {
-    print 'new';
+    //print 'new';
     return [
         'page' => 'templates/admin/forms/tools.php',
         'action' => 'index.php?p=admin&module=tools&action=create',
@@ -149,7 +149,7 @@ function updateToolItem($rules)
     } else {
         include('models/tools.php');
         $res = saveToolEntry($_REQUEST);
-        print $_REQUEST['text'];
+        //print $_REQUEST['text'];
         if ($res == false) {
             print 'Speichern fehlgeschlagen';
             //die('Speichern fehlgeschlagen');

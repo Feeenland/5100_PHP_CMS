@@ -31,7 +31,7 @@
             <!-- only the admin can do this ! -->
             <div class="row">
                 <div class="col">
-                    <button class="btn btn_1 btn_admin"><a href="index.php?p=admin&module=users&action=list">Add new User</a></button>
+                    <button class="btn btn_1 btn_admin"><a href="index.php?p=admin&module=users&action=list">User Verwalten</a></button>
                 </div>
             </div>
         </div>

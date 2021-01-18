@@ -4,6 +4,7 @@ $errorFeedback = [
     'required' => 'Dieses Feld muss ausgefüllt sein.',
     'number' => 'Dieses Feld muss eine Ganzzahl sein.',
     'isImage' => 'Dieses Feld muss ein Bildername mit .jpg, .jpeg oder .png enthalten.',
+    'isEmail' => 'Bitte eine Korrekt Email adresse angeben.',
     'max20chars' => 'Dieses Feld darf max. 20 Zeichen haben'
 ];
 
@@ -27,9 +28,16 @@ function validateFields($fieldRules){
                     $fieldErrors[] = $errorFeedback[$rule]; // 'number'
                 }
             }
+
             if($rule == 'isImage'){
                 if($value != '' && ! preg_match('/.*\.(jpeg|jpg|png)/', $value)){
-                    $fieldErrors[] = $errorFeedback[$rule]; // 'isImage'
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'its a image'
+                }
+            }
+
+            if($rule == 'isEmail'){
+                if($value != '' && ! preg_match('/^[\w\-\.]+@([\w\-]+\.)+[\w\-]{1,5}/', $value)){
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'its a email'
                 }
             }
 

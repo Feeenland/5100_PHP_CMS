@@ -8,7 +8,7 @@ $login_output = ''; // gives out what happened (fail ty, banned)
 
 if(isset($_POST['login_try']) ) {
     // valid user?
-    include('models/user.php');
+    include('models/users.php');
     $usr = getUserByEmail($_REQUEST['email']);
 
     if($usr == false){

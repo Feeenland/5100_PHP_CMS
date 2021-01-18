@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/admin/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/tools.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/models/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/edit-worked.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/edit-worked.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +42,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/SAE/web_application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/tools" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\scss" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\helpers" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\tools" />
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img" />
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\scss" />
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -90,7 +88,9 @@
       <workItem from="1608593750076" duration="1968000" />
       <workItem from="1609143020389" duration="1223000" />
       <workItem from="1609745451842" duration="41651000" />
-      <workItem from="1610521230000" duration="49156000" />
+      <workItem from="1610521230000" duration="49739000" />
+      <workItem from="1610782815338" duration="631000" />
+      <workItem from="1610962262571" duration="2358000" />
     </task>
     <servers />
   </component>
@@ -102,17 +102,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610457808247" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610643801557">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610971924271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610643801557" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610971924271" />
     <state x="794" y="439" key="NewPhpFileDialog" timestamp="1610630932079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610630932079" />
-    <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1610521233724">
+    <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1610962301825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610521233724" />
+    <state x="636" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610962301825" />
   </component>
 </project>

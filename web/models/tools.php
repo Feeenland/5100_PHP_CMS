@@ -28,7 +28,7 @@ function getToolItemById($id){
 
 function saveToolEntry($data){
     global $db_connection;
-    if($data['id']){
+    if (isset($data['id'])){
         // update
         try{
             $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ? WHERE id = ?");

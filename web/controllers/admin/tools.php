@@ -80,8 +80,9 @@ function listToolItems()
 
 function showCreateForm($errors = [], $values = [])
 {
+    print 'new';
     return [
-        'page' => 'templates/admin/lists/tools.php',
+        'page' => 'templates/admin/forms/tools.php',
         'action' => 'index.php?p=admin&module=tools&action=create',
         'errors' => $errors,
         'values' => $values
@@ -107,8 +108,11 @@ function createToolItem($rules)
             die('Speichern fehlgeschlagen');
         } else {
             // redirect to overview to prevent double-save
-            header('Location: index.php?p=admin&module=tools&action=list', true, 301);
-            exit();
+            //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
+            //exit();
+            $location = 'tools';
+            $happened = 'Neu Erstellt';
+            include 'templates/admin/forms/edit-worked.php';
         }
     }
 }

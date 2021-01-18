@@ -5,8 +5,8 @@
 <p><!-- include lead text--></p>
 <div class="row">
     <div class="col-12 col-sm-4">
-        <button class="btn btn_1">Neues Item Hinzufügen</button>
-    </div>
+        <button class="btn btn_1"><a href="<?php print 'index.php?p=admin&module=tools&action=new'; ?>">Neues Item Hinzufügen</a></button>
+    </div> <!--index.php?p=admin&module=tools&action=edit&id= (edit)$pageElement['edit_link'] . $item['id']-->
 </div>
 <div class="row">
     <div class="col">

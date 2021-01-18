@@ -7,7 +7,8 @@ $admin_path = 'controllers/admin/';
 // which modules are available
 $modules = [
     // which page i need if this module is active
-    'tools' => $admin_path . 'tools.php'
+    'tools' => $admin_path . 'tools.php',
+    'users' => $admin_path . 'user.php'
 ];
 
 $default_module = 'tools';

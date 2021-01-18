@@ -31,11 +31,12 @@ function saveToolEntry($data){
     if (isset($data['id'])){
         // update
         try{
-            $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ? WHERE id = ?");
-            $stmt->bind_param("sssi", $title, $subtitle, $text, $id);
+            $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ?, image = ? WHERE id = ?");
+            $stmt->bind_param("ssssi", $title, $subtitle, $text, $image, $id);
             $title = $data['title'];
             $subtitle = $data['subtitle'];
             $text = $data['text'];
+            $image = $data['image'];
             $id = $data['id'];
             $stmt->execute();
             return true;
@@ -46,11 +47,12 @@ function saveToolEntry($data){
     }else{
         // Create
         try{
-            $stmt = $db_connection->prepare("INSERT INTO tools (title, subtitle, text) VALUES (?,?,?)");
-            $stmt->bind_param("sss", $title, $subtitle, $text);
+            $stmt = $db_connection->prepare("INSERT INTO tools (title, subtitle, text, image) VALUES (?,?,?,?)");
+            $stmt->bind_param("ssss", $title, $subtitle, $text, $image);
             $title = $data['title'];
             $subtitle = $data['subtitle'];
             $text = $data['text'];
+            $image = $data['image'];
             $stmt->execute();
             return $stmt->insert_id;
         }catch(Exception $e){

@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/admin/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/helpers/validations.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/helpers/validations.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/models/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/edit-worked.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/edit-worked.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/tools.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/templates/admin/lists" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -53,6 +61,7 @@
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\fonts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\lists" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\tools" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\scss" />
@@ -90,7 +99,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="2358000" />
+      <workItem from="1610962262571" duration="9389000" />
     </task>
     <servers />
   </component>

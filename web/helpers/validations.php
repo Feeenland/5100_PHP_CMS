@@ -1,8 +1,9 @@
 <?php
 
 $errorFeedback = [
-    'required' => 'Dieses Feld muss ausgefüllt sein',
-    'number' => 'Dieses Feld muss eine Ganzzahl sein',
+    'required' => 'Dieses Feld muss ausgefüllt sein.',
+    'number' => 'Dieses Feld muss eine Ganzzahl sein.',
+    'isImage' => 'Dieses Feld muss ein Bildername mit .jpg, .jpeg oder .png enthalten.',
     'max20chars' => 'Dieses Feld darf max. 20 Zeichen haben'
 ];
 
@@ -26,10 +27,15 @@ function validateFields($fieldRules){
                     $fieldErrors[] = $errorFeedback[$rule]; // 'number'
                 }
             }
+            if($rule == 'isImage'){
+                if($value != '' && ! preg_match('/.*\.(jpeg|jpg|png)/', $value)){
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'isImage'
+                }
+            }
 
             if($rule == 'max20chars'){
                 if($value != '' && strlen($value) > 20){
-                    $fieldErrors[] = $errorFeedback[$rule]; // 'required'
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'max chars '
                 }
             }
         }

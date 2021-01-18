@@ -21,7 +21,7 @@ function getUserByEmail($email)
 }
 
 
-function updateUserField($id, $field, $newValue, $valueType){ //to update the user field in DB
+function updateUserField($id, $field, $newValue, $valueType){ //to update a specific user field in DB
     global $db_connection;
     try{
         $stmt = $db_connection->prepare('UPDATE users SET ' . $field .  ' = ? WHERE id = ?');

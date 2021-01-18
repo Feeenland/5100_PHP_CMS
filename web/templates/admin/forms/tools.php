@@ -60,12 +60,24 @@
     <div class="row">
         <div class="col">
             <label class="label">Werkzeug Text</label>
+          <!--  <p>Werkzeug Text:</p>-->
+            <textarea
+                class="input <?php if(array_key_exists('text', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                rows="4"
+                cols="50"
+                type="text"
+                maxlength="500"
+                name="text"
+                placeholder="Text"
+                form="usrform">
+                    <?php print $pageElement['values']['text'] ?? '' ?>
+            </textarea>
             <input
                 name="text"
                 class="input <?php if(array_key_exists('text', $pageElement['errors'])){ ?> is-danger <?php } ?>"
                 type="text"
-                maxlength="500"
-                placeholder="Text"
+                maxlength="200"
+                placeholder="text"
                 value="<?php print $pageElement['values']['text'] ?? '' ?>">
 
             <?php if(array_key_exists('text', $pageElement['errors'])){ ?>
@@ -75,6 +87,32 @@
             <?php }
             if(array_key_exists('text', $pageElement['errors'])){
             foreach($pageElement['errors']['text'] as $err){
+            ?>
+            <p class="help is-danger"><?php print $err; ?></p>
+            <?php
+                }
+            }
+            ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="label">Werkzeug Bild</label>
+            <input
+                name="image"
+                class="input <?php if(array_key_exists('image', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                type="text"
+                maxlength="100"
+                placeholder="image"
+                value="<?php print $pageElement['values']['image'] ?? '' ?>">
+
+            <?php if(array_key_exists('image', $pageElement['errors'])){ ?>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+            <?php }
+            if(array_key_exists('image', $pageElement['errors'])){
+            foreach($pageElement['errors']['image'] as $err){
             ?>
             <p class="help is-danger"><?php print $err; ?></p>
             <?php

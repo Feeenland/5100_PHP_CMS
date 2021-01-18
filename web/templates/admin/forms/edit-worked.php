@@ -1,5 +1,8 @@
 <?php
-//print $location;
+/**
+ * this page has the task of issuing a confirmation after something has been changed on the website
+ * and a button that leads you back to the edited list
+ * */
 ?>
 
 <h1>Erfolgreich <?php print $happened; ?></h1>

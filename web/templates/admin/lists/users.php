@@ -14,10 +14,10 @@
             <thead>
             <tr>
                 <th>ID</th>
-                <th>Titel</th>
-                <th>untertitel</th>
-                <th>Text</th>
-                <th>Bild</th>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Email</th>
+                <th>Password</th>
                 <th>Editieren</th>
                 <th>Löschen</th>
             </tr>

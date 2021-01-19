@@ -1,5 +1,12 @@
 <?php
+/**
+ * This file defines the tasks that are to take place in the DB, for the tools list.
+ */
 
+
+/**
+ * this function = get all items on this list in the DB and save them in the var $items.
+ */
 function getAllToolItems(){
     global $db_connection;
     $res = mysqli_query($db_connection, "SELECT * FROM tools");
@@ -11,6 +18,9 @@ function getAllToolItems(){
     return $items;
 }
 
+/**
+ * this function = get's a specific item from the DB by his ID.
+ */
 function getToolItemById($id){
     global $db_connection;
     try{
@@ -23,9 +33,12 @@ function getToolItemById($id){
     }catch(Exception $e){
         return false;
     }
-
 }
 
+/**
+ * this function = saves a Item in the DB.
+ * if there is a ID update a existing item, if not create a new item.
+ */
 function saveToolEntry($data){
     global $db_connection;
     if (isset($data['id'])){
@@ -61,6 +74,9 @@ function saveToolEntry($data){
     }
 }
 
+/**
+ * this function = Deletes a specific Item form the DB.
+ */
 function deleteToolItemById($id){
     global $db_connection;
     try{
@@ -72,5 +88,4 @@ function deleteToolItemById($id){
     }catch(Exception $e){
         return false;
     }
-
 }

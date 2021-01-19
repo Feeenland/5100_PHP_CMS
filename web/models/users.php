@@ -1,7 +1,11 @@
 <?php
 /**
- * funtions for the login
- * */
+ * This file defines the tasks that are to take place in the DB, for the users list.
+ */
+
+/**
+ * this function = get's a user by the email.
+ */
 function getUserByEmail($email)
 {
     global $db_connection;
@@ -23,7 +27,10 @@ function getUserByEmail($email)
     }
 }
 
-function updateUserField($id, $field, $newValue, $valueType){ //to update a specific user field in DB
+/**
+ * this function = updates a specified field in the DB.
+ */
+function updateUserField($id, $field, $newValue, $valueType){ //to update a specific user field in DB used in controllers/login.php
     global $db_connection;
     try{
         $stmt = $db_connection->prepare('UPDATE users SET ' . $field .  ' = ? WHERE id = ?');
@@ -38,9 +45,8 @@ function updateUserField($id, $field, $newValue, $valueType){ //to update a spec
 }
 
 /**
- * funtions for list, edit, create new and delete Users
- * */
-
+ * this function = get all items on this list in the DB and save them in the var $items.
+ */
 function getAllUsers()
 {
     global $db_connection;
@@ -53,6 +59,9 @@ function getAllUsers()
     return $items;
 }
 
+/**
+ * this function = get's a specific item from the DB by his ID.
+ */
 function getItemById($id)
 {
     global $db_connection;
@@ -66,12 +75,14 @@ function getItemById($id)
     } catch (Exception $e) {
         return false;
     }
-
 }
 
 
 /**
- *if you save a new password the browser gives a warning, but only if the site isn't https saved.
+ * this function = saves a Item in the DB.
+ * if there is a ID update a existing item, if not create a new item. it also hashes the password.
+ *
+ *if you save a new password the browser can gives a warning, but only if the site isn't https saved.
  * as I will secure this page via https as soon as I upload it, this is not relevant.
 */
 function saveEntry($data)
@@ -85,7 +96,7 @@ function saveEntry($data)
             $first_name = $data['first_name'];
             $last_name = $data['last_name'];
             $email = $data['email'];
-            $password = $data['password'];
+            $password = password_hash($data['password'], PASSWORD_DEFAULT);
             $banned_at = $data['banned_at'];
             $id = $data['id'];
             $stmt->execute();
@@ -97,13 +108,12 @@ function saveEntry($data)
     } else {
         // Create
         try {
-            $stmt = $db_connection->prepare("INSERT INTO users (first_name, last_name, email, password, banned_at) VALUES (?,?,?,?,?)");
-            $stmt->bind_param("sssss", $first_name, $last_name, $email, $password , $banned_at);
+            $stmt = $db_connection->prepare("INSERT INTO users (first_name, last_name, email, password) VALUES (?,?,?,?)");
+            $stmt->bind_param("ssss", $first_name, $last_name, $email, $password);
             $first_name = $data['first_name'];
             $last_name = $data['last_name'];
             $email = $data['email'];
             $password = password_hash($data['password'], PASSWORD_DEFAULT);
-            $banned_at = $data['banned_at'];
             $stmt->execute();
             return $stmt->insert_id;
         } catch (Exception $e) {
@@ -112,6 +122,9 @@ function saveEntry($data)
     }
 }
 
+/**
+ * this function = Deletes a specific Item form the DB.
+ */
 function deleteItemById($id)
 {
     global $db_connection;
@@ -124,5 +137,4 @@ function deleteItemById($id)
     } catch (Exception $e) {
         return false;
     }
-
 }

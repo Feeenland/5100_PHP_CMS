@@ -1,11 +1,17 @@
 <?php
+/**
+ * This file validates and defined all errors for the fields.
+ * for the fields for creating and editing content as well as the login / contact form.
+ * the output text in the event of an error is also defined here.
+ */
 
 $errorFeedback = [
     'required' => 'Dieses Feld muss ausgefüllt sein.',
     'number' => 'Dieses Feld muss eine Ganzzahl sein.',
     'isImage' => 'Dieses Feld muss ein Bildername mit .jpg, .jpeg oder .png enthalten.',
     'isEmail' => 'Bitte eine Korrekt Email adresse angeben.',
-    'max20chars' => 'Dieses Feld darf max. 20 Zeichen haben'
+    'max20chars' => 'Dieses Feld darf max. 20 Zeichen haben',
+    'password' => 'Das Passwort muss mindestens 5 zeichen haben und eine zahl' //not now in use
 ];
 
 function validateFields($fieldRules){
@@ -19,13 +25,13 @@ function validateFields($fieldRules){
 
             if($rule == 'required'){
                 if(! isset($value) || trim($value) == '' ){
-                    $fieldErrors[] = $errorFeedback[$rule]; // 'required'
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'its required'
                 }
             }
 
             if($rule == 'number'){
                 if($value != '' && ! preg_match('/^(\d+)$/', $value)){
-                    $fieldErrors[] = $errorFeedback[$rule]; // 'number'
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'its a number'
                 }
             }
 
@@ -43,7 +49,7 @@ function validateFields($fieldRules){
 
             if($rule == 'max20chars'){
                 if($value != '' && strlen($value) > 20){
-                    $fieldErrors[] = $errorFeedback[$rule]; // 'max chars '
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'max chars 20'
                 }
             }
         }

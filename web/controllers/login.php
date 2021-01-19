@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * This file controls the login.
+ * the user has 3 tries to log in correctly if he writes the password wrong 3time he get banned for a hour.
+ */
 
 $login_tries = 3; // 3 tries get the user to log in
 $ban_time = 60 * 60; // in seconds = 1h will the user be banner by 3 fails
@@ -9,11 +12,11 @@ $login_output = ''; // gives out what happened (fail ty, banned)
 if(isset($_POST['login_try']) ) {
     // valid user?
     include('models/users.php');
-    $usr = getUserByEmail($_REQUEST['email']);
+    $usr = getUserByEmail($_REQUEST['email']); //by email because if the email is wrong, it is not necessary to check the password.
 
     if($usr == false){
         // Return fail message
-        $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben';
+        $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben'; // mail is wrong
         $page = 'templates/forms/login.php';
         //die('wrong user');
     }else{
@@ -21,15 +24,14 @@ if(isset($_POST['login_try']) ) {
         if($usr['banned_at'] != null){
             $banned_at = date_create_from_format($db_datetime_format, $usr['banned_at']);
             $now = new DateTime();
-            $interval = $now->getTimestamp() - $banned_at->getTimestamp() ;
+            $interval = $now->getTimestamp() - $banned_at->getTimestamp(); // now - banned_at = how log is he banned jet.
             //print $interval.'and'.$ban_time;
-            if($interval <= $ban_time){
+            if($interval <= $ban_time){ //still banned
                 $login_output = 'Aufgrund zu vieler falscher login versuche wurden sie gebannt <br>
                                     versuchen sie es später erneut! ';
                 $page = 'templates/forms/login.php';
-                //die('You are banned. Wait longer'); // break?
-            }else{
-
+                //die('You are banned. Wait longer');
+            }else{ // waited long enough = reset the field banned_at an login_try in the DB.
                 updateUserField($usr['id'], 'banned_at', null, 's');
                 updateUserField($usr['id'], 'login_try', 0, 'i');
                 $usr['login_try'] = 0;
@@ -38,7 +40,6 @@ if(isset($_POST['login_try']) ) {
 
         }
         if ( $usr['banned_at'] == null || $usr['login_try'] <= 1){
-
             // check password
             if(password_verify($_REQUEST['password'], $usr['password'])){ //match the pw with pw in DB
                 // reset login_try, if there are any
@@ -46,17 +47,16 @@ if(isset($_POST['login_try']) ) {
                     updateUserField($usr['id'], 'login_try', 0, 'i');
                 }
                 //print 'pw down';
-                // start session
+                // start session = user is logged in
                 $_SESSION['logged_in'] = 1;
                 $login_output = 'Hallo '.$usr['first_name'].' '.$usr['last_name'].'<br> sie haben sich korrekt eingeloggt';
                 $page = 'templates/admin/admin.php';
-                //$page = 'templates/news.php';
                 //die('correct password'); //logged in
             }else{
-                // increment failure counter
+                // increase failure counter
                 $fails = $usr['login_try'] + 1; //every try +1, and banned at 3
                 // check failure counter, ban if needed
-                if($fails >= $login_tries){
+                if($fails >= $login_tries){ // user get banned, add timestamp in the field banned_at in the DB.
                     updateUserField($usr['id'], 'banned_at', date('Y-m-d H:i:s'), 's');
                     $login_output = 'Aufgrund zu vieler falscher login versuche wurden sie gebannt <br>
                                     versuchen sie es später erneut! <br>
@@ -64,7 +64,7 @@ if(isset($_POST['login_try']) ) {
                     $page = 'templates/forms/login.php';
                     //die('ban user: ' . date('Y-m-d H:i:s'));
                 }else{
-                    // update user with incremented failures
+                    // update login_try ++ in DB.
                     updateUserField($usr['id'], 'login_try', $fails, 'i');
                     $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben';
                     $page = 'templates/forms/login.php';
@@ -75,10 +75,9 @@ if(isset($_POST['login_try']) ) {
 
     }
     // login
-
     // or generate errors
 }else{
-        switch($_GET['action']){    // browser said its undefined! (but with a isset it's not working)
+        switch($_GET['action']){    // if already logged in then log out.
             case 'logout':
                 session_destroy();
                 $login_output= 'Sie wurden ausgeloggt';
@@ -95,7 +94,6 @@ if(isset($_POST['login_try']) ) {
                     $page = 'templates/forms/login.php';
                 }
         }
-
 }
 
 

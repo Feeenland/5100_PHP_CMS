@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * This file lists all the actions who are available to edit the users.
+ * checks whether a action is set and existing.
+ * defines the rules for errors.
+ * defines what to to by each action.
+ */
 
 // which actions are available
 $available_actions = [
@@ -20,17 +25,18 @@ if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actio
 }
 
 
-// VALIDATIONS
+// rules defined for the Validations(.php)
 $rules = [
     'first_name' => ['required'],
     'last_name' => ['required'],
     'email' => ['required', 'isEmail'],
-    'password' => ['required']
+    'password' => ['required'] //maybe make a pw validation
 ];
 
 if (isset($action)){
     switch ($action) {
         case 'list':
+            // lists all items
             $pageElement = listItems();
             break;
         case 'new':
@@ -38,7 +44,7 @@ if (isset($action)){
             $pageElement = showCreateForm();
             break;
         case 'create':
-            // save
+            // save new item
             $pageElement = createNewItem($rules);
             break;
         case 'edit':
@@ -46,25 +52,25 @@ if (isset($action)){
             $pageElement = showUpdateForm($_REQUEST['id']);
             break;
         case 'update':
-            // update
+            // update existing item
             $pageElement = updateItem($rules);
             break;
         case 'delete':
-            // delete
+            // delete item
             $pageElement = deleteItem($_REQUEST['id']);
             break;
     }
 }
 
 
-//var_dump($pageElement);
-//die();
+$location = 'tools';// to re locate after the action (to go back to the list that was edited)
+$happened = ''; // to change the message after the action (like = successfully deleted)
 
-$location = 'tools';// to re locate after the action
-$happened = ''; // to change the message after the action
 
-// PAGE FUNCTIONS
-
+/**
+ * this function = includes the models file, gets all the items and saves them in $items.
+ * returns also the action to edit and delete a item such as the page in which they should be listed.
+ */
 function listItems()
 {
     include('models/users.php');
@@ -77,6 +83,10 @@ function listItems()
     ];
 }
 
+/**
+ * this function = generates a blank mask.
+ * if there are errors sent in the function it send existing errors along so they can be printed in the form.
+ */
 function showCreateForm($errors = [], $values = [])
 {
     return [
@@ -87,6 +97,10 @@ function showCreateForm($errors = [], $values = [])
     ];
 }
 
+/**
+ * this function = saves a new item if there are no errors.
+ * if there are errors it goes back to the showCreateForm(error) functions and send existing errors along.
+ */
 function createNewItem($rules)
 {
     $errors = validateFields($rules);
@@ -116,6 +130,9 @@ function createNewItem($rules)
     }
 }
 
+/**
+ * this function = shows a mask filled with the entries of the DB.
+ */
 function showUpdateForm($id, $errors = [], $values = [])
 {
     include('models/users.php');
@@ -128,6 +145,10 @@ function showUpdateForm($id, $errors = [], $values = [])
     ];
 }
 
+/**
+ * this function = updates a existing item if there are no errors.
+ * if there are errors it's sends existing errors along, else update the item in the DB.
+ */
 function updateItem($rules)
 {
     $errors = validateFields($rules);
@@ -162,6 +183,9 @@ function updateItem($rules)
     }
 }
 
+/**
+ * this function = Deletes a Item in the DB.
+ */
 function deleteItem($id){
     //print 'delete that';
     include('models/users.php');

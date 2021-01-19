@@ -7,29 +7,37 @@
 // database connection
 include('database/config.php');
 include('database/database.php');
+// helpers
 include('helpers/validations.php');
 
 session_start();
-//error_reporting(E_WARNING);
+//error_reporting(E_WARNING); // don't show the warnings
 $pageElement= null;
 $p ='home';
 
-if(isset($_GET['p']) && $_GET['p'] != ''){// from the get param, is p set and not empty ?
+if(isset($_GET['p']) && $_GET['p'] != ''){// from the get param, is p set and not empty ? load the page
     $p =$_GET['p'] ;
     if($_GET['p'] == 'login'){
         include('controllers/login.php');
+        $pageTitle = 'Login bereich';
     }else if($_GET['p'] == 'home'){
         $page = 'templates/home.php';
+        $pageTitle = 'Lederbearbeitung';
     }else if($_GET['p'] == 'news'){
         $page = 'templates/news.php';
+        $pageTitle = 'Neues';
     }else if($_GET['p'] == 'work'){
         $page = 'templates/work.php';
+        $pageTitle = 'Lederbearbeitung';
     }else if($_GET['p'] == 'tools'){
         $page = 'templates/tools.php';
+        $pageTitle = 'Werkzeug zur Lederbearbeitung';
     }else if($_GET['p'] == 'contact'){
         include('controllers/contact.php');
+        $pageTitle = 'Kontakt';
     }else if($_GET['p'] == 'admin'){
         $page ='templates/admin/admin.php';
+        $pageTitle = 'Admin bereich';
     }
 }else{
     $page = 'templates/home.php';

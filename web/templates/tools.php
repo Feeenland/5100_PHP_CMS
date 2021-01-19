@@ -7,11 +7,9 @@
 <?php
 include 'models/tools.php'; //include the function to get all the tools items
 $items = getAllToolItems(); // save all tools items in $items
-
 ?>
 
 <?php ?>
-<tbody>
 <!-- for each registered object make a ned entry in the table-->
 <?php foreach($items as $item){ ?>
     <div class="container tools">

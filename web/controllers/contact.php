@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * This file controls the contact form.
+ */
 
 
 

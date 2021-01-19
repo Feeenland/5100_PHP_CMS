@@ -1,4 +1,7 @@
 <?php
+/**
+ * This file defines the layout and opportunities in the backend to change things on this website.
+ */
 ?>
 <div class="container">
     <div class="row">

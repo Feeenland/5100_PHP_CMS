@@ -1,3 +1,14 @@
+<?php
+/**
+ * This is the form for the users in the backend.
+ * to add new users and edit existing ones.
+ *
+ * who an user is processed it will fill the value with the existing entry.
+ * if there is a error the input field will change to danger (red outline).
+ * and a hint/error text will be printed under the field.
+ */
+?>
+
 <form action="<?php print $pageElement['action'] ?>" method="POST">
     <?php if(array_key_exists('id', $pageElement['values'])) { ?>
         <input type="hidden" name="id" value="<?php print $pageElement['values']['id'] ?>">

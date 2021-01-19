@@ -2,6 +2,22 @@
 SAE Institute Zürich, Submission date Jan, 28. 2021
 ***
 
+## For the teacher who reviews and evaluates the project
+**Database**
+
+_the file to create the Database is in this folder:_
+- root / config / database.php? !!! filename?
+
+_If the access data for the database have to be adjusted, this can be found here:_
+- root / web / database / config.php
+
+**Login**
+
+_these are the data to log into my website in the backend:_
+- Admin: email: lauralea@ledertatze.com PW: leder
+- User: email: cmsuser@ledertatze.com PW: 5100cmsuser
+***
+
 ## Overview
 **CMS Project Leder Tatze**
 

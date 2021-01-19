@@ -14,10 +14,10 @@
 
 
     <!-- seo optimierte meta description und title -->
-    <title><?php if (isset($pageTitle)){print $pageTitle ?? 'Leder Tatze';}  ?></title>
+    <title>Leder Tatze - <?php if (isset($pageTitle)){print $pageTitle;} else {print 'Lederbearbeitung';}  ?></title>
     <meta name="Description" content="Lederrüstung für ein LARP selbst anfertigen.
      Auf dieser Webseite werden Arbeitsschritte und Werkzeuge beschrieben, welche du benötigst, um selbst eine Rüstung aus Leder anzufertigen "/>
-    <meta name="keywords" content="LARP, Leder, Rüsung, selbst">
+    <meta name="keywords" content="LARP, Leder, Lederbearbeitung, Rüsung">
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">

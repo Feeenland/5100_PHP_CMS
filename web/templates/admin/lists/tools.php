@@ -1,12 +1,13 @@
 <?php
-
+/**
+ * This file lists all the items from the list tools from the DB, so that it is possible to edit/delete them or add new ones.
+ */
 ?>
-<h1><!--include title h1--></h1>
-<p><!-- include lead text--></p>
+
 <div class="row">
     <div class="col-12 col-sm-4">
         <button class="btn btn_1"><a href="<?php print 'index.php?p=admin&module=tools&action=new'; ?>">Neues Item Hinzufügen</a></button>
-    </div> <!--index.php?p=admin&module=tools&action=edit&id= (edit)$pageElement['edit_link'] . $item['id']-->
+    </div>
 </div>
 <div class="row">
     <div class="col">
@@ -23,7 +24,7 @@
             </tr>
             </thead>
             <tbody>
-                <!-- for each registered object make a ned entry in the table-->
+                <!-- for each registered object make a new entry in the table-->
                 <?php foreach($pageElement['items'] as $item){ ?>
                     <tr>
                         <td><?php print $item['id']; ?></td>

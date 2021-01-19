@@ -4,7 +4,8 @@
  * to add new items and edit existing ones.
  *
  * who an item is processed it will fill the value with the existing entry.
- * error, klass danger...
+ * if there is a error the input field will change to danger (red outline).
+ * and a hint/error text will be printed under the field.
  */
 ?>
 
@@ -71,7 +72,6 @@
     <div class="row">
         <div class="col">
             <label class="label">Werkzeug Text</label>
-          <!--  <p>Werkzeug Text:</p>-->
             <textarea
                 class="input <?php if(array_key_exists('text', $pageElement['errors'])){ ?> is-danger <?php } ?>"
                 rows="4"

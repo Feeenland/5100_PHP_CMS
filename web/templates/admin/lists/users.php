@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * This file lists all the users from the list users of the DB, so that it is possible to edit/delete them or add new ones.
+ */
 ?>
 <h1><!--include title h1--></h1>
 <p><!-- include lead text--></p>
@@ -17,7 +19,7 @@
                 <th>Vorname</th>
                 <th>Nachname</th>
                 <th>Email</th>
-               <!-- <th>Password</th>-->
+               <!-- <th>Password</th>--> <!-- it makes no sense to list the pw-->
                 <th>Rolle</th>
                 <th>Gebannt um</th>
                 <th>Editieren</th>
@@ -25,7 +27,7 @@
             </tr>
             </thead>
             <tbody>
-                <!-- for each registered object make a ned entry in the table-->
+                <!-- for each registered object make a new entry in the table-->
                 <?php foreach($pageElement['items'] as $item){ ?>
                     <tr>
                         <td><?php print $item['id']; ?></td>

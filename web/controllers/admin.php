@@ -1,8 +1,9 @@
 <?php
-//include list object for the admin to edit
+/**
+ * This file includes list object for the admin to edit and the controller to make it possible to edit.
+ */
 
-
-$admin_path = 'controllers/admin/';
+$admin_path = 'controllers/admin/'; // to avoid redundancies and simply to have the possibility to change the path
 
 // which modules are available
 $modules = [
@@ -22,12 +23,12 @@ if( isset($_REQUEST['module']) && array_key_exists($_REQUEST['module'], $modules
     //print 'default module';
 }
 
-include($active_module); // now = 'controllers/admin/tools.php'
+include($active_module); // includes for example = templates/controllers/admin/tools.php
 
 
 if (isset($pageElement) && $pageElement != null){
-    //print ($pageElement['page']); //now templates/admin/lists/tools.php
-    include ($pageElement['page']);
+    //print ($pageElement['page']);
+    include ($pageElement['page']); // includes for example = templates/admin/lists/tools.php
 }else{
     //print 'pageElement is not set';
 }

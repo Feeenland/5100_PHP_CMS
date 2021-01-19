@@ -5,7 +5,7 @@
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3">
             <div class="row">
                 <div class="col">
                     <button class="btn btn_1 btn_admin">Home</button>
@@ -38,10 +38,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-9">
 
             <?php
             include 'controllers/admin.php';
+            ?>
+
+            <?php
+            // mach das obe ade site und benutz es für d H1 und d active azeig ide navigation!
+            if(isset($_REQUEST['module'])){
+                $module =$_REQUEST['module'] ;
+                print $module;
+                if($_REQUEST['module'] == 'users'){
+                    print 'user ?';
+                }
+            }else{
+                print 'no title?';
+            }
             ?>
 
         </div>

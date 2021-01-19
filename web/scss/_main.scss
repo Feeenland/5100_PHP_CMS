@@ -10,6 +10,9 @@ body{
   h1,h2,h3,h4,button,.font_wind{ //letter spacing 4 font trade winds
     letter-spacing: 1px;
   }
+  h1{
+    margin: 5px 50px 50px;
+  }
   .font_wind{
     font-family: "Trade Winds", sans-serif;
   }
@@ -29,6 +32,32 @@ body{
       }
     }
   }
+  .btn_admin{
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    a{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+    }
+    &:hover{
+      box-shadow: 1px 1px 10px $primary;
+      a{
+        color: $light;
+      }
+    }
+  }
+  .btn_send{
+    width: 50%;
+    margin: 15px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+  .btn_table{
+    width: auto;
+  }
   article.teaser_home{ //teaser_home
     margin-top: 50px;
     margin-bottom: 50px;
@@ -36,4 +65,18 @@ body{
   .lead{
     margin-bottom: 150px;
   }
+  // classes for php messages
+  .login_output{
+
+  }
+  .error_message{ // to print the error message
+    color: $info;
+  }
+  .has_error{ // to outline a error field
+    border: 1px solid $danger;
+  }
+  .font_not_wind{
+    font-family: "Roboto", sans-serif;
+  }
+
 }

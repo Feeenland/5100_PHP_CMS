@@ -32,7 +32,7 @@
             </nav>
 
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-between nav_styles font_wind ">
-                <a class="navbar-brand" href="#">LOGO</a>
+                <a class="navbar-brand" href="#"><img src="img/logo_patterns/cat_logo.png" class="logo" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -474,7 +474,7 @@
                 </div>
                 <div class="form-group row">
                     <label for="exampleFormControlFile1">Bild / Zeichnung</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <input type="file" class="form-control form-control-file" id="exampleFormControlFile1" value="namecom">
                 </div>
                 <div class="form-group row">
                     <label for="exampleFormControlTextarea1">Nachricht*</label>
@@ -515,6 +515,172 @@
 
 <!-- End login form-->
 
+<!-- Start User form-->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn_1 btn_admin">Home</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn_1 btn_admin">Neues</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn_1 btn_admin"><a href="">Arbeit</a></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn_1 btn_admin "><a href="index.php?p=admin&module=tools&action=list">Werkzeug</a></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn_1 btn_admin"><a href="">Gallery</a></button>
+                </div>
+            </div>
+            <!-- only the admin can do this ! -->
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn_1 btn_admin"><a href="index.php?p=admin&module=users&action=list">User Verwalten</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8">
+
+
+            <form action="<?php print $pageElement['action'] ?>" method="POST">
+                <?php if(array_key_exists('id', $pageElement['values'])) { ?>
+                <input type="hidden" name="id" value="<?php print $pageElement['values']['id'] ?>">
+                <?php } ?>
+
+                <div class="row">
+                    <div class="col col-form-label ">
+                        <label class="font_wind">Vorname</label>
+                        <input
+                                name="first_name"
+                                class="font_not_wind form-control <?php if(array_key_exists('fist_name', $pageElement['errors'])){ ?> has_error <?php } ?>"
+                                type="text"
+                                maxlength="30"
+                                placeholder="Vorname"
+                                value="">
+
+                        <?php if(array_key_exists('fist_name', $pageElement['errors'])){ ?>
+                        <span class="error_message font_wind">!!!</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-form-label">
+                        <label class="font_wind">Nachame</label>
+                        <input
+                                name="last_name"
+                                class="font_not_wind form-control <?php if(array_key_exists('last_name', $pageElement['errors'])){ ?> has_error <?php } ?>"
+                                type="text"
+                                maxlength="30"
+                                placeholder="Nachname"
+                                value="<?php print $pageElement['values']['last_name'] ?? '' ?>">
+
+                        <?php if(array_key_exists('last_name', $pageElement['errors'])){ ?>
+                        <span class="error_message font_wind">!!!</span>
+                        <?php }
+            if(array_key_exists('last_name', $pageElement['errors'])){
+            foreach($pageElement['errors']['last_name'] as $err){
+            ?>
+                        <p class="error_message"><?php print $err; ?></p>
+                        <?php
+                }
+            }
+            ?>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                        <button class="btn_1 btn btn_send">Speichern</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- End User form-->
+
+<!-- start table to list DB elements-->
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="row">
+                <div class="col table-responsive" id="no-more-tables">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                        <tr class="font_wind">
+                            <th scope="col">ID</th>
+                            <th scope="col">Titel</th>
+                            <th scope="col">untertitel</th>
+                            <th scope="col">Text</th>
+                            <th scope="col">Bild</th>
+                            <th scope="col">Editieren</th>
+                            <th scope="col">Löschen</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- for each registered object make a new entry in the table-->
+                        <?php foreach($pageElement['items'] as $item){ ?>
+                        <tr>
+                            <td data-title="ID"><?php print $item['id']; ?>item</td>
+                            <td data-title="Titel"><?php print $item['title']; ?>item</td>
+                            <td data-title="untertitel"><?php print $item['subtitle']; ?>item</td>
+                            <td data-title="Text"><?php print $item['text']; ?>item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus eveniet explicabo illo illum laudantium, nostrum rem sapiente tempore ullam.</td>
+                            <td data-title="Bild"><?php print $item['image']; ?>item</td>
+                            <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
+                            <td data-title="Löschen"><button class="btn"><a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">Löschen</a></button></td>
+                        </tr>
+                        <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr class="font_wind">
+                            <th scope="col">ID</th>
+                            <th scope="col">Titel</th>
+                            <th scope="col">untertitel</th>
+                            <th scope="col">Text</th>
+                            <th scope="col">Bild</th>
+                            <th scope="col">Editieren</th>
+                            <th scope="col">Löschen</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- for each registered object make a new entry in the table-->
+                        <?php foreach($pageElement['items'] as $item){ ?>
+                        <tr>
+                            <td><?php print $item['id']; ?>item</td>
+                            <td><?php print $item['title']; ?>item</td>
+                            <td><?php print $item['subtitle']; ?>item</td>
+                            <td><?php print $item['text']; ?>item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus eveniet explicabo illo illum laudantium, nostrum rem sapiente tempore ullam.</td>
+                            <td><?php print $item['image']; ?>item</td>
+                            <td><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
+                            <td><button class="btn"><a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">Löschen</a></button></td>
+                        </tr>
+                        <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End table to list DB elements-->
 
 <!-- Start Footer -->
 <div class="container">

@@ -33,10 +33,16 @@
 <body>
 
 <?php include('navigation.php') ?>
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <h1 class="login_output"> <!--// prints infos from the login (like failed etc.)-->
+                <?php if (isset($login_output)){print $login_output;} ?>
+            </h1>
+        </div>
+    </div>
+</div>
 
-<span class="font_wind login_output"> <!--// prints infos from the login (like failed etc.)-->
-    <?php if (isset($login_output)){print $login_output;} ?>
-</span>
 
 <?php
 

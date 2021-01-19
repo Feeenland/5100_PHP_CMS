@@ -63,7 +63,7 @@ $colors: (
 $primary:       #ad714a; // medium brown
 $secondary:     #a96734; // dark brown
 $success:       #71401a; //dark bron btn
-$info:          $red;
+$info: #7b0202;
 $warning:       $yellow;
 $danger:        #5A0202;
 $light:         #d9b784; //light brown
@@ -473,8 +473,8 @@ $table-hover-bg-factor:       .075;
 $table-hover-bg:              rgba($black, $table-hover-bg-factor);
 
 $table-border-factor:         .1;
-$table-border-width:          $border-width;
-$table-border-color:          $border-color;
+$table-border-width:          1px; //$border-width;
+$table-border-color:          rgba($success, .3);
 
 $table-striped-order:         odd;
 

@@ -15,25 +15,23 @@
     <?php } ?>
 
     <div class="row">
-        <div class="col">
-            <label class="label">Vorname</label>
+        <div class="col col-form-label">
+            <label class="font_wind">Vorname</label>
             <input
                 name="first_name"
-                class="input <?php if(array_key_exists('fist_name', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                class="font_not_wind form-control <?php if(array_key_exists('first_name', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
                 placeholder="Vorname"
                 value="<?php print $pageElement['values']['first_name'] ?? '' ?>">
 
-            <?php if(array_key_exists('fist_name', $pageElement['errors'])){ ?>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
+            <?php if(array_key_exists('first_name', $pageElement['errors'])){ ?>
+                <span class="error_message font_wind">!!!</span>
             <?php }
-            if(array_key_exists('fist_name', $pageElement['errors'])){
-            foreach($pageElement['errors']['fist_name'] as $err){
+            if(array_key_exists('first_name', $pageElement['errors'])){
+            foreach($pageElement['errors']['first_name'] as $err){
             ?>
-            <p class="help is-danger"><?php print $err; ?></p>
+            <p class="error_message"><?php print $err; ?></p>
             <?php
                 }
             }
@@ -41,25 +39,23 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <label class="label">Nachame</label>
+        <div class="col col-form-label">
+            <label class="font_wind">Nachame</label>
             <input
                 name="last_name"
-                class="input <?php if(array_key_exists('last_name', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                class="font_not_wind form-control <?php if(array_key_exists('last_name', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
                 placeholder="Nachname"
                 value="<?php print $pageElement['values']['last_name'] ?? '' ?>">
 
             <?php if(array_key_exists('last_name', $pageElement['errors'])){ ?>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
+                <span class="error_message font_wind">!!!</span>
             <?php }
             if(array_key_exists('last_name', $pageElement['errors'])){
             foreach($pageElement['errors']['last_name'] as $err){
             ?>
-            <p class="help is-danger"><?php print $err; ?></p>
+            <p class="error_message"><?php print $err; ?></p>
             <?php
                 }
             }
@@ -67,25 +63,23 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <label class="label">Email</label>
+        <div class="col col-form-label">
+            <label class="font_wind">Email</label>
             <input
                 name="email"
-                class="input <?php if(array_key_exists('email', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                class="font_not_wind form-control <?php if(array_key_exists('email', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
                 placeholder="Email"
                 value="<?php print $pageElement['values']['email'] ?? '' ?>">
 
             <?php if(array_key_exists('email', $pageElement['errors'])){ ?>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
+                <span class="error_message font_wind">!!!</span>
             <?php }
             if(array_key_exists('email', $pageElement['errors'])){
             foreach($pageElement['errors']['email'] as $err){
             ?>
-            <p class="help is-danger"><?php print $err; ?></p>
+            <p class="error_message"><?php print $err; ?></p>
             <?php
                 }
             }
@@ -93,26 +87,24 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <label class="label">Passwort</label>
+        <div class="col col-form-label">
+            <label class="font_wind">Passwort</label>
             <input
                 name="password"
-                class="input
-                <?php if(array_key_exists('password', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                class="font_not_wind form-control
+                <?php if(array_key_exists('password', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="password"
-                maxlength="150"
+                maxlength="30"
                 placeholder="Passwort"
                 value="<?php print $pageElement['values']['password'] ?? '' ?>">
 
             <?php if(array_key_exists('password', $pageElement['errors'])){ ?>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
+                <span class="error_message font_wind">!!!</span>
             <?php }
             if(array_key_exists('password', $pageElement['errors'])){
             foreach($pageElement['errors']['password'] as $err){
             ?>
-            <p class="help is-danger"><?php print $err; ?></p>
+            <p class="error_message"><?php print $err; ?></p>
             <?php
                 }
             }
@@ -123,25 +115,23 @@
     <?php if(array_key_exists('id', $pageElement['values'])) { ?>
 
         <div class="row">
-            <div class="col">
-                <label class="label">Gebannt um</label>
+            <div class="col col-form-label">
+                <label class="font_wind">Gebannt um</label>
                 <input
                     name="banned_at"
-                    class="input <?php if(array_key_exists('banned_at', $pageElement['errors'])){ ?> is-danger <?php } ?>"
+                    class="font_not_wind form-control <?php if(array_key_exists('banned_at', $pageElement['errors'])){ ?> has_error <?php } ?>"
                     type="text"
-                    maxlength="30"
+                    maxlength="100"
                     placeholder="Zeit"
                     value="<?php print $pageElement['values']['banned_at'] ?? '' ?>">
 
                 <?php if(array_key_exists('banned_at', $pageElement['errors'])){ ?>
-                    <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
+                    <span class="error_message font_wind">!!!</span>
                 <?php }
                 if(array_key_exists('banned_at', $pageElement['errors'])){
                     foreach($pageElement['errors']['banned_at'] as $err){
                         ?>
-                        <p class="help is-danger"><?php print $err; ?></p>
+                        <p class="error_message"><?php print $err; ?></p>
                         <?php
                     }
                 }
@@ -151,12 +141,8 @@
     <?php } ?>
 
 
-    <div class="row">
-        <div class="col">
-
-            <button class="btn_1 btn">Speichern</button>
-
-        </div>
+    <div class="row justify-content-center">
+        <button class="btn_1 btn btn_send">Speichern</button>
     </div>
 
 

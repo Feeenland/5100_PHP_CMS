@@ -16,6 +16,14 @@ _If the access data for the database have to be adjusted, this can be found here
 _these are the data to log into my website in the backend:_
 - Admin: email: lauralea@ledertatze.com PW: leder
 - User: email: cmsuser@ledertatze.com PW: 5100cmsuser
+
+**Files**
+
+_in every file at the top you find a description what this file does_
+
+**Folders**
+
+_to understand the folder structure please read the section Folder structure in the README.md_
 ***
 
 ## Overview

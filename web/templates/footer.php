@@ -11,11 +11,13 @@
             <footer>
 
                 <ul class="font_wind">
-                    <li><a href="html/impressum.html" aria-label="zum Impressum"><span>Impressum</span></a></li>
+                    <li class="<?php if($p=='imprint'){print 'active';} ?>">
+                        <a href="index.php?p=imprint" aria-label="zum Impressum"><span>Impressum</span></a>
+                    </li>
                     <li><span class="small">|</span></li>
-                    <li><a href="html/datenschutz.html" aria-label="Datenschutz bestimmungen"><span>Datenschutz</span></a></li>
+                    <li><a href="index.php?p=data_protection" aria-label="Datenschutz bestimmungen"><span>Datenschutz</span></a></li>
                     <li><span class="small">|</span></li>
-                    <li><a href="html/contact.html" aria-label="zu kontakt"><span>kontakt</span></a></li>
+                    <li><a href="index.php?p=contact" aria-label="zu kontakt"><span>kontakt</span></a></li>
                 </ul>
 
                 <div class="step1"></div>

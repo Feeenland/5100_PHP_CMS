@@ -3,7 +3,6 @@
  * This file lists all the users from the list users of the DB, so that it is possible to edit/delete them or add new ones.
  */
 ?>
-<h1>User Verwalten</h1>
 <div class="row justify-content-end">
         <button class="btn btn_1 btn_send btn_table"><a href="<?php print 'index.php?p=admin&module=users&action=new'; ?>">Neuer user</a></button>
 </div>

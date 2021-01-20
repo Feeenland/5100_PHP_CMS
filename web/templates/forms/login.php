@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-11">
-            <h2>Login</h2>
+            <h1>Login</h1>
             <form action="index.php?p=login" method="POST">
                 <input type="hidden" name="login_try" value="1">
                 <div class="form-group row">

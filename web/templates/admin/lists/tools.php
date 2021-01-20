@@ -3,7 +3,6 @@
  * This file lists all the items from the list tools from the DB, so that it is possible to edit/delete them or add new ones.
  */
 ?>
-<h1>Werkzeug Verwalten</h1>
 <div class="row justify-content-end">
         <button class="btn btn_1 btn_send btn_table"><a href="<?php print 'index.php?p=admin&module=tools&action=new'; ?>">Neues Item</a></button>
 </div>

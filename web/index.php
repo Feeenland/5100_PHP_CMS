@@ -35,6 +35,12 @@ if(isset($_GET['p']) && $_GET['p'] != ''){// from the get param, is p set and no
     }else if($_GET['p'] == 'contact'){
         include('controllers/contact.php');
         $pageTitle = 'Kontakt';
+    }else if($_GET['p'] == 'imprint'){
+        $page ='templates/imprint.php';
+        $pageTitle = 'Impressum';
+    }else if($_GET['p'] == 'data_protection'){
+        $page ='templates/data_protection.php';
+        $pageTitle = 'Datenschutzerklärung';
     }else if($_GET['p'] == 'admin'){
         $page ='templates/admin/admin.php';
         $pageTitle = 'Admin bereich';

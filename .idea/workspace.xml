@@ -5,19 +5,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_contact_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_contact_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/scss/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/tools.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/controllers/admin" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/SAE/abgaben_prüffungen/4300_Js-Webseite_Laura_Lea_Mueller/02_website" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -103,7 +100,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="52300000" />
+      <workItem from="1610962262571" duration="59794000" />
     </task>
     <servers />
   </component>
@@ -115,14 +112,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610457808247" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610971924271">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611133222583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610971924271" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1610630932079">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611133222583" />
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1611135410288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610630932079" />
+    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611135410288" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1610962301825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

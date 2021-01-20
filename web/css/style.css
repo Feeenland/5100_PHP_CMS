@@ -1,3 +1,10 @@
+/*
+$h1-font-size:                $font-size-base * 2.5; //40px     64px
+$h2-font-size:                $font-size-base * 2; //32px     40px
+$h3-font-size:                $font-size-base * 1.5; //    24px
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;*/
 /* my Variables*/
 /* bootstrap */
 :root {
@@ -303,10 +310,10 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.1; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 1.9rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 1.7rem; }
 
 h3, .h3 {
   font-size: 1.5rem; }
@@ -2403,7 +2410,7 @@ textarea.form-control {
     -webkit-box-shadow: 1px 1px 0.2rem rgba(173, 113, 74, 0.35);
             box-shadow: 1px 1px 0.2rem rgba(173, 113, 74, 0.35); }
   .btn.disabled, .btn:disabled {
-    opacity: 0.65; }
+    opacity: 0.45; }
   .btn:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
@@ -9009,6 +9016,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* my scss*/
 /*main css*/
 body {
+  word-wrap: break-word;
   text-align: center;
   /*buttons*/ }
   body .space {
@@ -9017,8 +9025,13 @@ body {
     border: 1px solid #d9b784; }
   body h1, body h2, body h3, body h4, body button, body .font_wind {
     letter-spacing: 1px; }
-  body h1 {
-    margin: 5px 50px 50px; }
+  @media (min-width: 768px) {
+    body h1 {
+      margin: 5px 50px 50px;
+      font-size: 2.5rem; } }
+  @media (min-width: 768px) {
+    body h2 {
+      font-size: 2rem; } }
   body .font_wind {
     font-family: "Trade Winds", sans-serif; }
   body .btn_1 {
@@ -9048,6 +9061,8 @@ body {
               box-shadow: 1px 1px 10px #ad714a; }
       body .btn_admin:hover a {
         color: #d9b784; }
+  body .btn_admin.active a {
+    color: #a96734; }
   body .btn_send {
     width: 50%;
     margin: 15px;
@@ -9060,6 +9075,13 @@ body {
     margin-bottom: 50px; }
   body .lead {
     margin-bottom: 150px; }
+  body .login_output {
+    color: #71401a;
+    font-size: 1rem;
+    margin: 20px; }
+    @media (min-width: 992px) {
+      body .login_output {
+        font-size: 1.6rem; } }
   body .error_message {
     color: #7b0202; }
   body .has_error {
@@ -9885,6 +9907,29 @@ form {
   */
   #no-more-tables td:before {
     content: attr(data-title); } }
+
+.imprint_style {
+  position: relative; }
+  .imprint_style .lead {
+    margin: 50px 0 20px; }
+  .imprint_style aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    width: 20%;
+    float: right;
+    text-align: right; }
+    .imprint_style aside ul {
+      list-style: none; }
+      .imprint_style aside ul li {
+        padding: 5px 0;
+        font-size: 1.5rem; }
+  .imprint_style article p {
+    text-align: left; }
+  .imprint_style article ul {
+    list-style: circle;
+    text-align: left;
+    margin-left: 2rem; }
 
 /* Trade Winds */
 @font-face {

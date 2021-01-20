@@ -1,5 +1,6 @@
 /*main css*/
 body{
+  word-wrap: break-word;
   .space{ // only to visulise
     height: 150px;
     width: 100%;
@@ -11,7 +12,15 @@ body{
     letter-spacing: 1px;
   }
   h1{
-    margin: 5px 50px 50px;
+    @include media-breakpoint-up(md) {
+      margin: 5px 50px 50px;
+      font-size: $font-size-base* 2.5;
+    }
+  }
+  h2{
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base* 2;
+    }
   }
   .font_wind{
     font-family: "Trade Winds", sans-serif;
@@ -49,6 +58,11 @@ body{
       }
     }
   }
+  .btn_admin.active{
+    a{
+      color: $secondary;
+    }
+  }
   .btn_send{
     width: 50%;
     margin: 15px;
@@ -67,7 +81,12 @@ body{
   }
   // classes for php messages
   .login_output{
-
+    color: $success;
+    font-size: 1rem;
+    margin: 20px;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.6rem;
+    }
   }
   .error_message{ // to print the error message
     color: $info;

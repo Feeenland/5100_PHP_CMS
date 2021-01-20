@@ -17,6 +17,8 @@ _these are the data to log into my website in the backend:_
 - Admin: email: lauralea@ledertatze.com PW: leder
 - User: email: cmsuser@ledertatze.com PW: 5100cmsuser
 
+The only difference between admin and user is = the admin can edit/add and delete users
+
 **Files**
 
 _in every file at the top you find a description what this file does_

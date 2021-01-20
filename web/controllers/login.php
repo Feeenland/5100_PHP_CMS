@@ -49,6 +49,9 @@ if(isset($_POST['login_try']) ) {
                 //print 'pw down';
                 // start session = user is logged in
                 $_SESSION['logged_in'] = 1;
+                if ($usr['role'] == 'admin'){
+                    $_SESSION['role'] = 1;
+                }
                 $login_output = 'Hallo '.$usr['first_name'].' '.$usr['last_name'].'<br> sie haben sich korrekt eingeloggt';
                 $page = 'templates/admin/admin.php';
                 //die('correct password'); //logged in

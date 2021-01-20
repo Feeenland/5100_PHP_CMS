@@ -9130,7 +9130,7 @@ body {
       .hero .grid_container_child_pictures .picture_box .picture_wrap .picture_front {
         background-color: black; }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img1 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/armor_front.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img2 {
         background-image: url("../img/armor_front.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img3 {
@@ -9140,7 +9140,7 @@ body {
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img5 {
         background-image: url("../img/armor_front.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img6 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/armor_front.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img7 {
         background-image: url("../img/armor_front.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img8 {
@@ -9162,7 +9162,7 @@ body {
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic5 {
         background-image: url("../img/armschiene.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic6 {
-        background-image: url("../img/armschiene.jpg"); }
+        background-image: url("../img/new/armschiene.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic7 {
         background-image: url("../img/armschiene.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic8 {
@@ -9364,7 +9364,7 @@ footer {
     position: absolute;
     opacity: .1; }
   footer .step1, footer .step2 {
-    background-image: url("../img/paw_mittel_border.png");
+    background-image: url("../img/logo_patterns/paw_mittel_border.png");
     height: 102px;
     width: 100px;
     opacity: 1; }
@@ -9381,11 +9381,11 @@ footer {
     right: 1%;
     top: 20%; }
   footer .step3, footer .step6 {
-    background-image: url("../img/paw_hell.png"); }
+    background-image: url("../img/logo_patterns/paw_hell.png"); }
   footer .step4 {
-    background-image: url("../img/paw_mittel.png"); }
+    background-image: url("../img/logo_patterns/paw_mittel.png"); }
   footer .step5 {
-    background-image: url("../img/paw_dunkel.png"); }
+    background-image: url("../img/logo_patterns/paw_dunkel.png"); }
   footer .step3, footer .step4, footer .step5, footer .step6 {
     height: 52px;
     width: 50px;
@@ -9405,11 +9405,11 @@ footer {
     left: 8%;
     bottom: 66%; }
   footer .step7, footer .step10 {
-    background-image: url("../img/paw_hell.png"); }
+    background-image: url("../img/logo_patterns/paw_hell.png"); }
   footer .step8, footer .step11 {
-    background-image: url("../img/paw_mittel.png"); }
+    background-image: url("../img/logo_patterns/paw_mittel.png"); }
   footer .step9, footer .step12 {
-    background-image: url("../img/paw_dunkel.png"); }
+    background-image: url("../img/logo_patterns/paw_dunkel.png"); }
   footer .step7, footer .step8, footer .step9, footer .step10, footer .step11, footer .step12 {
     height: 32px;
     width: 30px;
@@ -9829,7 +9829,7 @@ footer {
     height: 12px;
     width: 10px; } }
 
-/* Navigation */
+/* Navigation css */
 .nav_styles {
   margin-bottom: 5%;
   border-bottom: 2px solid #a96734;
@@ -9869,6 +9869,9 @@ form {
     margin-bottom: 10px; }
 
 /*table css*/
+.table_img {
+  width: 100px; }
+
 @media only screen and (max-width: 1250px) {
   /* Force table to not be like tables anymore */
   #no-more-tables table,
@@ -9908,6 +9911,7 @@ form {
   #no-more-tables td:before {
     content: attr(data-title); } }
 
+/*// (Imprint / Data Protection)*/
 .imprint_style {
   position: relative; }
   .imprint_style .lead {
@@ -9942,9 +9946,14 @@ form {
   font-weight: bold;
   src: local("Libre Franklin"), local("LibreFranklin-Regular"), url("../fonts/Roboto-Regular.ttf") format("ttf"); }
 
-/* frank-ruhl-libre-500 - latin */
+/*
+
+!* frank-ruhl-libre-500 - latin *!
 @font-face {
   font-family: 'Frank Ruhl Libre';
+  //font-style: normal;
   font-weight: bold;
-  src: local("Frank Ruhl Libre Medium"), local("FrankRuhlLibre-Medium"), url("../../public/fonts/frank-ruhl-libre-v6-latin-500.woff2") format("woff2"), url("../../public/fonts/frank-ruhl-libre-v6-latin-500.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+  src: local('Frank Ruhl Libre Medium'), local('FrankRuhlLibre-Medium'),
+  url('../../public/fonts/frank-ruhl-libre-v6-latin-500.woff2') format('woff2'), !* Chrome 26+, Opera 23+, Firefox 39+ *!
+  url('../../public/fonts/frank-ruhl-libre-v6-latin-500.woff') format('woff'); !* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ *!
+}*/

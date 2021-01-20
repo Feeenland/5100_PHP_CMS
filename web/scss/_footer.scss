@@ -1,4 +1,4 @@
-// ### footer ### */
+// ### footer css ### */
 footer{
   //border-top: 5px solid rgba(173, 113, 74, 0.3);
   border-top: 2px solid $secondary;
@@ -21,7 +21,7 @@ footer{
   }
   // positioning paw steps and define paws (color)
   .step1, .step2{
-    background-image: url("../img/paw_mittel_border.png");
+    background-image: url("../img/logo_patterns/paw_mittel_border.png");
     height: 102px;
     width: 100px;
     opacity: 1;
@@ -38,13 +38,13 @@ footer{
     top: 20%;
   }
   .step3, .step6{
-    background-image: url("../img/paw_hell.png");
+    background-image: url("../img/logo_patterns/paw_hell.png");
   }
   .step4{
-    background-image: url("../img/paw_mittel.png");
+    background-image: url("../img/logo_patterns/paw_mittel.png");
   }
   .step5{
-    background-image: url("../img/paw_dunkel.png");
+    background-image: url("../img/logo_patterns/paw_dunkel.png");
   }
   .step3, .step4, .step5, .step6{
     height: 52px;
@@ -70,13 +70,13 @@ footer{
   }
   // right */
   .step7, .step10{
-    background-image: url("../img/paw_hell.png");
+    background-image: url("../img/logo_patterns/paw_hell.png");
   }
   .step8, .step11{
-    background-image: url("../img/paw_mittel.png");
+    background-image: url("../img/logo_patterns/paw_mittel.png");
   }
   .step9, .step12{
-    background-image: url("../img/paw_dunkel.png");
+    background-image: url("../img/logo_patterns/paw_dunkel.png");
   }
   .step7, .step8, .step9, .step10, .step11, .step12{
     height: 32px;

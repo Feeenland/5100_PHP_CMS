@@ -8,20 +8,20 @@
 <div class="container news_section">
     <div class="row justify-content-around">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 offset-lg-1">
-            <article class="news_card" style="background-image: url(img/armor_front.jpg)"><!-- // i know inline style is ugly but there was no other way to change a bg-img via PHP-->
+            <article class="news_card" style="background-image: url(img/new/armor_front.jpg)"><!-- // i know inline style is ugly but there was no other way to change a bg-img via PHP-->
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -36,20 +36,20 @@
             </article>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 offset-lg-1">
-            <article class="news_card" style="background-image: url(img/armschiene.jpg)">
+            <article class="news_card" style="background-image: url(img/new/armschiene.jpg)">
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -63,20 +63,20 @@
             </article>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 offset-lg-1">
-            <article class="news_card" style="background-image: url(img/armschiene.jpg)"> <!-- inline style so i can change the img with PHP-->
+            <article class="news_card" style="background-image: url(img/new/armschiene.jpg)"> <!-- inline style so i can change the img with PHP-->
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -89,20 +89,20 @@
             </article>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 offset-lg-1">
-            <article class="news_card" style="background-image: url(img/paw_mittel.png)">
+            <article class="news_card" style="background-image: url(img/new/paw_mittel.png)">
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4 offset-7">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                     </div>
                 </div>
                 <div class="row justify-content-center">

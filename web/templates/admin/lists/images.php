@@ -26,6 +26,7 @@
                 <?php foreach($pageElement['items'] as $item){ ?>
 
                     <?php
+                    // should not be static!
                     $folder_id = '';
                         if (isset($item['id_folder']) && $item['id_folder'] == 1){
                             //print 'logo_patterns';
@@ -53,7 +54,7 @@
                         <td data-title="Alt Tag"><?php print $item['alt']; ?></td>
                         <td data-title="Name"><?php print $item['filename']; ?></td>
                         <td data-title="ID Folder"><?php print $item['id_folder']; ?></td>
-                        <td data-title="Bild"><img src="img/<?php print $folder_id; ?>/<?php print $item['filename']; ?>" alt="" style="width: 100px"></td>
+                        <td data-title="Bild"><img src="img/<?php print $folder_id; ?>/<?php print $item['filename']; ?>" alt="" class="table_img"></td>
                         <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
                         <td data-title="X"><button class="btn"><a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">X</a></button></td>
                     </tr>

@@ -8,8 +8,8 @@
 <article class="container work_collapse_element">
     <div class="row work_visual  justify-content-center">
         <figure class="col-sm-12 col-md-6 col-lg-5">
-            <img src="img/armschiene.jpg" alt="">
-            <img src="img/armschiene.jpg" alt="">
+            <img src="img/new/armschiene.jpg" alt="">
+            <img src="img/new/armschiene.jpg" alt="">
         </figure>
         <div class="col-12 col-sm-12 col-md-6 col-lg-5">
             <h2> Farben, Schnallen, Nieten</h2>
@@ -32,8 +32,8 @@
                         Die Farbe sowie Leder holte ich bei <a href="https://www.ryffel-felle.ch/de/146-lederfarben" target="_blank" aria-label="Link zu Ryffel Felle + Leder, Farben" title="Shop ryffel-felle.ch">ryffel-felle.ch</a>.
                     </p>
                     <figure>
-                        <img src="img/armschiene.jpg" alt="">
-                        <img src="img/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
+                        <img src="img/new/armschiene.jpg" alt="">
                         <img src="img/armschiene.jpg" alt="">
                         <img src="img/armschiene.jpg" alt="">
                     </figure>
@@ -45,7 +45,7 @@
 <article class="container work_collapse_element">
     <div class="row work_visual  justify-content-center">
         <figure class="col-sm-12 col-md-6 col-lg-5">
-            <img src="img/armschiene.jpg" alt="">
+            <img src="img/new/armschiene.jpg" alt="">
             <img src="img/armschiene.jpg" alt="">
         </figure>
         <div class="col-12 col-sm-12 col-md-6 col-lg-5">

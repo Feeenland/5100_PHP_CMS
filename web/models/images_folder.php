@@ -22,12 +22,12 @@ function getAllimage_folders()
 /**
  * this function = get's a specific item from the DB by his ID.
  */
-/*
-function getItemById($id)
+
+function getImageFolderById($id)
 {
     global $db_connection;
     try {
-        $stmt = $db_connection->prepare("SELECT * FROM images_folder WHERE id = ?");
+        $stmt = $db_connection->prepare("SELECT * FROM image_folder WHERE id = ?");
         $stmt->bind_param("i", $_id);
         $_id = $id;
         $stmt->execute();
@@ -36,7 +36,7 @@ function getItemById($id)
     } catch (Exception $e) {
         return false;
     }
-}*/
+}
 
 
 /**

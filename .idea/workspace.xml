@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/images_folder.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_folder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/images.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/work" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -56,11 +53,11 @@
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\fonts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\work" />
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\new" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\models" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\forms" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\lists" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\controllers\admin" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\tools" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -94,7 +91,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="68520000" />
+      <workItem from="1610962262571" duration="72354000" />
     </task>
     <servers />
   </component>

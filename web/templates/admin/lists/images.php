@@ -1,6 +1,7 @@
 <?php
 /**
- * This file lists all the images from the list images of the DB, so that it is possible to edit/delete or add them.
+ * This file lists all the image from the list images of the DB, so that it is possible to edit/delete or add them.
+ * and it lists all the image folders, but it's not possible to edit them.
  */
 ?>
 <div class="row justify-content-end">
@@ -15,6 +16,7 @@
                 <th scope="col">Alt Tag</th>
                 <th scope="col">Name</th>
                 <th scope="col">ID Folder</th>
+                <th scope="col">Bild</th>
                 <th scope="col">Editieren</th>
                 <th scope="col">X</th>
             </tr>
@@ -22,11 +24,36 @@
             <tbody>
                 <!-- for each registered object make a new entry in the table-->
                 <?php foreach($pageElement['items'] as $item){ ?>
+
+                    <?php
+                    $folder_id = '';
+                        if (isset($item['id_folder']) && $item['id_folder'] == 1){
+                            //print 'logo_patterns';
+                            $folder_id = 'logo_patterns';
+                        } elseif ($item['id_folder'] == 2){
+                            //print 'favicon';
+                            $folder_id = 'favicon';
+                        }elseif ($item['id_folder'] == 3){
+                            //print 'new';
+                            $folder_id = 'new';
+                        }elseif ($item['id_folder'] == 4){
+                            //print 'work';
+                            $folder_id = 'work';
+                        }elseif ($item['id_folder'] == 5){
+                            //print 'tools';
+                            $folder_id = 'tools';
+                        }else{
+                            print 'no folder id';
+                        }
+                    //print $item['id_folder'];
+                    ?>
+
                     <tr>
                         <td data-title="ID"><?php print $item['id']; ?></td>
                         <td data-title="Alt Tag"><?php print $item['alt']; ?></td>
                         <td data-title="Name"><?php print $item['filename']; ?></td>
                         <td data-title="ID Folder"><?php print $item['id_folder']; ?></td>
+                        <td data-title="Bild"><img src="img/<?php print $folder_id; ?>/<?php print $item['filename']; ?>" alt="" style="width: 100px"></td>
                         <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
                         <td data-title="X"><button class="btn"><a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">X</a></button></td>
                     </tr>
@@ -38,8 +65,8 @@
             <tr class="font_wind">
                 <th scope="col">ID</th>
                 <th scope="col">Folder</th>
-                <th scope="col">Editieren</th>
-                <th scope="col">X</th>
+               <!-- <th scope="col">Editieren</th>
+                <th scope="col">X</th>-->
             </tr>
             </thead>
             <tbody>
@@ -48,8 +75,8 @@
                     <tr>
                         <td data-title="ID"><?php print $item_folder['id']; ?></td>
                         <td data-title="Folder"><?php print $item_folder['folder']; ?></td>
-                        <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
-                        <td data-title="X"><button class="btn"><a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">X</a></button></td>
+                    <!--    <td data-title="Editieren"><button class="btn"><a href="<?php /*print $pageElement['edit_link'] . $item['id']; */?>">Editieren</a></button></td>
+                        <td data-title="X"><button class="btn"><a href="<?php /*print $pageElement['delete_link'] . $item['id']; */?>">X</a></button></td>-->
                     </tr>
                 <?php } ?>
             </tbody>

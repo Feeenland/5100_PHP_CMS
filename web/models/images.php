@@ -10,14 +10,27 @@
 function getAllimages()
 {
     global $db_connection;
-    $res = mysqli_query($db_connection, "SELECT * FROM images");
+    $res = mysqli_query($db_connection, "SELECT * FROM images INNER JOIN image_folder ON images.id_folder = image_folder.id WHERE image_folder.folder = ?");
     $items = [];
-    // save all elements from the DB Tools in this array
+    // save all elements from the DB in this array
     while ($row = mysqli_fetch_assoc($res)) {
         $items[] = $row;
     }
     return $items;
 }
+
+
+/*function getAllimages()
+{
+    global $db_connection;
+    $res = mysqli_query($db_connection, "SELECT * FROM images");
+    $items = [];
+    // save all elements from the DB in this array
+    while ($row = mysqli_fetch_assoc($res)) {
+        $items[] = $row;
+    }
+    return $items;
+}*/
 
 /**
  * this function = get's a specific item from the DB by his ID.
@@ -75,6 +88,7 @@ function saveEntry($data)
         }
     }
 }
+
 
 /**
  * this function = Deletes a specific Item form the DB.

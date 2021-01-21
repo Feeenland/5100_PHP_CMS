@@ -22,12 +22,12 @@
             </tr>
             </thead>
             <tbody>
+            <?php print_r ($pageElement['items']) ?>
                 <!-- for each registered object make a new entry in the table-->
                 <?php foreach($pageElement['items'] as $item){ ?>
 
                     <?php
-                    // should not be static!
-                    $folder_id = '';
+                    $folder_id = '';// should not be static!
                         if (isset($item['id_folder']) && $item['id_folder'] == 1){
                             //print 'logo_patterns';
                             $folder_id = 'logo_patterns';
@@ -48,7 +48,6 @@
                         }
                     //print $item['id_folder'];
                     ?>
-
                     <tr>
                         <td data-title="ID"><?php print $item['id']; ?></td>
                         <td data-title="Alt Tag"><?php print $item['alt']; ?></td>

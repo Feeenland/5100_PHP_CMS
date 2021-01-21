@@ -52,7 +52,7 @@ function getAllUsers()
     global $db_connection;
     $res = mysqli_query($db_connection, "SELECT * FROM users");
     $items = [];
-    // save all elements from the DB Tools in this array
+    // save all elements from the DB in this array
     while ($row = mysqli_fetch_assoc($res)) {
         $items[] = $row;
     }

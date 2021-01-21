@@ -6,11 +6,12 @@
 
 /**
  * this function = get all items on this list in the DB and save them in the var $items.
+ * It also add the folder names by the id in a new column.
  */
 function getAllimages()
 {
     global $db_connection;
-    $res = mysqli_query($db_connection, "SELECT * FROM images INNER JOIN image_folder ON images.id_folder = image_folder.id WHERE image_folder.folder = ?");
+    $res = mysqli_query($db_connection, "SELECT images.*, image_folder.folder FROM images JOIN image_folder ON images.id_folder = image_folder.id");
     $items = [];
     // save all elements from the DB in this array
     while ($row = mysqli_fetch_assoc($res)) {

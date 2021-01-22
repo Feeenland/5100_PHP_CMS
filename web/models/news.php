@@ -7,6 +7,7 @@
 /**
  * this function = get all items on this list in the DB and save them in the var $items.
  * It also adds the thins from the images list.
+ * try :
  * SELECT images.*, image_folder.folder FROM images JOIN image_folder ON images.id_folder = image_folder.id // zu jedem image den passenden ortner
  * SELECT news.*, images.* FROM news INNER JOIN images ON news.bg_image = images.id // all news + img from id BG
  * //all news + all img from id BG + folder from id BG img
@@ -15,22 +16,9 @@
  * SELECT news.*, img1.alt,img1.filename, img2.alt,img2.filename, folder1.folder, folder2.folder FROM news, images AS img1, images AS img2, image_folder AS folder1, image_folder AS folder2 WHERE news.bg_image = img1.id AND news.top_image = img2.id AND img1.id_folder = folder1.id AND img2.id_folder = folder2.id //funktioniert aber es heisst alles gleich
  *SELECT news.*, img1.alt AS alt1, img1.filename AS filname1, img2.alt AS alt2, img2.filename AS filename2, folder1.folder AS folder1, folder2.folder AS folder2 FROM news, images AS img1, images AS img2, image_folder AS folder1, image_folder AS folder2 WHERE news.bg_image = img1.id AND news.top_image = img2.id AND img1.id_folder = folder1.id AND img2.id_folder = folder2.id
  *
- * SELECT news.*,
-img1.alt AS alt1,
-img1.filename AS filname1,
-img2.alt AS alt2,
-img2.filename AS filename2,
-folder1.folder AS folder1,
-folder2.folder AS folder2
-FROM news,
-images AS img1,
-images AS img2,
-image_folder AS folder1,
-image_folder AS folder2
-WHERE news.bg_image = img1.id
-AND news.top_image = img2.id
-AND img1.id_folder = folder1.id
-AND img2.id_folder = folder2.id
+ * last and final it works: (this in the function)
+ *
+ *
  */
 function getAllNews()
 {
@@ -133,7 +121,7 @@ function saveEntry($data)
     } else {
         // Create
         try {
-            $stmt = $db_connection->prepare("INSERT INTO images (title, text, bg_image, top_image, mid_image, bot_image) VALUES (?,?,?,?,?,?)");
+            $stmt = $db_connection->prepare("INSERT INTO news (title, text, bg_image, top_image, mid_image, bot_image) VALUES (?,?,?,?,?,?)");
             $stmt->bind_param("ssiiii", $title, $text, $bg_image, $top_image, $mid_image, $bot_image);
             $title = $data['title'];
             $text = $data['text'];

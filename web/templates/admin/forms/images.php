@@ -45,7 +45,7 @@
                 name="alt"
                 class="font_not_wind form-control <?php if(array_key_exists('alt', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
-                maxlength="30"
+                maxlength="50"
                 placeholder="Alt text"
                 value="<?php print $pageElement['values']['alt'] ?? '' ?>">
 
@@ -66,7 +66,7 @@
         <div class="col col-form-label">
             <label class="font_wind">ID Ortner</label>
             <input
-                name="alt"
+                name="id_folder"
                 class="font_not_wind form-control <?php if(array_key_exists('id_folder', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"

@@ -1,6 +1,6 @@
 <?php
 /**
- * This file lists all the actions who are available to edit the Images.
+ * This file lists all the actions who are available to edit the Nwess.
  * checks whether a action is set and existing.
  * defines the rules for errors.
  * defines what to to by each action.
@@ -20,16 +20,19 @@ $available_actions = [
 if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actions)) {
     $action = $_REQUEST['action'];
 } else {
-    //print 'diese aktion ist nicht möglich 4';
+    //print 'diese aktion ist nicht möglich';
     //die('invalid action');
 }
 
 
 // rules defined for the Validations(.php)
 $rules = [
-    'alt' => ['required'],
-    'filename' => ['required'],
-    'id_folder' => ['required','number']
+    'title' => ['required', 'max20chars'],
+    'text' => ['required'],
+    'bg_image' => ['required','number'],
+    'top_image' => ['required','number'],
+    'mid_image' => ['required','number'],
+    'bot_image' => ['required','number']
 ];
 
 if (isset($action)){
@@ -62,7 +65,7 @@ if (isset($action)){
 }
 
 
-$location = 'images';// to re locate after the action (to go back to the list that was edited)
+$location = 'news';// to re locate after the action (to go back to the list that was edited)
 $happened = ''; // to change the message after the action (like = successfully deleted)
 
 
@@ -72,16 +75,13 @@ $happened = ''; // to change the message after the action (like = successfully d
  */
 function listItems()
 {
-    include('models/images.php');
-    $items = getAllimages();
-    include('models/images_folder.php');
-    $item_folders = getAllimage_folders();
+    include('models/news.php');
+    $items = getAllNews();
     return [
-        'page' => 'templates/admin/lists/images.php',
-        'items' => $items, //saved all items from the models/images.php
-        'item_folders' => $item_folders, //saved all folders from the models/images_folder.php
-        'edit_link' => 'index.php?p=admin&module=images&action=edit&id=',
-        'delete_link' => 'index.php?p=admin&module=images&action=delete&id=',
+        'page' => 'templates/admin/lists/news.php',
+        'items' => $items, //saved all items from the models/news.php
+        'edit_link' => 'index.php?p=admin&module=news&action=edit&id=',
+        'delete_link' => 'index.php?p=admin&module=news&action=delete&id=',
     ];
 }
 
@@ -92,8 +92,8 @@ function listItems()
 function showCreateForm($errors = [], $values = [])
 {
     return [
-        'page' => 'templates/admin/forms/images.php',
-        'action' => 'index.php?p=admin&module=images&action=create',
+        'page' => 'templates/admin/forms/news.php',
+        'action' => 'index.php?p=admin&module=news&action=create',
         'errors' => $errors,
         'values' => $values
     ];
@@ -111,12 +111,15 @@ function createNewItem($rules)
         return showCreateForm(
             $errors,
             [
-                'filename' => $_REQUEST['filename'],
-                'alt' => $_REQUEST['alt'],
-                'id_folder' => $_REQUEST['id_folder']
+                'title' => $_REQUEST['title'],
+                'text' => $_REQUEST['text'],
+                'bg_image' => $_REQUEST['bg_image'],
+                'top_image' => $_REQUEST['top_image'],
+                'mid_image' => $_REQUEST['mid_image'],
+                'bot_image' => $_REQUEST['bot_image']
             ]);
     } else {
-        include('models/images.php');
+        include('models/news.php');
         $res = saveEntry($_REQUEST);
         if ($res == false) {
             die('Speichern fehlgeschlagen');
@@ -124,7 +127,7 @@ function createNewItem($rules)
             // redirect to overview to prevent double-save
             //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
             //exit();
-            $location = 'images';
+            $location = 'news';
             $happened = 'Neu Erstellt';
             include 'templates/admin/forms/edit-worked.php';
         }
@@ -136,11 +139,11 @@ function createNewItem($rules)
  */
 function showUpdateForm($id, $errors = [], $values = [])
 {
-    include('models/images.php');
+    include('models/news.php');
     $item = getItemById($id);
     return [
-        'page' => 'templates/admin/forms/images.php',
-        'action' => 'index.php?p=admin&module=images&action=update',
+        'page' => 'templates/admin/forms/news.php',
+        'action' => 'index.php?p=admin&module=news&action=update',
         'values' => $values != [] ? $values : $item,
         'errors' => $errors
     ];
@@ -159,12 +162,15 @@ function updateItem($rules)
             $_REQUEST['id'],
             $errors,
             [
-                'filename' => $_REQUEST['filename'],
-                'alt' => $_REQUEST['alt'],
-                'id_folder' => $_REQUEST['id_folder']
+                'title' => $_REQUEST['title'],
+                'text' => $_REQUEST['text'],
+                'bg_image' => $_REQUEST['bg_image'],
+                'top_image' => $_REQUEST['top_image'],
+                'mid_image' => $_REQUEST['mid_image'],
+                'bot_image' => $_REQUEST['bot_image']
             ]);
     } else {
-        include('models/images.php');
+        include('models/news.php');
         $res = saveEntry($_REQUEST);
         if ($res == false) {
             print 'Speichern fehlgeschlagen';
@@ -174,7 +180,7 @@ function updateItem($rules)
             //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
             //print 'location should be: index.php?p=admin&module=tools&action=list';
             //print $location;
-            $location = 'images';
+            $location = 'news';
             $happened = 'Aktualisiert';
             include 'templates/admin/forms/edit-worked.php';
             //exit();
@@ -187,9 +193,9 @@ function updateItem($rules)
  */
 function deleteItem($id){
     //print 'delete that';
-    include('models/images.php');
+    include('models/news.php');
     $item = deleteItemById($id);
-    $location = 'images';
+    $location = 'news';
     $happened = 'Gelöscht';
     include 'templates/admin/forms/edit-worked.php';
 }

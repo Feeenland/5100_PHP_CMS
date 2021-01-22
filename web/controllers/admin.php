@@ -8,6 +8,8 @@ $admin_path = 'controllers/admin/'; // to avoid redundancies and simply to have 
 // which modules are available
 $modules = [
     // which page i need if this module is active
+    'news' => $admin_path . 'news.php',
+    'works' => $admin_path . 'works.php',
     'tools' => $admin_path . 'tools.php',
     'users' => $admin_path . 'users.php',
     'images' => $admin_path . 'images.php'

@@ -4,15 +4,23 @@
  */
 
 
-// mach das obe ade site und benutz es für d H1 und d active azeig ide navigation!
+// to set the title in the backend
 $titleBackend = 'Website';
 if (isset($_REQUEST['module'])) {
     $module = $_REQUEST['module'];
     //print $module;
-    if ($_REQUEST['module'] == 'users') {
-        $titleBackend = 'Users';
+    if ($_REQUEST['module'] == 'news') {
+        $titleBackend = 'Neues';
+    }else if ($_REQUEST['module'] == 'works') {
+        $titleBackend = 'Arbeitsschritte';
     }else if ($_REQUEST['module'] == 'tools') {
         $titleBackend = 'Werkzeug';
+    }else if ($_REQUEST['module'] == 'gallery') {
+        $titleBackend = 'Gallerie';
+    }else if ($_REQUEST['module'] == 'images') {
+        $titleBackend = 'Bilder';
+    }else if ($_REQUEST['module'] == 'users') {
+        $titleBackend = 'User';
     }
 } else {
     //print 'no title?';

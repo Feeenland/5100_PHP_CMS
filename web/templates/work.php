@@ -4,6 +4,28 @@
  */
 
 ?>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Arbeitsschritte <br> zur Lederrüstung</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-9">
+            <p class="lead">
+                Auf dieser Seite findest du die beschriebenen Arbeitsschritte, um eine Lederrüstung anzufertigen mit Hinweisen, auf was man achten sollte. Um diese Hinweise wäre ich sehr froh gewesen, bevor ich angefangen hatte.
+                Ebenfalls findest du Hinweise dazu, wann es sinnvoll ist welches Werkzeug zu verwenden.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
 <!--Start work-->
 <?php
 include 'models/works.php'; //include the function to get all the tools items

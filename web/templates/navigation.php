@@ -70,7 +70,7 @@
                             <a class="nav-link <?php if($p=='tools'){print 'active';} ?>" href="index.php?p=tools"">Werkzeug</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($p=='gallery'){print 'active';} ?>" href="#">Gallerie</a>
+                            <a class="nav-link <?php if($p=='gallery'){print 'active';} ?>" href="index.php?p=gallery">Gallerie</a>
                         </li>
                     </ul>
 

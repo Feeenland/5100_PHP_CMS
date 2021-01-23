@@ -32,6 +32,9 @@ if(isset($_GET['p']) && $_GET['p'] != ''){// from the get param, is p set and no
     }else if($_GET['p'] == 'tools'){
         $page = 'templates/tools.php';
         $pageTitle = 'Werkzeug zur Lederbearbeitung';
+    }else if($_GET['p'] == 'gallery'){
+        $page = 'templates/gallery.php';
+        $pageTitle = 'Gallerie';
     }else if($_GET['p'] == 'contact'){
         include('controllers/contact.php');
         $pageTitle = 'Kontakt';

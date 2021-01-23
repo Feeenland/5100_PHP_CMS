@@ -3,6 +3,24 @@
  * news.php = this file generates the content for the news page.
  */
 ?>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Neue Lederutensilien</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-9">
+            <p class="lead">
+                Stehts entstehen neue Gegenstände, hir einige meiner letzten Arbeiten.
+            </p>
+        </div>
+    </div>
+</div>
+
+
 <!-- start news -->
 <?php
 include 'models/news.php'; //include the function to get all the news items

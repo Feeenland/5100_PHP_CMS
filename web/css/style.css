@@ -9074,7 +9074,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px; }
   body .lead {
-    margin-bottom: 150px; }
+    margin-bottom: 50px; }
   body .login_output {
     color: #71401a;
     font-size: 1rem;
@@ -9130,49 +9130,49 @@ body {
       .hero .grid_container_child_pictures .picture_box .picture_wrap .picture_front {
         background-color: black; }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img1 {
-        background-image: url("../img/new/armor_front.jpg"); }
+        background-image: url("../img/new/armband_blau.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img2 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/armschienen.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img3 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/ruecken.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img4 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/AA.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img5 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/buch_back.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img6 {
-        background-image: url("../img/new/armor_front.jpg"); }
+        background-image: url("../img/new/buch.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img7 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/gurt_alex.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img8 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/gurt_spitze.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img9 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/armband_blau.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img10 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/beinschinen.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .img11 {
-        background-image: url("../img/armor_front.jpg"); }
+        background-image: url("../img/new/lederschmuck.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic1 {
-        background-image: url("../img/armschiene.jpg"); }
-      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic2 {
-        background-image: url("../img/armschiene.jpg"); }
-      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic3 {
-        background-image: url("../img/armschiene.jpg"); }
-      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic4 {
-        background-image: url("../img/armschiene.jpg"); }
-      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic5 {
-        background-image: url("../img/armschiene.jpg"); }
-      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic6 {
         background-image: url("../img/new/armschiene.jpg"); }
+      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic2 {
+        background-image: url("../img/new/gurt_AA.jpg"); }
+      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic3 {
+        background-image: url("../img/new/beinschine.jpg"); }
+      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic4 {
+        background-image: url("../img/new/armband_braun.jpg"); }
+      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic5 {
+        background-image: url("../img/new/tasche_gruen.jpg"); }
+      .hero .grid_container_child_pictures .picture_box .picture_wrap .pic6 {
+        background-image: url("../img/new/armor_front.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic7 {
-        background-image: url("../img/armschiene.jpg"); }
+        background-image: url("../img/new/brust.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic8 {
-        background-image: url("../img/armschiene.jpg"); }
+        background-image: url("../img/new/gurt_tatze.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic9 {
-        background-image: url("../img/armschiene.jpg"); }
+        background-image: url("../img/new/kopfschmuck.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic10 {
-        background-image: url("../img/armschiene.jpg"); }
+        background-image: url("../img/new/gurt_blau.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .pic11 {
-        background-image: url("../img/armschiene.jpg"); }
+        background-image: url("../img/new/beinschinen.jpg"); }
       .hero .grid_container_child_pictures .picture_box .picture_wrap .picture_back {
         background-color: #5a371a;
         -webkit-transform: rotateX(-180deg);
@@ -9298,6 +9298,8 @@ body {
       width: 100px;
       height: 100px;
       position: relative;
+      -o-object-fit: cover;
+         object-fit: cover;
       margin: 20px 10px;
       -webkit-box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a;
               box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a; }
@@ -9322,6 +9324,8 @@ body {
     width: 100px;
     height: 100px;
     margin: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
     -webkit-box-shadow: 0 0 2px 4px #000000, 0 0 3px 4px #ad714a;
             box-shadow: 0 0 2px 4px #000000, 0 0 3px 4px #ad714a; }
     @media (min-width: 576px) {
@@ -9870,7 +9874,7 @@ form {
 
 /*table css*/
 .table_img {
-  width: 100px; }
+  width: 80px; }
 
 @media only screen and (max-width: 1250px) {
   /* Force table to not be like tables anymore */
@@ -9910,6 +9914,116 @@ form {
   */
   #no-more-tables td:before {
     content: attr(data-title); } }
+
+/* gallery*/
+section#spin_gallery {
+  width: 100%;
+  margin: 15% 0; }
+  section#spin_gallery .spin {
+    -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+            transform: scale(2.5);
+    border: 1px solid #71401a;
+    position: relative;
+    width: 210px;
+    height: 140px;
+    margin: 10px auto;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    background-color: #000004; }
+    section#spin_gallery .spin .spin_wrap {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform: translateZ(-320px);
+              transform: translateZ(-320px);
+      /* -288 for 9 img */
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s;
+      z-index: 10; }
+      section#spin_gallery .spin .spin_wrap .spin_img {
+        position: absolute;
+        width: 190px;
+        height: 120px;
+        left: 8px;
+        top: 10px;
+        border: 1px solid #a96734;
+        line-height: 116px;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, -webkit-transform 1s;
+        -o-transition: transform 1s, opacity 1s;
+        transition: transform 1s, opacity 1s;
+        transition: transform 1s, opacity 1s, -webkit-transform 1s;
+        overflow: hidden;
+        opacity: .2; }
+        section#spin_gallery .spin .spin_wrap .spin_img img {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(1) {
+          -webkit-transform: rotateY(0deg) translateZ(320px);
+                  transform: rotateY(0deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(2) {
+          -webkit-transform: rotateY(36deg) translateZ(320px);
+                  transform: rotateY(36deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(3) {
+          -webkit-transform: rotateY(72deg) translateZ(320px);
+                  transform: rotateY(72deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(4) {
+          -webkit-transform: rotateY(108deg) translateZ(320px);
+                  transform: rotateY(108deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(5) {
+          -webkit-transform: rotateY(144deg) translateZ(320px);
+                  transform: rotateY(144deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(6) {
+          -webkit-transform: rotateY(180deg) translateZ(320px);
+                  transform: rotateY(180deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(7) {
+          -webkit-transform: rotateY(216deg) translateZ(320px);
+                  transform: rotateY(216deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(8) {
+          -webkit-transform: rotateY(252deg) translateZ(320px);
+                  transform: rotateY(252deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(9) {
+          -webkit-transform: rotateY(288deg) translateZ(320px);
+                  transform: rotateY(288deg) translateZ(320px); }
+        section#spin_gallery .spin .spin_wrap .spin_img:nth-child(10) {
+          -webkit-transform: rotateY(324deg) translateZ(320px);
+                  transform: rotateY(324deg) translateZ(320px); }
+      section#spin_gallery .spin .spin_wrap .toggle_front_image {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #71401a;
+                box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #71401a;
+        border: none; }
+  section#spin_gallery .spin-options {
+    text-align: center;
+    position: relative;
+    z-index: 25;
+    bottom: 0; }
+    section#spin_gallery .spin-options p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      section#spin_gallery .spin-options p button {
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: #000004; }
+        section#spin_gallery .spin-options p button i {
+          color: #71401a;
+          font-size: 1.1rem; }
 
 /*// (Imprint / Data Protection)*/
 .imprint_style {

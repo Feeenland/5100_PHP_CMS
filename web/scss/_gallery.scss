@@ -1,0 +1,81 @@
+/* gallery*/
+// gallery spin
+section#spin_gallery{
+  width: 100%;
+  margin: 15% 0;
+  .spin {
+    transform: scale(2.5);
+    border: 1px solid $success;
+    position: relative;
+    width: 210px;
+    height: 140px;
+    margin: 10px auto;
+    perspective: 1000px;
+    background-color: $dark;
+    .spin_wrap {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform: translateZ(-320px); /* -288 for 9 img */
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      z-index: 10;
+      .spin_img {
+        position: absolute;
+        width: 190px;
+        height: 120px;
+        left: 8px;
+        top: 10px;
+        border: 1px solid $secondary;
+        line-height: 116px;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        transition: transform 1s, opacity 1s;
+        overflow: hidden;
+        opacity: .2;
+        img {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        &:nth-child(1) { transform: rotateY(  0deg) translateZ(320px);}
+        &:nth-child(2) { transform: rotateY( 36deg) translateZ(320px); }
+        &:nth-child(3) { transform: rotateY( 72deg) translateZ(320px);}
+        &:nth-child(4) { transform: rotateY(108deg) translateZ(320px); }
+        &:nth-child(5) { transform: rotateY(144deg) translateZ(320px); }
+        &:nth-child(6) { transform: rotateY(180deg) translateZ(320px); }
+        &:nth-child(7) { transform: rotateY(216deg) translateZ(320px); }
+        &:nth-child(8) { transform: rotateY(252deg) translateZ(320px); }
+        &:nth-child(9) { transform: rotateY(288deg) translateZ(320px); }
+        &:nth-child(10) { transform: rotateY(324deg) translateZ(320px); }
+      }
+      .toggle_front_image{
+        opacity: 1;
+        box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px $success;
+        border: none;
+      }
+    }
+  }
+  .spin-options {
+    text-align: center;
+    position: relative;
+    z-index: 25;
+    bottom: 0;
+    p {
+      display: flex;
+      justify-content: space-between;
+      button{
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: $dark;
+        i{
+          color: $success;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

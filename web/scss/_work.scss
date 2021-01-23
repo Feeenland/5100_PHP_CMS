@@ -13,6 +13,7 @@
       width: 100px;
       height: 100px;
       position: relative;
+      object-fit: cover;
       // margin: 10px 0 150px 40px;
       margin: 20px 10px;
       box-shadow: 0 0 2px 4px #000000, 0 0 3px 5px #ad714a;
@@ -43,6 +44,7 @@
       width: 100px;
       height: 100px;
       margin: 5px;
+      object-fit: cover;
       box-shadow: 0 0 2px 4px #000000, 0 0 3px 4px #ad714a;
       @include media-breakpoint-up(sm) {
         margin: 15px;

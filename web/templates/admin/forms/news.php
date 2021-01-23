@@ -40,13 +40,14 @@
     <div class="row">
         <div class="col col-form-label">
             <label class="font_wind">Text</label>
-            <input
-                name="text"
-                class="font_not_wind form-control <?php if(array_key_exists('text', $pageElement['errors'])){ ?> has_error <?php } ?>"
-                type="text"
-                maxlength="50"
-                placeholder="Text"
-                value="<?php print $pageElement['values']['text'] ?? '' ?>">
+            <textarea
+                    class="font_not_wind form-control  <?php if(array_key_exists('text', $pageElement['errors'])){ ?> has_error <?php } ?>"
+                    rows="4"
+                    cols="50"
+                    type="text"
+                    maxlength="500"
+                    name="text"
+                    placeholder="Text"><?php print $pageElement['values']['text'] ?? '' ?></textarea>
 
             <?php if(array_key_exists('text', $pageElement['errors'])){ ?>
                 <span class="error_message font_wind">!!!</span>

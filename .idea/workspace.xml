@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/work.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/work.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +54,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\forms" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\models" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\controllers\admin" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\lists" />
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\controllers\admin" />
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\models" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\work" />
     </key>
   </component>
@@ -91,7 +91,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="105698000" />
+      <workItem from="1610962262571" duration="110103000" />
     </task>
     <servers />
   </component>

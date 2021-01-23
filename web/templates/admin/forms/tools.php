@@ -94,18 +94,18 @@
         <div class="col col-form-label">
             <label class="font_wind">Werkzeug Bild Name</label>
             <input
-                name="image"
-                class="font_not_wind form-control  <?php if(array_key_exists('image', $pageElement['errors'])){ ?> has_error <?php } ?>"
-                type="text"
-                maxlength="100"
+                name="image_id"
+                class="font_not_wind form-control  <?php if(array_key_exists('image_id', $pageElement['errors'])){ ?> has_error <?php } ?>"
+                type="number"
+                maxlength="150"
                 placeholder="image"
-                value="<?php print $pageElement['values']['image'] ?? '' ?>">
+                value="<?php print $pageElement['values']['image_id'] ?? '' ?>">
 
-            <?php if(array_key_exists('image', $pageElement['errors'])){ ?>
+            <?php if(array_key_exists('image_id', $pageElement['errors'])){ ?>
                 <span class="error_message font_wind">!!!</span>
             <?php }
-            if(array_key_exists('image', $pageElement['errors'])){
-            foreach($pageElement['errors']['image'] as $err){
+            if(array_key_exists('image_id', $pageElement['errors'])){
+            foreach($pageElement['errors']['image_id'] as $err){
             ?>
             <p class="error_message"><?php print $err; ?></p>
             <?php

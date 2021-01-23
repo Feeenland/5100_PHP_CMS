@@ -17,7 +17,7 @@ $items = getAllToolItems(); // save all tools items in $items
             <div class="col">
                 <article class="row justify-content-center">
                     <div class="col-10 col-sm-10  col-md-4 col-lg-3">
-                        <img src="img/tools/<?php print $item['image']; ?>" alt="">
+                        <img src="img/<?php print $item['folder_1']; ?>/<?php print $item['filename_1']; ?>" alt="<?php print $item['alt_1']; ?>">
                     </div>
                     <div class="col col-sm-12  col-md-6">
                         <h2><?php print $item['title']; ?></h2>

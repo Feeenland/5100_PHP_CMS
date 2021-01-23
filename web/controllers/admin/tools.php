@@ -29,7 +29,7 @@ $rules = [
     'title' => ['required', 'max20chars'],
     'subtitle' => ['required'],
     'text' => ['required'],
-    'image' => ['required', 'isImage']
+    'image_id' => ['required', 'number']
 ];
 
 if (isset($action)){
@@ -113,7 +113,7 @@ function createToolItem($rules)
                 'title' => $_REQUEST['title'],
                 'subtitle' => $_REQUEST['subtitle'],
                 'text' => $_REQUEST['text'],
-                'image' => $_REQUEST['image']
+                'image_id' => $_REQUEST['image_id']
             ]);
     } else {
         include('models/tools.php');
@@ -162,7 +162,7 @@ function updateToolItem($rules)
                 'title' => $_REQUEST['title'],
                 'subtitle' => $_REQUEST['subtitle'],
                 'text' => $_REQUEST['text'],
-                'image' => $_REQUEST['image']
+                'image_id' => $_REQUEST['image_id']
             ]);
     } else {
         include('models/tools.php');

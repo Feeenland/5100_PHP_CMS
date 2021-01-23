@@ -6,10 +6,19 @@
 
 /**
  * this function = get all items on this list in the DB and save them in the var $items.
+ *
  */
 function getAllToolItems(){
     global $db_connection;
-    $res = mysqli_query($db_connection, "SELECT * FROM tools");
+    $res = mysqli_query($db_connection, "SELECT tools.*,
+        img_1.alt AS alt_1,
+        img_1.filename AS filename_1,
+        folder_1.folder AS folder_1
+        FROM tools,
+        images AS img_1,
+        image_folder AS folder_1
+        WHERE tools.image_id = img_1.id
+        AND img_1.id_folder = folder_1.id");
     $items = [];
     // save all elements from the DB Tools in this array
     while($row = mysqli_fetch_assoc($res)){
@@ -44,12 +53,12 @@ function saveToolEntry($data){
     if (isset($data['id'])){
         // update
         try{
-            $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ?, image = ? WHERE id = ?");
-            $stmt->bind_param("ssssi", $title, $subtitle, $text, $image, $id);
+            $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ?, image_id = ? WHERE id = ?");
+            $stmt->bind_param("sssii", $title, $subtitle, $text, $image_id, $id);
             $title = $data['title'];
             $subtitle = $data['subtitle'];
             $text = $data['text'];
-            $image = $data['image'];
+            $image_id = $data['image_id'];
             $id = $data['id'];
             $stmt->execute();
             return true;
@@ -60,12 +69,12 @@ function saveToolEntry($data){
     }else{
         // Create
         try{
-            $stmt = $db_connection->prepare("INSERT INTO tools (title, subtitle, text, image) VALUES (?,?,?,?)");
-            $stmt->bind_param("ssss", $title, $subtitle, $text, $image);
+            $stmt = $db_connection->prepare("INSERT INTO tools (title, subtitle, text, image_id) VALUES (?,?,?,?)");
+            $stmt->bind_param("sssi", $title, $subtitle, $text, $image_id);
             $title = $data['title'];
             $subtitle = $data['subtitle'];
             $text = $data['text'];
-            $image = $data['image'];
+            $image_id = $data['image_id'];
             $stmt->execute();
             return $stmt->insert_id;
         }catch(Exception $e){

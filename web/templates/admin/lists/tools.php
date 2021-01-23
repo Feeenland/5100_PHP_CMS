@@ -28,7 +28,7 @@
                         <td data-title="Titel"><?php print $item['title']; ?></td>
                         <td data-title="untertitel"><?php print $item['subtitle']; ?></td>
                         <td data-title="Text"><?php print $item['text']; ?></td>
-                        <td data-title="Bild"><?php print $item['image']; ?></td>
+                        <td data-title="Bild"><img src="img/<?php print $item['folder_1']; ?>/<?php print $item['filename_1']; ?>" alt="<?php print $item['alt_1']; ?>" class="table_img"></td>
                         <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
                         <td data-title="X"><button class="btn"><a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">X</a></button></td>
                     </tr>

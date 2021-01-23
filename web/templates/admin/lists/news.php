@@ -24,7 +24,7 @@
             </thead>
             <tbody>
                 <!-- for each registered object make a new entry in the table-->
-                <?php print_r ($pageElement['items']); ?>
+                <?php //print_r ($pageElement['items']); ?>
                 <?php foreach($pageElement['items'] as $item){ ?>
                     <tr>
                         <td data-title="ID"><?php print $item['id']; ?></td>

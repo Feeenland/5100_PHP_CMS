@@ -14,8 +14,8 @@ _If the access data for the database have to be adjusted, this can be found here
 **Login**
 
 _these are the data to log into my website in the backend:_
-- Admin: email: lauralea@ledertatze.com PW: leder
-- User: email: cmsuser@ledertatze.com PW: 5100cmsuser
+- Admin: email: lauralea@ledertatze.com PW: leder // LederTatze95$
+- User: email: cmsuser@ledertatze.com PW: 5100CmsUser!
 
 The only difference between admin and user is = the admin can edit/add and delete users
 

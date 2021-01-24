@@ -3,44 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/logo_patterns/linien_leder - Kopie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/logo_patterns/paw_blue_medium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/armband_blau_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/armband_braun_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/armschiene_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/armschienen_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/beinschine_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/beinschinen_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/brust_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/kopfschmuck_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/lederschmuck_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/new/ruecken_sw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/tools/punzier_muster_nav.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/antique_finish.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/artwort_an_wand.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/augen_uebung_leder.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/beinschine_gefaerbt_nav.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/front_schnalle_bein_cut.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/hintergrund_work_02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/inspiration_lederruestung.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/leder_zeichnung.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/naeh_vorbereitung.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/punzier_uebung_leder.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/punzierstemel_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/punziertes_leder_faerben.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/schnittmuster_02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/work/schulter_lederruestung.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/images.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/works.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/admin/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/images.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/helpers/validations.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/helpers/validations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/forms/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,22 +47,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/SAE/abgaben_prüffungen/4300_Js-Webseite_Laura_Lea_Mueller/02_website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sae/first_lessons" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\config" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\helpers" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\fonts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\js" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\forms" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\lists" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\controllers\admin" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\models" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\img\work" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -127,7 +97,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="124542000" />
+      <workItem from="1610962262571" duration="132719000" />
     </task>
     <servers />
   </component>
@@ -143,10 +113,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611153776713" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611407175564">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611516331094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611407175564" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611516331094" />
     <state x="794" y="439" key="NewPhpFileDialog" timestamp="1611407367961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

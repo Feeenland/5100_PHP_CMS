@@ -189,6 +189,8 @@ function deleteItem($id){
     //print 'delete that';
     include('models/images.php');
     $item = deleteItemById($id);
+    //$res = deleteItemById($_REQUEST);
+    //print $res;
     $location = 'images';
     $happened = 'Gelöscht';
     include 'templates/admin/forms/edit-worked.php';

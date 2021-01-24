@@ -55,4 +55,6 @@
     </div>
 </div>
 
+<script src="js/script_gallery.js"></script>
+
 <!-- ### End ### section Spin ### -->

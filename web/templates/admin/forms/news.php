@@ -15,9 +15,10 @@
 
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Titel</label>
+            <label class="font_wind" for="title">Titel</label>
             <input
                 name="title"
+                id="title"
                 class="font_not_wind form-control <?php if(array_key_exists('title', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
@@ -39,9 +40,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Text</label>
+            <label class="font_wind" for="text">Text</label>
             <textarea
                     class="font_not_wind form-control  <?php if(array_key_exists('text', $pageElement['errors'])){ ?> has_error <?php } ?>"
+                    id="text"
                     rows="4"
                     cols="50"
                     type="text"
@@ -64,9 +66,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">ID Bild Bg</label>
+            <label class="font_wind" for="idbg">ID Bild Bg</label>
             <input
                 name="bg_image"
+                id="idbg"
                 class="font_not_wind form-control <?php if(array_key_exists('bg_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
                 maxlength="150"
@@ -88,9 +91,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">ID Bild Top</label>
+            <label class="font_wind" for="idtop">ID Bild Top</label>
             <input
                 name="top_image"
+                id="idtop"
                 class="font_not_wind form-control <?php if(array_key_exists('top_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
                 maxlength="150"
@@ -112,9 +116,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">ID Bild Mid</label>
+            <label class="font_wind" for="idmid">ID Bild Mid</label>
             <input
                 name="mid_image"
+                id="idmid"
                 class="font_not_wind form-control <?php if(array_key_exists('mid_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
                 maxlength="150"
@@ -136,9 +141,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">ID Bild Bot</label>
+            <label class="font_wind" for="idbot">ID Bild Bot</label>
             <input
                 name="bot_image"
+                id="idbot"
                 class="font_not_wind form-control <?php if(array_key_exists('bot_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
                 maxlength="150"

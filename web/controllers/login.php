@@ -35,7 +35,7 @@ if(isset($_POST['login_try']) ) {
                 updateUserField($usr['id'], 'banned_at', null, 's');
                 updateUserField($usr['id'], 'login_try', 0, 'i');
                 $usr['login_try'] = 0;
-                print $usr['login_try'];
+                //print $usr['login_try'];
             }
 
         }

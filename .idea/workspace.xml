@@ -3,18 +3,44 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_table.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/_work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/_work.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/logo_patterns/linien_leder - Kopie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/logo_patterns/paw_blue_medium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/armband_blau_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/armband_braun_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/armschiene_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/armschienen_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/beinschine_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/beinschinen_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/brust_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/kopfschmuck_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/lederschmuck_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/new/ruecken_sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tools/punzier_muster_nav.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/antique_finish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/artwort_an_wand.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/augen_uebung_leder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/beinschine_gefaerbt_nav.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/front_schnalle_bein_cut.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/hintergrund_work_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/inspiration_lederruestung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/leder_zeichnung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/naeh_vorbereitung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/punzier_uebung_leder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/punzierstemel_test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/punziertes_leder_faerben.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/schnittmuster_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/work/schulter_lederruestung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/images.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/works.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/gallery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/work.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/work.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +127,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="118172000" />
+      <workItem from="1610962262571" duration="124542000" />
     </task>
     <servers />
   </component>

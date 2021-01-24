@@ -16,9 +16,10 @@
 
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Name</label>
+            <label class="font_wind" for="imgname">Name</label>
             <input
                 name="filename"
+                id="imgname"
                 class="font_not_wind form-control <?php if(array_key_exists('filename', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
@@ -40,9 +41,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Alt Tag</label>
+            <label class="font_wind" for="imgalt">Alt Tag</label>
             <input
                 name="alt"
+                id="imgalt"
                 class="font_not_wind form-control <?php if(array_key_exists('alt', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="50"
@@ -64,9 +66,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">ID Ortner</label>
+            <label class="font_wind" for="idfolder">ID Ortner</label>
             <input
                 name="id_folder"
+                id="idfolder"
                 class="font_not_wind form-control <?php if(array_key_exists('id_folder', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"

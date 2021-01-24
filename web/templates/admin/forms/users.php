@@ -16,9 +16,10 @@
 
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Vorname</label>
+            <label class="font_wind" for="firstname">Vorname</label>
             <input
                 name="first_name"
+                id="firstname"
                 class="font_not_wind form-control <?php if(array_key_exists('first_name', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
@@ -40,9 +41,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Nachame</label>
+            <label class="font_wind" for="lastname">Nachame</label>
             <input
                 name="last_name"
+                id="lastname"
                 class="font_not_wind form-control <?php if(array_key_exists('last_name', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
@@ -64,9 +66,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Email</label>
+            <label class="font_wind" for="email">Email</label>
             <input
                 name="email"
+                id="email"
                 class="font_not_wind form-control <?php if(array_key_exists('email', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="30"
@@ -88,9 +91,10 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Passwort</label>
+            <label class="font_wind" for="password">Passwort</label>
             <input
                 name="password"
+                id="password"
                 class="font_not_wind form-control
                 <?php if(array_key_exists('password', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="password"
@@ -116,9 +120,10 @@
 
         <div class="row">
             <div class="col col-form-label">
-                <label class="font_wind">Gebannt um</label>
+                <label class="font_wind" for="banned">Gebannt um</label>
                 <input
                     name="banned_at"
+                    id="banned"
                     class="font_not_wind form-control <?php if(array_key_exists('banned_at', $pageElement['errors'])){ ?> has_error <?php } ?>"
                     type="text"
                     maxlength="100"

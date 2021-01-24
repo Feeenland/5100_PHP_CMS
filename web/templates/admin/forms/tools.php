@@ -17,9 +17,10 @@
 
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Werkzeug Titel</label>
+            <label class="font_wind" for="title">Titel</label>
             <input
                 name="title"
+                id="title"
                 class="font_not_wind form-control  <?php if(array_key_exists('title', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="20"
@@ -42,9 +43,10 @@
 
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Werkzeug Untertitel</label>
+            <label class="font_wind" for="subtitle">Untertitel</label>
             <input
                 name="subtitle"
+                id="subtitle"
                 class="font_not_wind form-control  <?php if(array_key_exists('subtitle', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="text"
                 maxlength="20"
@@ -67,9 +69,10 @@
 
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Werkzeug Text</label>
+            <label class="font_wind" for="text">Text</label>
             <textarea
                 class="font_not_wind form-control  <?php if(array_key_exists('text', $pageElement['errors'])){ ?> has_error <?php } ?>"
+                id="text"
                 rows="4"
                 cols="50"
                 type="text"
@@ -92,13 +95,14 @@
     </div>
     <div class="row">
         <div class="col col-form-label">
-            <label class="font_wind">Werkzeug Bild Name</label>
+            <label class="font_wind" for="imgid">Bild ID</label>
             <input
                 name="image_id"
+                id="imgid"
                 class="font_not_wind form-control  <?php if(array_key_exists('image_id', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
                 maxlength="150"
-                placeholder="image"
+                placeholder="Zahl"
                 value="<?php print $pageElement['values']['image_id'] ?? '' ?>">
 
             <?php if(array_key_exists('image_id', $pageElement['errors'])){ ?>

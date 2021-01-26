@@ -159,6 +159,7 @@ function updateItem($rules)
             $_REQUEST['id'],
             $errors,
             [
+                'id' => $_REQUEST['id'],
                 'filename' => $_REQUEST['filename'],
                 'alt' => $_REQUEST['alt'],
                 'id_folder' => $_REQUEST['id_folder']

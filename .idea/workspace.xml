@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/admin/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/images_folder.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_folder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/images_id_exist.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_id_exist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/works.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/works.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/forms/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/admin/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/works.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +90,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="171882000" />
+      <workItem from="1610962262571" duration="172245000" />
     </task>
     <servers />
   </component>

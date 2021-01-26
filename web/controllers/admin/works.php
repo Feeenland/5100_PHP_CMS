@@ -171,6 +171,7 @@ function updateItem($rules)
             $_REQUEST['id'],
             $errors,
             [
+                'id' => $_REQUEST['id'],
                 'title' => $_REQUEST['title'],
                 'text' => $_REQUEST['text'],
                 'subtitle' => $_REQUEST['subtitle'],

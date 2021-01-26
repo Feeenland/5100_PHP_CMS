@@ -83,7 +83,7 @@ function getItemById($id)
     try {
         $stmt = $db_connection->prepare("SELECT * FROM news WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = $id;
+        $_id = htmlspecialchars($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();
@@ -105,13 +105,13 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("UPDATE news SET title = ?, text = ?, bg_image = ?, top_image = ?, mid_image = ?, bot_image = ? WHERE id = ?");
             $stmt->bind_param("ssiiiii", $title, $text, $bg_image, $top_image, $mid_image, $bot_image, $id);
-            $title = $data['title'];
-            $text = $data['text'];
-            $bg_image = $data['bg_image'];
-            $top_image = $data['top_image'];
-            $mid_image = $data['mid_image'];
-            $bot_image = $data['bot_image'];
-            $id = $data['id'];
+            $title = htmlspecialchars($data['title']);
+            $text = htmlspecialchars($data['text']);
+            $bg_image = htmlspecialchars($data['bg_image']);
+            $top_image = htmlspecialchars($data['top_image']);
+            $mid_image = htmlspecialchars($data['mid_image']);
+            $bot_image = htmlspecialchars($data['bot_image']);
+            $id = htmlspecialchars($data['id']);
             $stmt->execute();
             return true;
         } catch (Exception $e) {
@@ -123,12 +123,12 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("INSERT INTO news (title, text, bg_image, top_image, mid_image, bot_image) VALUES (?,?,?,?,?,?)");
             $stmt->bind_param("ssiiii", $title, $text, $bg_image, $top_image, $mid_image, $bot_image);
-            $title = $data['title'];
-            $text = $data['text'];
-            $bg_image = $data['bg_image'];
-            $top_image = $data['top_image'];
-            $mid_image = $data['mid_image'];
-            $bot_image = $data['bot_image'];
+            $title = htmlspecialchars($data['title']);
+            $text = htmlspecialchars($data['text']);
+            $bg_image = htmlspecialchars($data['bg_image']);
+            $top_image = htmlspecialchars($data['top_image']);
+            $mid_image = htmlspecialchars($data['mid_image']);
+            $bot_image = htmlspecialchars($data['bot_image']);
             $stmt->execute();
             return $stmt->insert_id;
         } catch (Exception $e) {
@@ -147,7 +147,7 @@ function deleteItemById($id)
     try {
         $stmt = $db_connection->prepare("DELETE FROM news WHERE ID = ?");
         $stmt->bind_param("i", $_id);
-        $_id = $id;
+        $_id = htmlspecialchars($id);
         $stmt->execute();
         $result = $stmt->get_result();
     } catch (Exception $e) {

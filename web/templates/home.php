@@ -127,7 +127,7 @@
                     Um diese Hinweise wäre ich sehr froh gewesen, bevor ich angefangen hatte. <br>
                     Ebenfalls findest du Hinweise dazu, wann es sinnvoll ist welches Werkzeug zu verwenden.
                 </p>
-                <button class="btn_1 btn btn-dark"><a href="html/work.html"aria-label="read more about the work-steps"><span class="small">mehr...</span></a></button>
+                <button class="btn_1 btn btn-dark"><a href="index?p=work"aria-label="read more about the work-steps"><span class="small">mehr...</span></a></button>
             </article>
         </div>
 
@@ -137,7 +137,7 @@
                 <p class="standard">Auf dieser Seite sind alle wichtigen und auch ein paar unwichtige Werkzeuge kurz beschrieben,
                     die man benötigt oder mit denen es einfacher ist,
                     Dinge, wie zum Beispiel eine Rüstung mit Leder herzustellen.</p>
-                <button class="btn_1 btn btn-dark"> <a href="html/tools.html" aria-label="read more about the tools of leather work"><span class="small">mehr...</span></a></button>
+                <button class="btn_1 btn btn-dark"> <a href="index?p=tools" aria-label="read more about the tools of leather work"><span class="small">mehr...</span></a></button>
             </article>
         </div>
     </div>

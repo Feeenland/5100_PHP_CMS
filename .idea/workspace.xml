@@ -4,12 +4,21 @@
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/admin/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/admin/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/tools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/admin/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/works.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/helpers/validations.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/helpers/validations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/models/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/forms/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/forms/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/images_folder.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_folder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/images_id_exist.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_id_exist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/works.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/works.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/templates" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -59,11 +68,11 @@
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\fonts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\models" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\js" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\forms" />
       <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\templates\admin\lists" />
-      <recent name="C:\xampp\htdocs\5100_php_website_laura_lea_mueller_WDD919\web\controllers\admin" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -97,7 +106,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="155376000" />
+      <workItem from="1610962262571" duration="171882000" />
     </task>
     <servers />
   </component>
@@ -125,6 +134,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1610962301825" />
+    <state x="1920" y="30" width="1474" height="1023" key="dock-window-1" timestamp="1611680574405">
+      <screen x="1920" y="30" width="1680" height="1010" />
+    </state>
+    <state x="1920" y="30" width="1474" height="1023" key="dock-window-1/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611680574405" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611072095018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -13,7 +13,7 @@
             <tr class="font_wind">
                 <th scope="col">ID</th>
                 <th scope="col">Titel</th>
-                <th scope="col">Text</th>
+                <!--<th scope="col">Text</th>-->
                 <th scope="col">Bild Bg</th>
                 <th scope="col">Bild Top</th>
                 <th scope="col">Bild Mid</th>
@@ -29,7 +29,7 @@
                     <tr>
                         <td data-title="ID"><?php print $item['id']; ?></td>
                         <td data-title="Titel"><?php print $item['title']; ?></td>
-                        <td data-title="Text"><?php print $item['text']; ?></td>
+                       <!-- <td data-title="Text"><?php /*print $item['text']; */?></td>-->
                         <td data-title="Bild Bg"><img src="img/<?php print $item['folderBg']; ?>/<?php print $item['filenameBg']; ?>" alt="<?php print $item['altBg']; ?>" class="table_img"></td>
                         <td data-title="Bild Top"><img src="img/<?php print $item['folderTop']; ?>/<?php print $item['filenameTop']; ?>" alt="<?php print $item['altTop']; ?>" class="table_img"></td>
                         <td data-title="Bild Mid"><img src="img/<?php print $item['folderMid']; ?>/<?php print $item['filenameMid']; ?>" alt="<?php print $item['altMid']; ?>" class="table_img"></td>

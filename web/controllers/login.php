@@ -8,6 +8,8 @@ $login_tries = 3; // 3 tries get the user to log in
 $ban_time = 60 * 60; // in seconds = 1h will the user be banner by 3 fails
 $db_datetime_format = 'Y-m-d H:i:s'; // date format = 2021-01-13 11:06:37
 $login_output = ''; // gives out what happened (fail ty, banned)
+$email = '';
+$errorMessage = '';
 
 if(isset($_POST['login_try']) ) {
     // valid user?
@@ -19,6 +21,8 @@ if(isset($_POST['login_try']) ) {
         $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben'; // mail is wrong
         $page = 'templates/forms/login.php';
         //die('wrong user');
+        $email = htmlspecialchars($_POST['email']);
+        $errorMessage = 'Etwas wurde falsch eingegeben!';
     }else{
         // is user banned?
         if($usr['banned_at'] != null){
@@ -31,6 +35,8 @@ if(isset($_POST['login_try']) ) {
                                     versuchen sie es später erneut! ';
                 $page = 'templates/forms/login.php';
                 //die('You are banned. Wait longer');
+                $email = htmlspecialchars($_POST['email']);
+                $errorMessage = 'Immernoch Gebannt !';
             }else{ // waited long enough = reset the field banned_at an login_try in the DB.
                 updateUserField($usr['id'], 'banned_at', null, 's');
                 updateUserField($usr['id'], 'login_try', 0, 'i');
@@ -65,6 +71,8 @@ if(isset($_POST['login_try']) ) {
                                     versuchen sie es später erneut! <br>
                                     zeit der Bannung: '.date('Y-m-d H:i:s');
                     $page = 'templates/forms/login.php';
+                    $email = htmlspecialchars($_POST['email']);
+                    $errorMessage = 'Gebannt! um: '.date('Y-m-d H:i:s');
                     //die('ban user: ' . date('Y-m-d H:i:s'));
                 }else{
                     // update login_try ++ in DB.
@@ -72,6 +80,8 @@ if(isset($_POST['login_try']) ) {
                     $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben';
                     $page = 'templates/forms/login.php';
                     //die('mistake counter incremented');
+                    $email = htmlspecialchars($_POST['email']);
+                    $errorMessage = 'Etwas wurde falsch eingegeben!';
                 }
             }
         }

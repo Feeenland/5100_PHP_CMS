@@ -26,6 +26,15 @@ if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actio
 
 
 // rules defined for the Validations(.php)
+/*$rules = [
+    'title' => ['required', 'max20chars'],
+    'text' => ['required'],
+    'bg_image' => ['required','number'],
+    'top_image' => ['required','number'],
+    'mid_image' => ['required','number'],
+    'bot_image' => ['required','number']
+];*/
+
 $rules = [
     'title' => ['required', 'max20chars'],
     'text' => ['required'],

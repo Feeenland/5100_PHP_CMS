@@ -13,9 +13,9 @@
             <tr class="font_wind">
                 <th scope="col">ID</th>
                 <th scope="col">Titel</th>
-                <th scope="col">Text</th>
-                <th scope="col">Untertitel</th>
-                <th scope="col">Text unten</th>
+                <!--<th scope="col">Text</th>-->
+                <!--<th scope="col">Untertitel</th>-->
+                <!--<th scope="col">Text unten</th>-->
                 <th scope="col">Bild 1</th>
                 <th scope="col">Bild 2</th>
                 <th scope="col">Bild 3</th>
@@ -33,9 +33,9 @@
                     <tr>
                         <td data-title="ID"><?php print $item['id']; ?></td>
                         <td data-title="Titel"><?php print $item['title']; ?></td>
-                        <td data-title="Text"><?php print $item['text']; ?></td>
-                        <td data-title="Untertitel"><?php print $item['subtitle']; ?></td>
-                        <td data-title="Text unten"><?php print $item['sub_text']; ?></td>
+                       <!-- <td data-title="Text"><?php /*print $item['text']; */?></td>-->
+                        <!--<td data-title="Untertitel"><?php /*print $item['subtitle']; */?></td>-->
+                       <!-- <td data-title="Text unten"><?php /*print $item['sub_text']; */?></td>-->
                         <td data-title="Bild 1"><img src="img/<?php print $item['folder1']; ?>/<?php print $item['filename1']; ?>" alt="<?php print $item['alt1']; ?>" class="table_img"></td>
                         <td data-title="Bild 2"><img src="img/<?php print $item['folder2']; ?>/<?php print $item['filename2']; ?>" alt="<?php print $item['alt2']; ?>" class="table_img"></td>
                         <td data-title="Bild 3"><img src="img/<?php print $item['folder3']; ?>/<?php print $item['filename3']; ?>" alt="<?php print $item['alt3']; ?>" class="table_img"></td>

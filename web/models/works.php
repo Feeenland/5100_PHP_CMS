@@ -86,7 +86,7 @@ function getItemById($id)
     try {
         $stmt = $db_connection->prepare("SELECT * FROM works WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = $id;
+        $_id = htmlspecialchars($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();
@@ -108,17 +108,17 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("UPDATE works SET title = ?, text = ?, subtitle = ?, sub_text = ?, image_1 = ?, image_2 = ?, image_3 = ?, image_4 = ?, image_5 = ?, image_6 = ? WHERE id = ?");
             $stmt->bind_param("ssssiiiiiii", $title, $text, $subtitle, $sub_text, $image_1, $image_2, $image_3, $image_4, $image_5, $image_6, $id);
-            $title = $data['title'];
-            $text = $data['text'];
-            $subtitle = $data['subtitle'];
-            $sub_text = $data['sub_text'];
-            $image_1 = $data['image_1'];
-            $image_2 = $data['image_2'];
-            $image_3 = $data['image_3'];
-            $image_4 = $data['image_4'];
-            $image_5 = $data['image_5'];
-            $image_6 = $data['image_6'];
-            $id = $data['id'];
+            $title = htmlspecialchars($data['title']);
+            $text = htmlspecialchars($data['text']);
+            $subtitle = htmlspecialchars($data['subtitle']);
+            $sub_text = htmlspecialchars($data['sub_text']);
+            $image_1 = htmlspecialchars($data['image_1']);
+            $image_2 = htmlspecialchars($data['image_2']);
+            $image_3 = htmlspecialchars($data['image_3']);
+            $image_4 = htmlspecialchars($data['image_4']);
+            $image_5 = htmlspecialchars($data['image_5']);
+            $image_6 = htmlspecialchars($data['image_6']);
+            $id = htmlspecialchars($data['id']);
             $stmt->execute();
             return true;
         } catch (Exception $e) {
@@ -130,16 +130,16 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("INSERT INTO works (title, text, subtitle, sub_text, image_1, image_2, image_3, image_4, image_5, image_6) VALUES (?,?,?,?,?,?,?,?,?,?)");
             $stmt->bind_param("ssssiiiiii", $title,  $text, $subtitle, $sub_text, $image_1, $image_2, $image_3, $image_4, $image_5, $image_6);
-            $title = $data['title'];
-            $text = $data['text'];
-            $subtitle = $data['subtitle'];
-            $sub_text = $data['sub_text'];
-            $image_1 = $data['image_1'];
-            $image_2 = $data['image_2'];
-            $image_3 = $data['image_3'];
-            $image_4 = $data['image_4'];
-            $image_5 = $data['image_5'];
-            $image_6 = $data['image_6'];
+            $title = htmlspecialchars($data['title']);
+            $text = htmlspecialchars($data['text']);
+            $subtitle = htmlspecialchars($data['subtitle']);
+            $sub_text = htmlspecialchars($data['sub_text']);
+            $image_1 = htmlspecialchars($data['image_1']);
+            $image_2 = htmlspecialchars($data['image_2']);
+            $image_3 = htmlspecialchars($data['image_3']);
+            $image_4 = htmlspecialchars($data['image_4']);
+            $image_5 = htmlspecialchars($data['image_5']);
+            $image_6 = htmlspecialchars($data['image_6']);
             $stmt->execute();
             return $stmt->insert_id;
         } catch (Exception $e) {
@@ -158,7 +158,7 @@ function deleteItemById($id)
     try {
         $stmt = $db_connection->prepare("DELETE FROM works WHERE ID = ?");
         $stmt->bind_param("i", $_id);
-        $_id = $id;
+        $_id = htmlspecialchars($id);
         $stmt->execute();
         $result = $stmt->get_result();
     } catch (Exception $e) {

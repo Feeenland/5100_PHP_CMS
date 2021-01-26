@@ -40,7 +40,7 @@ function getItemById($id)
     try {
         $stmt = $db_connection->prepare("SELECT * FROM images WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = $id;
+        $_id = htmlspecialchars($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();
@@ -61,10 +61,10 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("UPDATE images SET alt = ?, filename = ?, id_folder = ? WHERE id = ?");
             $stmt->bind_param("sssi", $alt, $filename, $id_folder, $id);
-            $alt = $data['alt'];
-            $filename = $data['filename'];
-            $id_folder = $data['id_folder'];
-            $id = $data['id'];
+            $alt = htmlspecialchars($data['alt']);
+            $filename = htmlspecialchars($data['filename']);
+            $id_folder = htmlspecialchars($data['id_folder']);
+            $id = htmlspecialchars($data['id']);
             $stmt->execute();
             return true;
         } catch (Exception $e) {
@@ -76,9 +76,9 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("INSERT INTO images (alt, filename, id_folder) VALUES (?,?,?)");
             $stmt->bind_param("sss", $alt, $filename, $id_folder);
-            $alt = $data['alt'];
-            $filename = $data['filename'];
-            $id_folder = $data['id_folder'];
+            $alt = htmlspecialchars($data['alt']);
+            $filename = htmlspecialchars($data['filename']);
+            $id_folder = htmlspecialchars($data['id_folder']);
             $stmt->execute();
             return $stmt->insert_id;
         } catch (Exception $e) {
@@ -98,7 +98,7 @@ function deleteItemById($id)
     try {
         $stmt = $db_connection->prepare("DELETE FROM images WHERE ID = ?");
         $stmt->bind_param("i", $_id);
-        $_id = $id;
+        $_id = htmlspecialchars($id);
         $stmt->execute();
         $result = $stmt->get_result();
     } catch (Exception $e) {

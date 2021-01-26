@@ -4,6 +4,10 @@
  * */
 ?>
 
+<?php
+
+?>
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -30,11 +34,25 @@
                 <input type="hidden" name="login_try" value="1">
                 <div class="form-group row">
                     <label for="email" class="col col-form-label font_wind">Email Addresse</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-control<?php if(strlen($errorMessage)>0){ ?> has_error <?php } ?>"
+                        id="email"
+                        placeholder="name@example.com"
+                        value="<?php if (isset($email)){ print $email;}?>">
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword" class="col col-form-label font_wind">Passwort</label>
-                    <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input
+                        type="password"
+                        name="password"
+                        class="form-control <?php if(strlen($errorMessage)>0){ ?> has_error <?php } ?>"
+                        id="inputPassword"
+                        placeholder="Password">
+                    <?php if (isset($errorMessage) && (strlen($errorMessage)>0)) { ?>
+                        <p class="error_message"><?php print $errorMessage; ?></p>
+                    <?php } ?>
                 </div>
                 <div class="row justify-content-center">
                     <button type="submit" class="btn_1 btn btn_send">Senden</button>

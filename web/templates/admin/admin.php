@@ -47,35 +47,35 @@ if (isset($_REQUEST['module'])) {
             <div class="row">
                 <div class="col">
                     <button class="btn btn_1 btn_admin <?php if($module=='news'){print 'active';} ?>">
-                        <a href="index.php?p=admin&module=news&action=list">Neues</a>
+                        <a href="index?p=admin&module=news&action=list">Neues</a>
                     </button>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <button class="btn btn_1 btn_admin <?php if($module=='works'){print 'active';} ?>">
-                        <a href="index.php?p=admin&module=works&action=list">Arbeit</a>
+                        <a href="index?p=admin&module=works&action=list">Arbeit</a>
                     </button>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <button class="btn btn_1 btn_admin <?php if($module=='tools'){print 'active';} ?> ">
-                        <a class="" href="index.php?p=admin&module=tools&action=list">Werkzeug</a>
+                        <a class="" href="index?p=admin&module=tools&action=list">Werkzeug</a>
                     </button>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <button class="btn btn_1 btn_admin disabled" disabled>
-                        Gallery
+                        Galerie
                     </button>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <button class="btn btn_1 btn_admin <?php if($module=='images'){print 'active';} ?>">
-                        <a href="index.php?p=admin&module=images&action=list">Bilder Verwalten</a>
+                        <a href="index?p=admin&module=images&action=list">Bilder</a>
                     </button>
                 </div>
             </div>
@@ -84,7 +84,7 @@ if (isset($_REQUEST['module'])) {
                 <div class="row">
                     <div class="col">
                         <button class="btn btn_1 btn_admin <?php if($module=='users'){print 'active';} ?>">
-                            <a href="index.php?p=admin&module=users&action=list">User Verwalten</a>
+                            <a href="index?p=admin&module=users&action=list">User</a>
                         </button>
                     </div>
                 </div>
@@ -94,7 +94,13 @@ if (isset($_REQUEST['module'])) {
 
 
             <?php
-            include 'controllers/admin.php';
+            if(isset($_SESSION['logged_in'])){
+                include 'controllers/admin.php';
+            } else{
+                print '<p class="lead error_message">Um diese Seite Bearbeiten zu können musst dich einloggen! <br> </p>
+                            <a href="index?p=login"><button class="btn btn_1 btn_send">Login</button></a>';
+            }
+
             ?>
 
 

@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Gallerie</h1>
+            <h1>Galerie</h1>
         </div>
     </div>
 </div>

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/admin/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/admin/images.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/admin/lists/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/lists/images.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/admin/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/forms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/forms/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <workItem from="1609745451842" duration="41651000" />
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
-      <workItem from="1610962262571" duration="139817000" />
+      <workItem from="1610962262571" duration="143715000" />
     </task>
     <servers />
   </component>

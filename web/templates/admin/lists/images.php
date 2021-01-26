@@ -30,7 +30,7 @@
                         <td data-title="Alt Tag"><?php print $item['alt']; ?></td>
                         <td data-title="Name"><?php print $item['filename']; ?></td>
                         <td data-title="ID Folder"><?php print $item['id_folder'].' = '.$item['folder']; ?></td>
-                        <td data-title="Bild"><img src="img/<?php print $item['folder']; ?>/<?php print $item['filename']; ?>" alt="" class="table_img"></td>
+                        <td data-title="Bild"><img src="img/<?php print $item['folder']; ?>/<?php print $item['filename']; ?>" alt="<?php print $item['alt']; ?>" class="table_img"></td>
                         <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
                        <!-- <td data-title="X"><button class="btn"><a href="<?php /*print $pageElement['delete_link'] . $item['id']; */?>">X</a></button></td>-->
                     </tr>

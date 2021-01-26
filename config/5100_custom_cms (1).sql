@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 24. Jan 2021 um 18:15
+-- Erstellungszeit: 26. Jan 2021 um 19:46
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.4.10
 
@@ -195,9 +195,14 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `text`, `bg_image`, `top_image`, `mid_image`, `bot_image`) VALUES
-(1, 'Leder Brustplatte', 'Eine Lederbrustplatte für das DF LARP.', 3, 2, 2, 4),
-(2, 'Armschiene', 'Armschiene passen zur plattenrüstung.', 3, 2, 3, 4),
-(4, 'Buskatze', 'lorem...i', 3, 4, 4, 2);
+(1, 'Leder Brustplatte', 'Eine Lederbrustplatte für das DF LARP.', 85, 17, 11, 52),
+(2, 'Armschiene', 'Armschiene passen zur plattenrüstung.', 12, 13, 57, 51),
+(4, 'Beinschienen', 'Beinschienen passend zur Brustplatte', 14, 68, 15, 16),
+(5, 'Ledergurt', 'Blauer Ledergurt mit Punzierten Federn und Pfoten. Angefertigt nach Auftrag.', 23, 40, 23, 41),
+(6, 'Gebundenes Buch', 'Lederbuch Komplett selbst gemacht, mit Papier färben und Binden.', 18, 20, 19, 53),
+(7, 'Gürtel', 'Brauner Gürtel mit Spezifischen logo angefertigt.', 46, 47, 21, 22),
+(8, 'Gürtel', 'Gürtel Braun und schlicht.', 42, 43, 44, 45),
+(9, 'Ledertasche', 'Ledertasche aus dünnem Leder genäht. Auf Wunsch in Farbe und Form.', 54, 55, 54, 55);
 
 -- --------------------------------------------------------
 
@@ -218,7 +223,7 @@ CREATE TABLE `tools` (
 --
 
 INSERT INTO `tools` (`id`, `title`, `subtitle`, `text`, `image_id`) VALUES
-(16, 'Messer', 'zum schneiden', 'Ein gutes Messer ist wichtig, um das Leder schön schneiden zu können. Ich würde sowas wie ein Teppichmesser empfehlen. Für gerade Linien kann es helfen, an einem Massstab entlang zu schneiden.', 118),
+(16, 'Messer', 'zum schneiden', 'Ein gutes Messer ist wichtig, um das Leder schön schneiden zu können. Ich würde sowas wie ein Teppichmesser empfehlen. Für gerade Linien kann es helfen, an einem Massstab entlang zu schneiden. ', 118),
 (22, 'Schneidematte', 'Schützt den Tisch', 'Eine Schneidematte ist sinnvoll, damit der Arbeitstisch, der Boden und alles andere ganz bleibt. Karton würde ich nicht empfehlen, da schneidet man schnell durch. Ich spreche aus Erfahrung. Die Schneidematte legt man unter das Leder. Darauf achten, dass wirklich alles Leder auf der Matte liegt.', 127),
 (23, 'Hammer', 'Zum Hämmern', 'Braucht man, wenn man das Leder punzieren will, um die Stempel in das Leder zu hämmern. Ich empfehle, einen Gummihammer zu verwenden, um die Stempel und Setter in einem guten Zustand zu halten. Und um weniger Ärger mit den Nachbarn zu haben.', 113),
 (24, 'Granitplatte', 'solider Untergrund', 'Ist nicht zwingend nötig. Der harte Untergrund hilft, um das Leder gleichmässig bearbeiten zu können, ohne Verlust des Musters durch zu weichen Untergrund. Die Platte beim Punzieren unter das Leder legen.', 112),
@@ -264,8 +269,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `first_name`, `last_name`, `password`, `role`, `login_try`, `banned_at`) VALUES
 (1, 'lauralea@ledertatze.com', 'Laura Lea', 'Mueller', '$2y$10$kvesD0pTOWo.VrCHiQykJuvETvM.rz2SbkgXoa0TgXFEUlSfDfOpi', 'admin', 0, NULL),
-(2, 'cmsuser@ledertatze.com', 'cms', 'user', '$2y$10$5rpH8Hu1buMU4enzyX1cW.9NcNR7T4ILvRT7d6O84Cg5x2JVvCOOm', 'user', 0, '0000-00-00 00:00:00'),
-(15, 'm@u.mau', 'mau', 'mau', '$2y$10$gmXTa.oZPCxCo1qP04BEweTrLpzYjvwX3lzMQUM4YmKDXu7g45fIq', 'user', 0, NULL);
+(2, 'cmsuser@ledertatze.com', 'cms', 'user', '$2y$10$MqH88V9.SN2qG1OYegKkDeFQX.Siu8W1Lr9aA7WLe9jO7LclhM7Wq', 'user', 0, NULL),
+(15, 'm@u.mau', 'mau', 'mau', '$2y$10$4f0qXvLK5ZUBqLAnPIXKHelvsnXKy9xqyLltBfRSrLrHIZwmJNBA.', 'user', 2, NULL),
+(16, 'kaio@katze.com', 'katze', 'Kaio!', '$2y$10$FLFL9sDp5yPvFeYh18v9leSW.0Xp4yf3sKj2W0oiuh6lz0HCb6HMu', 'user', 0, NULL);
 
 --
 -- Indizes der exportierten Tabellen
@@ -315,7 +321,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT für Tabelle `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
 -- AUTO_INCREMENT für Tabelle `image_folder`
@@ -327,19 +333,19 @@ ALTER TABLE `image_folder`
 -- AUTO_INCREMENT für Tabelle `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT für Tabelle `tools`
 --
 ALTER TABLE `tools`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT für Tabelle `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints der exportierten Tabellen

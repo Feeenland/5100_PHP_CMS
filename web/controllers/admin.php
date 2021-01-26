@@ -12,7 +12,8 @@ $modules = [
     'works' => $admin_path . 'works.php',
     'tools' => $admin_path . 'tools.php',
     'users' => $admin_path . 'users.php',
-    'images' => $admin_path . 'images.php'
+    'images' => $admin_path . 'images.php',
+    'gallerys' => $admin_path . 'gallerys.php'
 ];
 
 $default_module = 'tools';

@@ -15,8 +15,8 @@ if (isset($_REQUEST['module'])) {
         $titleBackend = 'Arbeitsschritte';
     }else if ($_REQUEST['module'] == 'tools') {
         $titleBackend = 'Werkzeug';
-    }else if ($_REQUEST['module'] == 'gallery') {
-        $titleBackend = 'Gallerie';
+    }else if ($_REQUEST['module'] == 'gallerys') {
+        $titleBackend = 'Galerie';
     }else if ($_REQUEST['module'] == 'images') {
         $titleBackend = 'Bilder';
     }else if ($_REQUEST['module'] == 'users') {
@@ -73,9 +73,10 @@ if (isset($_REQUEST['module'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn_1 btn_admin disabled" disabled>
-                        Galerie
-                    </button>
+                    <a class="" href="index?p=admin&module=gallerys&action=list">
+                        <button class="btn btn_1 btn_admin <?php if($module=='gallerys'){print 'active';} ?> ">
+                            Galerie
+                        </button>
                 </div>
             </div>
             <div class="row">

@@ -23,7 +23,10 @@
 </div>
 
 
-
+<?php
+include 'models/gallerys.php'; //include the function to get all the tools items
+$items = getAllImages(); // save all tools items in $items
+?>
 
 <!-- ### start ### section Spin ### -->
 <div class="container">
@@ -32,7 +35,12 @@
             <section class="spin_gallery" id="spin_gallery">
                 <div class="spin">
                     <div class="spin_wrap">
-                        <div class="spin_img toggle_front_image">0<img src="img/new/brust.jpg"  alt="Brustplatte auf Fell"></div>
+                        <?php foreach($items as $item){ ?>
+
+                          <div class="spin_img <?php if($item['id']== 1){print 'toggle_front_image';} ?> "><?php print $item['id']; ?><img src="img/<?php print $item['folder']; ?>/<?php print $item['filename']; ?>" alt="<?php print $item['alt']; ?>"></div>
+
+                        <?php } ?>
+                     <!--   <div class="spin_img toggle_front_image">0<img src="img/new/brust.jpg"  alt="Brustplatte auf Fell"></div>
                         <div class="spin_img">1<img src="img/new/armband_blau.jpg"  alt="Armband blau auf Fell"></div>
                         <div class="spin_img">2<img src="img/new/kopfschmuck.jpg"  alt="Kopfschmuck auf Fell"></div>
                         <div class="spin_img">3<img src="img/new/beinschine_spin.jpg"  alt="Beinschine auf Fell"></div>
@@ -41,7 +49,7 @@
                         <div class="spin_img">6<img src="img/new/beinschinen_spin.jpg"  alt="Beinschinen auf Fell"></div>
                         <div class="spin_img">7<img src="img/new/armschienen.jpg"  alt="Armschienen auf Fell"></div>
                         <div class="spin_img">8<img src="img/new/lederschmuck.jpg"  alt="Lederschmuck auf Fell"></div>
-                        <div class="spin_img">9<img src="img/new/pencile_armor_spin.jpg"  alt="getragene Lederrüstung schwarz weiss"></div>
+                        <div class="spin_img">9<img src="img/new/pencile_armor_spin.jpg"  alt="getragene Lederrüstung schwarz weiss"></div>-->
                     </div>
                 </div>
                 <div class="spin-options" id="spin-options">

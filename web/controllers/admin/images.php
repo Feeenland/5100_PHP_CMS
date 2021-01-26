@@ -28,7 +28,7 @@ if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actio
 // rules defined for the Validations(.php)
 $rules = [
     'alt' => ['required'],
-    'filename' => ['required'],
+    'filename' => ['required','isImage'],
     'id_folder' => ['required','number']
 ];
 

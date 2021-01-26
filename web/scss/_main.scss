@@ -46,6 +46,7 @@ body{
     padding: 5px;
     margin: 15px 0;
     font-size: 1.5rem;
+    color: $light;
     a{
       width: 100%;
       height: 100%;
@@ -59,9 +60,8 @@ body{
     }
   }
   .btn_admin.active{
-    a{
       color: $secondary;
-    }
+    //box-shadow: 1px 2px 7px $primary;
   }
   .btn_send{
     width: 50%;

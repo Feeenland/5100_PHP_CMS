@@ -16,7 +16,7 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-9">
             <p class="lead">
-                Einige eindrücke einer Lederrüstung.
+                Einige eindrücke von Lederarbeiten.
             </p>
         </div>
     </div>
@@ -40,7 +40,8 @@ $items = getAllImages(); // save all tools items in $items
                           <div class="spin_img <?php if($item['id']== 1){print 'toggle_front_image';} ?> "><?php print $item['id']; ?><img src="img/<?php print $item['folder']; ?>/<?php print $item['filename']; ?>" alt="<?php print $item['alt']; ?>"></div>
 
                         <?php } ?>
-                     <!--   <div class="spin_img toggle_front_image">0<img src="img/new/brust.jpg"  alt="Brustplatte auf Fell"></div>
+                     <!-- HTML only
+                       <div class="spin_img toggle_front_image">0<img src="img/new/brust.jpg"  alt="Brustplatte auf Fell"></div>
                         <div class="spin_img">1<img src="img/new/armband_blau.jpg"  alt="Armband blau auf Fell"></div>
                         <div class="spin_img">2<img src="img/new/kopfschmuck.jpg"  alt="Kopfschmuck auf Fell"></div>
                         <div class="spin_img">3<img src="img/new/beinschine_spin.jpg"  alt="Beinschine auf Fell"></div>

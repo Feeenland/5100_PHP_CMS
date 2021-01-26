@@ -77,6 +77,7 @@ if (isset($_REQUEST['module'])) {
                         <button class="btn btn_1 btn_admin <?php if($module=='gallerys'){print 'active';} ?> ">
                             Galerie
                         </button>
+                    </a>
                 </div>
             </div>
             <div class="row">

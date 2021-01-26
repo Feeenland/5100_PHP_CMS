@@ -11,10 +11,12 @@ $errorFeedback = [
     'isImage' => 'Dieses Feld muss ein Bildername mit .jpg, .jpeg oder .png enthalten.',
     'isEmail' => 'Bitte eine Korrekt Email adresse angeben.',
     'max20chars' => 'Dieses Feld darf max. 20 Zeichen haben',
+    'existImgId' => 'Bitte eine existierende Bild ID wählen',
     'password' => 'Das Passwort muss mindestens 8 zeichen, 2 Grossbuchstaben, 1 spezielles zeichen, 2 zahlen und 3 Kleinbuchstaben haben' //not now in use
 ];
 
 function validateFields($fieldRules){
+    include 'models/images_id_exist.php';
     global $errorFeedback;
     $errors = [];
     foreach($fieldRules as $field => $rules){
@@ -53,7 +55,14 @@ function validateFields($fieldRules){
                 }
             }
 
+            if($rule == 'existImgId'){
+                if($value != '' && existImgId($value) == 0){
+                    $fieldErrors[] = $errorFeedback[$rule]; // 'exist Img ID'
+                }
+            }
+
             if($rule == 'password'){
+
                 if($value != '' && ! preg_match('/^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$/', $value)){
                     $fieldErrors[] = $errorFeedback[$rule];
                     //'its a password with = 8 characters length oe more, 2 letters in Upper Case, 1 Special Character, 2 numerals, 3 letters in Lower Case'

@@ -29,11 +29,12 @@ if (isset($_REQUEST['action']) && in_array($_REQUEST['action'], $available_actio
 $rules = [
     'title' => ['required', 'max20chars'],
     'text' => ['required'],
-    'bg_image' => ['required','number'],
-    'top_image' => ['required','number'],
-    'mid_image' => ['required','number'],
-    'bot_image' => ['required','number']
+    'bg_image' => ['required','number','existImgId'],
+    'top_image' => ['required','number','existImgId'],
+    'mid_image' => ['required','number','existImgId'],
+    'bot_image' => ['required','number','existImgId']
 ];
+
 
 if (isset($action)){
     switch ($action) {

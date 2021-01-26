@@ -3,13 +3,11 @@
  * This file defines the tasks that are to take place in the DB, for the Images list.
  */
 
-
 /**
  * this function = get all items on this list in the DB and save them in the var $items.
  * It also add the folder names by the id in a new column.
  */
-function getAllimages()
-{
+function getAllimages(){
     global $db_connection;
     $res = mysqli_query($db_connection, "SELECT images.*, image_folder.folder FROM images JOIN image_folder ON images.id_folder = image_folder.id");
     $items = [];
@@ -50,7 +48,6 @@ function getItemById($id)
         return false;
     }
 }
-
 
 /**
  * this function = saves a Item in the DB.
@@ -93,6 +90,7 @@ function saveEntry($data)
 
 /**
  * this function = Deletes a specific Item form the DB.
+ * I won't use this. there will be no need to delete Images.
  */
 function deleteItemById($id)
 {

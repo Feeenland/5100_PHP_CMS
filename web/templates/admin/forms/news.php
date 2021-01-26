@@ -72,7 +72,7 @@
                 id="idbg"
                 class="font_not_wind form-control <?php if(array_key_exists('bg_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
-                maxlength="150"
+                maxlength="1500"
                 placeholder="Zahl"
                 value="<?php print $pageElement['values']['bg_image'] ?? '' ?>">
 
@@ -97,7 +97,7 @@
                 id="idtop"
                 class="font_not_wind form-control <?php if(array_key_exists('top_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
-                maxlength="150"
+                maxlength="1500"
                 placeholder="Zahl"
                 value="<?php print $pageElement['values']['top_image'] ?? '' ?>">
 
@@ -122,7 +122,7 @@
                 id="idmid"
                 class="font_not_wind form-control <?php if(array_key_exists('mid_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
-                maxlength="150"
+                maxlength="1500"
                 placeholder="Zahl"
                 value="<?php print $pageElement['values']['mid_image'] ?? '' ?>">
 
@@ -147,7 +147,7 @@
                 id="idbot"
                 class="font_not_wind form-control <?php if(array_key_exists('bot_image', $pageElement['errors'])){ ?> has_error <?php } ?>"
                 type="number"
-                maxlength="150"
+                maxlength="1500"
                 placeholder="Zahl"
                 value="<?php print $pageElement['values']['bot_image'] ?? '' ?>">
 

@@ -46,23 +46,29 @@ if (isset($_REQUEST['module'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn_1 btn_admin <?php if($module=='news'){print 'active';} ?>">
-                        <a href="index?p=admin&module=news&action=list">Neues</a>
-                    </button>
+                    <a href="index?p=admin&module=news&action=list">
+                        <button class="btn btn_1 btn_admin <?php if($module=='news'){print 'active';} ?>">
+                            Neues
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn_1 btn_admin <?php if($module=='works'){print 'active';} ?>">
-                        <a href="index?p=admin&module=works&action=list">Arbeit</a>
-                    </button>
+                    <a href="index?p=admin&module=works&action=list">
+                        <button class="btn btn_1 btn_admin <?php if($module=='works'){print 'active';} ?>">
+                            Arbeit
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn_1 btn_admin <?php if($module=='tools'){print 'active';} ?> ">
-                        <a class="" href="index?p=admin&module=tools&action=list">Werkzeug</a>
-                    </button>
+                    <a class="" href="index?p=admin&module=tools&action=list">
+                        <button class="btn btn_1 btn_admin <?php if($module=='tools'){print 'active';} ?> ">
+                            Werkzeug
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -74,18 +80,22 @@ if (isset($_REQUEST['module'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn_1 btn_admin <?php if($module=='images'){print 'active';} ?>">
-                        <a href="index?p=admin&module=images&action=list">Bilder</a>
-                    </button>
+                    <a href="index?p=admin&module=images&action=list">
+                        <button class="btn btn_1 btn_admin <?php if($module=='images'){print 'active';} ?>">
+                            Bilder
+                        </button>
+                    </a>
                 </div>
             </div>
             <!-- only the admin can do this ! -->
             <?php if(isset($_SESSION['role']) == 1){ ?>
                 <div class="row">
                     <div class="col">
-                        <button class="btn btn_1 btn_admin <?php if($module=='users'){print 'active';} ?>">
-                            <a href="index?p=admin&module=users&action=list">User</a>
-                        </button>
+                        <a href="index?p=admin&module=users&action=list">
+                            <button class="btn btn_1 btn_admin <?php if($module=='users'){print 'active';} ?>">
+                                User
+                            </button>
+                        </a>
                     </div>
                 </div>
             <?php } ?>

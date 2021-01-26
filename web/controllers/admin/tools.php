@@ -29,7 +29,7 @@ $rules = [
     'title' => ['required', 'max20chars'],
     'subtitle' => ['required'],
     'text' => ['required'],
-    'image_id' => ['required', 'number']
+    'image_id' => ['required', 'number','existImgId']
 ];
 
 if (isset($action)){

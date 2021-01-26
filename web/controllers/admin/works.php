@@ -31,13 +31,14 @@ $rules = [
     'text' => ['required'],
     'subtitle' => ['required'],
     'sub_text' => ['required'],
-    'image_1' => ['required','number'],
-    'image_2' => ['required','number'],
-    'image_3' => ['required','number'],
-    'image_4' => ['required','number'],
-    'image_5' => ['required','number'],
-    'image_6' => ['required','number']
+    'image_1' => ['required','number','existImgId'],
+    'image_2' => ['required','number','existImgId'],
+    'image_3' => ['required','number','existImgId'],
+    'image_4' => ['required','number','existImgId'],
+    'image_5' => ['required','number','existImgId'],
+    'image_6' => ['required','number','existImgId']
 ];
+
 
 if (isset($action)){
     switch ($action) {
@@ -130,7 +131,7 @@ function createnewItem($rules)
         include('models/works.php');
         $res = saveEntry($_REQUEST);
         if ($res == false) {
-            die('Speichern fehlgeschlagen');
+            die('Speichern fehlgeschlagen 77');
         } else {
             // redirect to overview to prevent double-save
             //header('Location: index.php?p=admin&module=tools&action=list', true, 301);
@@ -185,7 +186,7 @@ function updateItem($rules)
         include('models/works.php');
         $res = saveEntry($_REQUEST);
         if ($res == false) {
-            print 'Speichern fehlgeschlagen';
+            print 'Speichern fehlgeschlagen 88';
             //die('Speichern fehlgeschlagen');
         } else {
             // redirect to overview tools list

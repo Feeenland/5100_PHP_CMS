@@ -34,11 +34,11 @@
                         <td data-title="Rolle"><?php print $item['role']; ?></td>
                         <td data-title="Gebannt um"><?php print $item['banned_at']; ?></td>
                         <td data-title="Editieren"><button class="btn"><a href="<?php print $pageElement['edit_link'] . $item['id']; ?>">Editieren</a></button></td>
-                        <td data-title="X"><button class="btn"<?php if ($item['id']== 1){print 'disabled'; //so its not possible to delete the admin ?>>
-                                <?php print '!'; } else{?>
-                                <a href="<?php print $pageElement['delete_link'] . $item['id']; ?>">X</a>
-                                    <?php }?>
-                            </button></td>
+                        <td data-title="X">
+
+                            <button class="btn" <?= $item['id']== 1 ? 'disabled>!': "><a href=".$pageElement['delete_link'] . $item['id'].">X</a>";?></button>
+
+                        </td>
                     </tr>
                 <?php } ?>
             </tbody>

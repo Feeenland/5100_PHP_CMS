@@ -5,19 +5,31 @@ SAE Institute Zürich, Submission date Jan, 28. 2021
 ## For the teacher who reviews and evaluates the project
 **Database**
 
-_the file to create the Database is in this folder:_
-- root / config / database.php? !!! filename?
+_The file to create the Database is in this folder:_
+
+    Database:
+    5100_php_website_laura_lea_mueller_WDD919 / config / 5100_custom_cms.sql
 
 _If the access data for the database have to be adjusted, this can be found here:_
-- root / web / database / config.php
+
+    access data Database:
+    5100_php_website_laura_lea_mueller_WDD919 / web / database / config.php
 
 **Login**
 
-_these are the data to log into my website in the backend:_
-- Admin: email: lauralea@ledertatze.com PW: leder // LederTatze95$
-- User: email: cmsuser@ledertatze.com PW: 5100CmsUser!
+_These are the data to log into my website in the backend:_
+
+    Login:
+    Admin: email: lauralea@ledertatze.com PW: leder
+    User: email: cmsuser@ledertatze.com PW: 5100CmsUser!
 
 The only difference between admin and user is = the admin can edit/add and delete users
+
+**Email**
+
+_The contact site can send a email with a Message, change Email here:_
+
+    5100_php_website_laura_lea_mueller_WDD919 / web / controllers / contact.php
 
 **Files**
 
@@ -31,7 +43,7 @@ _to understand the folder structure please read the section Folder structure in 
 ## Overview
 **CMS Project Leder Tatze**
 
-For this school project you have to program a cms yourself.
+For this school project i had to program a cms by myself.
 I have decided to revise and add to my existing "Leder LARP Tatze" page.
 The goal is a simple CMS where you can delete, edit and add things.
 
@@ -40,7 +52,7 @@ Also, the site is now being set up with Bootstrap and Mobile first.
 ***
 
 ##Project structure
-**Pic**  
+**PHP**  
 my php code is unfortunately a mishmash between object-oriented programming and not object-oriented programming. 
 this for the reason that I can not yet determine the difference everywhere and thus also could not locate with examples from the internet whether this is object-oriented or not.
 ***

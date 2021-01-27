@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 26. Jan 2021 um 19:46
+-- Erstellungszeit: 27. Jan 2021 um 14:26
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.4.10
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `5100_custom_cms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `gallerys`
+--
+
+CREATE TABLE `gallerys` (
+  `id` int(11) NOT NULL,
+  `image` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `gallerys`
+--
+
+INSERT INTO `gallerys` (`id`, `image`) VALUES
+(1, 9),
+(6, 11),
+(4, 13),
+(3, 16),
+(8, 17),
+(2, 40),
+(10, 47),
+(9, 48),
+(5, 49),
+(7, 53);
 
 -- --------------------------------------------------------
 
@@ -269,13 +296,56 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `first_name`, `last_name`, `password`, `role`, `login_try`, `banned_at`) VALUES
 (1, 'lauralea@ledertatze.com', 'Laura Lea', 'Mueller', '$2y$10$kvesD0pTOWo.VrCHiQykJuvETvM.rz2SbkgXoa0TgXFEUlSfDfOpi', 'admin', 0, NULL),
-(2, 'cmsuser@ledertatze.com', 'cms', 'user', '$2y$10$MqH88V9.SN2qG1OYegKkDeFQX.Siu8W1Lr9aA7WLe9jO7LclhM7Wq', 'user', 0, NULL),
-(15, 'm@u.mau', 'mau', 'mau', '$2y$10$4f0qXvLK5ZUBqLAnPIXKHelvsnXKy9xqyLltBfRSrLrHIZwmJNBA.', 'user', 2, NULL),
-(16, 'kaio@katze.com', 'katze', 'Kaio!', '$2y$10$FLFL9sDp5yPvFeYh18v9leSW.0Xp4yf3sKj2W0oiuh6lz0HCb6HMu', 'user', 0, NULL);
+(2, 'cmsuser@ledertatze.com', 'cms', 'user', '$2y$10$MqH88V9.SN2qG1OYegKkDeFQX.Siu8W1Lr9aA7WLe9jO7LclhM7Wq', 'user', 0, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `works`
+--
+
+CREATE TABLE `works` (
+  `id` int(11) NOT NULL,
+  `title` varchar(80) NOT NULL,
+  `text` varchar(500) NOT NULL,
+  `subtitle` varchar(100) NOT NULL,
+  `sub_text` varchar(1500) NOT NULL,
+  `image_1` int(150) NOT NULL DEFAULT 5,
+  `image_2` int(150) NOT NULL DEFAULT 5,
+  `image_3` int(150) NOT NULL DEFAULT 5,
+  `image_4` int(150) NOT NULL DEFAULT 5,
+  `image_5` int(150) NOT NULL DEFAULT 5,
+  `image_6` int(150) NOT NULL DEFAULT 5
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `works`
+--
+
+INSERT INTO `works` (`id`, `title`, `text`, `subtitle`, `sub_text`, `image_1`, `image_2`, `image_3`, `image_4`, `image_5`, `image_6`) VALUES
+(1, 'Vorstellung', 'Bevor man beginnt, sollte man genau wissen, was man überhaupt machen will. Es hilft, wenn man vor dem Start eine klare Vorstellung vom Ergebnis hat.', 'Eine Genaue Vorstellung Vom Ziel', 'So besorgt man von den Materialien nicht unnötig zu viel oder zu wenig.\r\n\r\nZur Inspiration habe ich es so gelöst, dass ich alle Rüstungen, die mir gefielen, zusammengetragen und dann eine Skizze von meinem Wunschprodukt gemacht habe. Hier ist es auch wichtig, realistisch zu bleiben. Bei ersten Projekten eignet sich eine Armschiene besser als eine ganze Rüstung. Oder ihr macht es wie ich und beginnt bei der Rüstung.', 80, 79, 81, 80, 79, 17),
+(3, 'Farben, Schnallen, Nieten', 'Zur Definition der Farben und Schnallen: Wenn man diese Dinge Anfangs entscheidet, muss man, wenn das Produkt beinahe fertig ist, nicht warten, bis die richtigen Schnallen, Nieten etc. eintreffen', 'Definition der Farben, Schnallen, Nieten und Verschlüssen', 'Meine Lösung dazu war, von allen Schnallen, welche in Frage kamen, eine zu bestellen und zu schauen, welche davon wirklich passt. Gleich ging ich auch bei den Nieten und der Farbe vor. Ich bestellte meine Schnallen und Nieten von Lederhaus.de. Die Farbe sowie Leder holte ich bei ryffel-felle.ch.', 90, 99, 96, 97, 98, 57),
+(4, 'Artwork', 'Was soll auf eurer Rüstung dargestellt sein? Nur Musterung oder etwas Konkretes?', 'Artwork erschaffen, Kreieren, Zeichnen', 'Es ist jedem selbst überlassen, wie man das macht. Ich persönlich finde es toll, wenn man diese Sachen selbst zeichnet. Man kann aber auch etwas aus dem Internet nehmen oder einfach mit Struktur eine Musterung erschaffen ohne konkrete Darstellung.', 77, 60, 59, 58, 62, 1),
+(5, 'Ausprobieren und üben', 'Bevor man richtig startet, macht es Sinn auszuprobieren und zu üben.', 'Ausprobieren / üben / Umgang Werkzeug / färben', 'Punzieren kann je nach Wunsch des Endresultats schwierig sein. Besonders wenn man Punzier-Stempel hat, welche genau ineinanderpassen und man diese Musterung über eine grosse Fläche haben will. Z.B. Schuppen oder gerade Linien. Beim Üben merkt man auch schnell, wie nass oder wie trocken das Leder sein muss, um einen schönen Abdruck zu erhalten. Beim Färben ist es wichtig zu lernen, wie sich die Lederfarbe verhält. Gibt es Linien am Aussenrand, oder wie viele Schichten benötigt man, um den korrekten Farbton zu erhalten.\r\n\r\nIch selbst mag das Leder zum Punzieren lieber zu nass, unter anderem auch, da ich einige Punzier-Stempel habe, welche sehr tief geschlagen werden müssen, um den kompletten Abdruck zu erhalten. Zum Färben habe ich teils für grosse Flächen das Leder zuerst nass gemacht. Die Farbe verteilt sich so schneller und gleichmässiger. Auch wird die Farbe schneller mit weniger Schichten dunkler. Diese Methode kann ich nicht bei den punzierten Stellen empfehlen, da es sein kann, dass sich die Färbung in die Punzierung zieht.\r\n\r\nWenn man es beherrscht, ist es hilfreich ein kleines Muster anzufertigen, wie die Rüstung am Schluss aussehen soll.', 84, 65, 84, 65, 67, 84),
+(6, 'Schnittmuster', 'Das Schnittmuster sollte so gemacht sein, dass die Rüstung nicht zu eng wird. Damit man Kleidung darunter anziehen kann und sie nicht scheuert.', 'Schnittmuster', 'Als Mann würde ich einfach ein Massband nehmen und den Oberkörper ausmessen. Als Frau ist dies etwas schwieriger wegen den Brüsten. Hier meine Empfehlung: Ziehe einen BH an, der gut passt oder evtl. eher etwas zu gross ist, damit die Rüstung auch nicht zu eng ist, falls du etwas wächst. Hol dir jemanden zur Hilfe. Lass dich in Klarsichtfolie einpacken. Vorsicht! Nicht zu eng, atme ein und halte die Luft an. Wenn deine ganze Haut abgedeckt ist, soll dein Helfer dich mit Klebeband einwickeln. Auch hier Vorsicht das es dir nicht die Luft abschneidet. Ist dies getan, nimm einen Stift und zeichne genau ein wie breit, hoch, lang die Rüstung werden soll. Schneide dich so frei, dass du ein Rücken- und ein Brustteil hast.\r\n\r\nSo hast du ein perfekt angepasstes Schnittmuster. Schneide um die Brüste danach die Stücke so, dass du einerseits die Stücke möglichst flach hinlegen kannst und andererseits so, dass es möglichst wenige sind und du nicht zu viel nähen musst.', 100, 81, 82, 100, 82, 101),
+(7, 'Teile', 'Lege das Schnittmuster auf das Leder. Zeichne es ab und schneide es aus.', 'Teile zuschneiden', 'Für gerade Linien kann es hilfreich sein, ein Lineal zur Führung des Messers zu benutzen. Ich habe ein Teppichmesser benutz und eine ganz gewöhnliche Schnittunterlage. Vorsicht: Karton wird leicht durchschnitten.', 83, 73, 118, 76, 70, 65),
+(8, 'Punzieren', 'Punziere dein gewünschtes Muster auf dein Leder.', 'Punzieren', 'Das Leder muss zum Punzieren nass sein, ansonsten funktioniert es nicht richtig. Pause deine Zeichnung mit einen Druckstift auf das nasse Leder ab. Schneide die Linien mit dem Rundmesser nach. Es geht auch ohne dass es nachgeschnitten wird, allerdings läuft dann die Farbe eher in die Musterung und es ist schwieriger, die Ränder genau zu punzieren.\r\nIst das gemacht, nimm den gewünschten (am besten einen relativ neutralen) Punzier-Stempel und punziere dem Rand entlang.\r\nZum Schluss punziere die freien Flächen mit der gewünschten Musterung.', 73, 74, 56, 61, 73, 74),
+(9, 'Färben', 'Färbe das Leder in der gewünschten Farbe ein.', 'Färben', 'Zum Färben der kleinen Dinge würde ich einen kleinen Pinsel empfehlen, da die Farbe nicht an Orte läuft, wo man sie nicht haben will. Für Flächen empfehle ich einen Wollpinsel. Er kann eine grosse Menge an Farbe gleichzeitig aufnehmen und verteilt sie schön.', 66, 75, 75, 63, 68, 67),
+(10, 'Finischer', 'Wenn man es wünscht, kann man Finischer benutzen, muss man aber nicht.', 'Finischer', 'Für meine Rüstung habe ich Antikfinisher benutz. Er macht das Leder etwas dunkler, dadurch wirkt es älter. Es gibt auch Pflegeprodukte, welche speziell für Glanz sind, oder welche, die das Leder matt machen.\r\nWenn man das Leder härten will, kann man es in heissem Wachs baden und danach trocknen lassen. Dies habe ich allerdings noch nie probiert.', 68, 85, 68, 85, 67, 64),
+(11, 'Ränder', 'Um die Ränder schön hinzubekommen, müssen sie mit dem Kantenpoliererer abgeschliffen werden.', 'Ränder Polieren und schleifen', 'Es gibt spezielle Mittel, welche man verwenden kann, damit die Ränder nicht ausfransen. Ich habe dazu immer Bienenwachs verwendet. Mit dem Bienenwachs die Ränder abreiben und dann mit dem Kantenpolierer darüberfahren, bis die Ränder schön und glatt sind.', 91, 114, 67, 114, 91, 93),
+(12, 'Schnallen Nieten Kleben', 'Zum Schluss werden die Schnallen befestigt und die Nieten eingeschlagen, geklebt oder genäht.', 'Schnallen /Nieten / Nähte / Kleben', 'Hinweis zum Kleben: wenn das Leder gefärbt und evtl. schon behandelt ist, ist es glatt. Verwendet man einen Kontaktkleber, wird er nicht auf dem Leder haften. Wenn dieser Fall eintrifft, kann man vorher das Leder mit einem Schleifpapier aufrauen, sodass der Kleber hält.\r\n\r\nZum Nieten einschlagen ist es empfehlenswert, ein Nietenschlagset zu verwenden, damit die Nieten nicht zerkratzt oder zerbeult sind.\r\nSo wie bei der Rüstung bei mir XD.', 99, 120, 90, 99, 93, 78),
+(13, 'Nähen', 'Wann der richtige Zeitpunkt zum Nähen ist, ist von Rüstung zu Rüstung unterschiedlich.', 'Nähen', 'Es kommt darauf an, welche Teile wie zugänglich sind. Da das Leder zum Punzieren jedoch flach liegen muss und das auch beim Färben hilft, würde ich erst ganz am Schluss nähen.\r\n\r\nJe nachdem wie die Naht ist, kann man zuerst mit dem Rillenzieher eine Bahn ziehen, in der man die Naht versenken kann. Danach entweder mit dem Locheisen gleichmässige Löcher schlagen oder mit dem Abstandrädchen den Abstand messen und die Löcher mit der Ahle einstechen.\r\n\r\nDann nur noch nähen. Es ist empfehlenswert Ledernadeln zu verwenden, da diese wesentlich stabiler sind und zum Teil extra so geformt, dass man das Leder besser durchstechen kann.\r\nAls Faden kann ich Sattelgarn empfehlen, es ist sehr stabil.', 110, 88, 107, 110, 119, 108);
 
 --
 -- Indizes der exportierten Tabellen
 --
+
+--
+-- Indizes für die Tabelle `gallerys`
+--
+ALTER TABLE `gallerys`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_gallery_img` (`image`);
 
 --
 -- Indizes für die Tabelle `images`
@@ -314,8 +384,26 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indizes für die Tabelle `works`
+--
+ALTER TABLE `works`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_images_1` (`image_1`),
+  ADD KEY `fk_images_2` (`image_2`),
+  ADD KEY `fk_images_3` (`image_3`),
+  ADD KEY `fk_images_4` (`image_4`),
+  ADD KEY `fk_images_5` (`image_5`),
+  ADD KEY `fk_images_6` (`image_6`);
+
+--
 -- AUTO_INCREMENT für exportierte Tabellen
 --
+
+--
+-- AUTO_INCREMENT für Tabelle `gallerys`
+--
+ALTER TABLE `gallerys`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT für Tabelle `images`
@@ -348,8 +436,20 @@ ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
+-- AUTO_INCREMENT für Tabelle `works`
+--
+ALTER TABLE `works`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
 -- Constraints der exportierten Tabellen
 --
+
+--
+-- Constraints der Tabelle `gallerys`
+--
+ALTER TABLE `gallerys`
+  ADD CONSTRAINT `fk_gallery_img` FOREIGN KEY (`image`) REFERENCES `images` (`id`);
 
 --
 -- Constraints der Tabelle `images`
@@ -371,6 +471,17 @@ ALTER TABLE `news`
 --
 ALTER TABLE `tools`
   ADD CONSTRAINT `fk_image_tools` FOREIGN KEY (`image_id`) REFERENCES `images` (`id`);
+
+--
+-- Constraints der Tabelle `works`
+--
+ALTER TABLE `works`
+  ADD CONSTRAINT `fk_images_1` FOREIGN KEY (`image_1`) REFERENCES `images` (`id`),
+  ADD CONSTRAINT `fk_images_2` FOREIGN KEY (`image_2`) REFERENCES `images` (`id`),
+  ADD CONSTRAINT `fk_images_3` FOREIGN KEY (`image_3`) REFERENCES `images` (`id`),
+  ADD CONSTRAINT `fk_images_4` FOREIGN KEY (`image_4`) REFERENCES `images` (`id`),
+  ADD CONSTRAINT `fk_images_5` FOREIGN KEY (`image_5`) REFERENCES `images` (`id`),
+  ADD CONSTRAINT `fk_images_6` FOREIGN KEY (`image_6`) REFERENCES `images` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

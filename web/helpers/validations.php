@@ -61,7 +61,7 @@ function validateFields($fieldRules){
                 }
             }
 
-            if($rule == 'password'){
+            if($rule == 'password'){ // not in use jet!
 
                 if($value != '' && ! preg_match('/^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$/', $value)){
                     $fieldErrors[] = $errorFeedback[$rule];

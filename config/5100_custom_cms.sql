@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 27. Jan 2021 um 14:26
+-- Erstellungszeit: 28. Jan 2021 um 10:45
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.4.10
 
@@ -37,11 +37,11 @@ CREATE TABLE `gallerys` (
 --
 
 INSERT INTO `gallerys` (`id`, `image`) VALUES
-(1, 9),
 (6, 11),
 (4, 13),
 (3, 16),
 (8, 17),
+(1, 40),
 (2, 40),
 (10, 47),
 (9, 48),
@@ -421,7 +421,7 @@ ALTER TABLE `image_folder`
 -- AUTO_INCREMENT für Tabelle `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT für Tabelle `tools`
@@ -433,7 +433,7 @@ ALTER TABLE `tools`
 -- AUTO_INCREMENT für Tabelle `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT für Tabelle `works`

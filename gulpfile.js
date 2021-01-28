@@ -17,12 +17,12 @@ function style(){
 
 // to uglify/minify the css
 function uglifyCss(){
-    return gulp.src('./css/*.css') // were are the files?
+    return gulp.src('web/css/*.css') // were are the files?
         .pipe(uglifycss({
             // "maxLineLen": 80, // every 80 carr new line
             "uglyComments": true
         }))
-        .pipe(gulp.dest('./min_css/'));
+        .pipe(gulp.dest('web/min_css/'));
 }
 
 
@@ -42,7 +42,7 @@ function watch(){
         }
     });
     gulp.watch('web/scss/**/*.scss', style);
-    //gulp.watch('./css/*.css', uglifyCss);
+    gulp.watch('web/css/*.css', uglifyCss);
     //gulp.watch('./css/*.css', autoprefix);
     gulp.watch('web/*.html').on('change', browserSync.reload);
     gulp.watch('web/js/*.js').on('change', browserSync.reload);

@@ -11,7 +11,7 @@ include('database/database.php');
 include('helpers/validations.php');
 
 session_start();
-//error_reporting(E_WARNING); // don't show the warnings
+error_reporting(E_WARNING); // don't show the warnings
 $pageElement= null;
 $p ='home';
 

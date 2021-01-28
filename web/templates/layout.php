@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#000000">
 
     <!-- style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="min_css/style.css">
 </head>
 
 <body>

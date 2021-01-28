@@ -122,6 +122,7 @@ With PHP the whole thing gets a bit more complicated, That's why I did the whole
      7. package.json = contains instructions for node.
      8. package-lock.json = auto generated file from node.
      9. README.md = contains everything that is important to work on this project.
+     10. README.pdf = contains the README.md as a PDF.
  
 ***
 

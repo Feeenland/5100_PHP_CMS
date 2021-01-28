@@ -35,7 +35,7 @@ function getToolItemById($id){
     try{
         $stmt = $db_connection->prepare("SELECT * FROM tools WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();
@@ -55,11 +55,11 @@ function saveToolEntry($data){
         try{
             $stmt = $db_connection->prepare("UPDATE tools SET title = ?, subtitle = ?, text = ?, image_id = ? WHERE id = ?");
             $stmt->bind_param("sssii", $title, $subtitle, $text, $image_id, $id);
-            $title = htmlspecialchars($data['title']);
-            $subtitle = htmlspecialchars($data['subtitle']);
-            $text = htmlspecialchars($data['text']);
-            $image_id = htmlspecialchars($data['image_id']);
-            $id = htmlspecialchars($data['id']);
+            $title = desinfect($data['title']);
+            $subtitle = desinfect($data['subtitle']);
+            $text = desinfect($data['text']);
+            $image_id = desinfect($data['image_id']);
+            $id = desinfect($data['id']);
             $stmt->execute();
             return true;
         }catch(Exception $e){
@@ -71,10 +71,10 @@ function saveToolEntry($data){
         try{
             $stmt = $db_connection->prepare("INSERT INTO tools (title, subtitle, text, image_id) VALUES (?,?,?,?)");
             $stmt->bind_param("sssi", $title, $subtitle, $text, $image_id);
-            $title = htmlspecialchars($data['title']);
-            $subtitle = htmlspecialchars($data['subtitle']);
-            $text = htmlspecialchars($data['text']);
-            $image_id = htmlspecialchars($data['image_id']);
+            $title = desinfect($data['title']);
+            $subtitle = desinfect($data['subtitle']);
+            $text = desinfect($data['text']);
+            $image_id = desinfect($data['image_id']);
             $stmt->execute();
             return $stmt->insert_id;
         }catch(Exception $e){
@@ -91,7 +91,7 @@ function deleteToolItemById($id){
     try{
         $stmt = $db_connection->prepare("DELETE FROM tools WHERE ID = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
     }catch(Exception $e){

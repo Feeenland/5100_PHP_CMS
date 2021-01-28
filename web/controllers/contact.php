@@ -19,10 +19,10 @@ $header = '';
 
 
 if (isset($_POST['submit'])) {
-    $first_name = htmlspecialchars($_POST['first_name']);
-    $last_name = htmlspecialchars($_POST['last_name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+    $first_name = desinfect($_POST['first_name']);
+    $last_name = desinfect($_POST['last_name']);
+    $email = desinfect($_POST['email']);
+    $message = desinfect($_POST['message']);
 // valid infos ?= send Mail
     /* isset mit Martin angeschaut, hat nicht funktioniert! (comment steht hier auf Martins Wunsch:)*/
     if (strlen($_POST['first_name']) < 1) {

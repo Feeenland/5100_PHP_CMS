@@ -21,7 +21,7 @@ if(isset($_POST['login_try']) ) {
         $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben'; // mail is wrong
         $page = 'templates/forms/login.php';
         //die('wrong user');
-        $email = htmlspecialchars($_POST['email']);
+        $email = desinfect($_POST['email']);
         $errorMessage = 'Etwas wurde falsch eingegeben!';
     }else{
         // is user banned?
@@ -35,7 +35,7 @@ if(isset($_POST['login_try']) ) {
                                     versuchen sie es später erneut! ';
                 $page = 'templates/forms/login.php';
                 //die('You are banned. Wait longer');
-                $email = htmlspecialchars($_POST['email']);
+                $email = desinfect($_POST['email']);
                 $errorMessage = 'Immernoch Gebannt !';
             }else{ // waited long enough = reset the field banned_at an login_try in the DB.
                 updateUserField($usr['id'], 'banned_at', null, 's');
@@ -71,7 +71,7 @@ if(isset($_POST['login_try']) ) {
                                     versuchen sie es später erneut! <br>
                                     zeit der Bannung: '.date('Y-m-d H:i:s');
                     $page = 'templates/forms/login.php';
-                    $email = htmlspecialchars($_POST['email']);
+                    $email = desinfect($_POST['email']);
                     $errorMessage = 'Gebannt! um: '.date('Y-m-d H:i:s');
                     //die('ban user: ' . date('Y-m-d H:i:s'));
                 }else{
@@ -80,7 +80,7 @@ if(isset($_POST['login_try']) ) {
                     $login_output = 'fehlerhafter login versuch, etwas wurde falsch eingegeben';
                     $page = 'templates/forms/login.php';
                     //die('mistake counter incremented');
-                    $email = htmlspecialchars($_POST['email']);
+                    $email = desinfect($_POST['email']);
                     $errorMessage = 'Etwas wurde falsch eingegeben!';
                 }
             }

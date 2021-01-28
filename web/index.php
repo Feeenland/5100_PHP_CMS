@@ -9,6 +9,7 @@ include('database/config.php');
 include('database/database.php');
 // helpers
 include('helpers/validations.php');
+include('helpers/desinfect.php');
 
 session_start();
 error_reporting(E_WARNING); // don't show the warnings

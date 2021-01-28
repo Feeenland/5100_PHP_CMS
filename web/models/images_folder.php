@@ -29,7 +29,7 @@ function getImageFolderById($id)
     try {
         $stmt = $db_connection->prepare("SELECT * FROM image_folder WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();

@@ -13,7 +13,7 @@ function existImgId($value){
     try {
         $stmt = $db_connection->prepare("SELECT ID FROM images WHERE EXISTS(SELECT ID FROM images WHERE id = ?)");
         $stmt->bind_param("i", $_value);
-        $_value = htmlspecialchars($value);
+        $_value = desinfect($value);
         $stmt->execute(); // = 1
         $result = $stmt->get_result();
         /* if ($_value > 0){

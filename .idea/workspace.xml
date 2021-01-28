@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8637d84b-63fb-4bc1-9908-da4cf6c183c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/gallerys.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/gallerys.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/images.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/images_folder.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_folder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/images_id_exist.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/images_id_exist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/tools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models/works.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/works.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/templates/admin/lists" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sae/vorbereitung" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -93,7 +103,7 @@
       <workItem from="1610521230000" duration="49739000" />
       <workItem from="1610782815338" duration="631000" />
       <workItem from="1610962262571" duration="180577000" />
-      <workItem from="1611762979677" duration="13781000" />
+      <workItem from="1611762979677" duration="24263000" />
     </task>
     <servers />
   </component>
@@ -109,14 +119,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611153776713" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611516331094">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611828265394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611516331094" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1611407367961">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611828265394" />
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1611858613805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611407367961" />
+    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.30.1680.1010@0.0.1920.1040" timestamp="1611858613805" />
     <state x="2477" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1611762982575">
       <screen x="1920" y="30" width="1680" height="1010" />
     </state>

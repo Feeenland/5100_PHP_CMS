@@ -35,8 +35,8 @@ function updateUserField($id, $field, $newValue, $valueType){ //to update a spec
     try{
         $stmt = $db_connection->prepare('UPDATE users SET ' . $field .  ' = ? WHERE id = ?');
         $stmt->bind_param($valueType . 'i', $_value, $_id);
-        $_value = htmlspecialchars($newValue);
-        $_id = htmlspecialchars($id);
+        $_value = desinfect($newValue);
+        $_id = desinfect($id);
         $stmt->execute();
         return true;
     }catch(Exception $exception){
@@ -68,7 +68,7 @@ function getItemById($id)
     try {
         $stmt = $db_connection->prepare("SELECT * FROM users WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();
@@ -93,12 +93,12 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("UPDATE users SET first_name = ?, last_name = ?, email = ?, password = ?, banned_at = ? WHERE id = ?");
             $stmt->bind_param("sssssi", $first_name, $last_name, $email, $password, $banned_at, $id);
-            $first_name = htmlspecialchars($data['first_name']);
-            $last_name = htmlspecialchars($data['last_name']);
-            $email = htmlspecialchars($data['email']);
+            $first_name = desinfect($data['first_name']);
+            $last_name = desinfect($data['last_name']);
+            $email = desinfect($data['email']);
             $password = password_hash($data['password'], PASSWORD_DEFAULT);
-            $banned_at = htmlspecialchars($data['banned_at']);
-            $id = htmlspecialchars($data['id']);
+            $banned_at = desinfect($data['banned_at']);
+            $id = desinfect($data['id']);
             $stmt->execute();
             return true;
         } catch (Exception $e) {
@@ -110,9 +110,9 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("INSERT INTO users (first_name, last_name, email, password) VALUES (?,?,?,?)");
             $stmt->bind_param("ssss", $first_name, $last_name, $email, $password);
-            $first_name = htmlspecialchars($data['first_name']);
-            $last_name = htmlspecialchars($data['last_name']);
-            $email = htmlspecialchars($data['email']);
+            $first_name = desinfect($data['first_name']);
+            $last_name = desinfect($data['last_name']);
+            $email = desinfect($data['email']);
             $password = password_hash($data['password'], PASSWORD_DEFAULT);
             $stmt->execute();
             return $stmt->insert_id;
@@ -131,7 +131,7 @@ function deleteItemById($id)
     try {
         $stmt = $db_connection->prepare("DELETE FROM users WHERE ID = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
     } catch (Exception $e) {

@@ -28,7 +28,7 @@ function getItemById($id)
     try {
         $stmt = $db_connection->prepare("SELECT * FROM gallerys WHERE id = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_assoc();
@@ -49,8 +49,8 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("UPDATE gallerys SET image = ? WHERE id = ?");
             $stmt->bind_param("ii", $image, $id);
-            $image = htmlspecialchars($data['image']);
-            $id = htmlspecialchars($data['id']);
+            $image = desinfect($data['image']);
+            $id = desinfect($data['id']);
             $stmt->execute();
             return true;
         } catch (Exception $e) {
@@ -62,7 +62,7 @@ function saveEntry($data)
         try {
             $stmt = $db_connection->prepare("INSERT INTO gallerys (image) VALUES (?)");
             $stmt->bind_param("i", $image);
-            $image = htmlspecialchars($data['image']);
+            $image = desinfect($data['image']);
             $stmt->execute();
             return $stmt->insert_id;
         } catch (Exception $e) {
@@ -82,7 +82,7 @@ function saveEntry($data)
     try {
         $stmt = $db_connection->prepare("DELETE FROM images WHERE ID = ?");
         $stmt->bind_param("i", $_id);
-        $_id = htmlspecialchars($id);
+        $_id = desinfect($id);
         $stmt->execute();
         $result = $stmt->get_result();
     } catch (Exception $e) {
